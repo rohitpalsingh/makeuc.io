@@ -1,4 +1,5 @@
 import ScrollTop from 'react-scrolltop-button';
+import JetpackOn from '../svg/JetpackOn'
 
 const ScrollTopButton = ({distance=700}) => {
     return (
@@ -6,7 +7,11 @@ const ScrollTopButton = ({distance=700}) => {
             text=''
             distance={distance}
             breakpoint={50000}
-            style={{'border-radius': '50%'}}
+            speed={500}
+            style={{'border': 'none',
+                    'background-color': 'transparent',
+                    'width': '60px'}}
+            icon={<JetpackOn />}
         />
     );
 };
