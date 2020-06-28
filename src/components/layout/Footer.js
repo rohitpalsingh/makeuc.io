@@ -20,7 +20,7 @@ const Footer = () => (
       <a target='_blank' href="https://twitter.com/uc_ieee" className="flex-1">
         <FaTwitter />
       </a>
-      <a target='_blank' href="https://github.com/ieeeatuc/makeuc.io" className="flex-1">
+      <a target='_blank' href="https://github.com/makeuc" className="flex-1">
         <FaGithub />
       </a>
     </IconContext.Provider>

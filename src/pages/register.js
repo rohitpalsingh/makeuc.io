@@ -18,9 +18,9 @@ export default () => (
           </div>
         </a>
         <div className="hidden md:block">
-          <Button className="text-sm" href="/index">
-            Home
-          </Button>
+          <a href="/">
+            <Button className="text-sm">Home</Button>
+          </a>
         </div>
       </div>
     </header>
@@ -37,7 +37,7 @@ export default () => (
                       className="block text-gray-700 text-sm font-bold mb-2"
                       htmlFor="fullName"
                     >
-                      Full name
+                      Name
                     </label>
                     <input
                       className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
@@ -63,16 +63,110 @@ export default () => (
                   <div className="mb-4 text-left">
                     <label
                       className="block text-gray-700 text-sm font-bold mb-2"
-                      htmlFor="university"
+                      htmlFor="school"
                     >
                       School
                     </label>
                     <input
                       className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                      name="university"
+                      name="school"
                       type="text"
-                      placeholder="Current School"
+                      placeholder="Current school"
+                      list="schools"
                     />
+                      <datalist id="schools">
+                        <option>Arizona State University</option>
+                        <option>Auburn University</option>
+                        <option>Boston University</option>
+                        <option>Bowling Green State University</option>
+                        <option>California Institute of Technology</option>
+                        <option>Carleton University</option>
+                        <option>Carnegie Mellon University</option>
+                        <option>Case Western Reserve University</option>
+                        <option>Clemson University</option>
+                        <option>Cleveland State University</option>
+                        <option>Colorado State University</option>
+                        <option>Columbia University</option>
+                        <option>Concordia University</option>
+                        <option>Cornell University</option>
+                        <option>Dartmouth College</option>
+                        <option>Drexel University</option>
+                        <option>Duke University</option>
+                        <option>George Washington University</option>
+                        <option>Georgia Institute of Technology</option>
+                        <option>Harvard University</option>
+                        <option>Henry Ford College</option>
+                        <option>Illinois State University</option>
+                        <option>Johns Hopkins University</option>
+                        <option>Kent State University</option>
+                        <option>Loyola University Chicago</option>
+                        <option>Massachusetts Institute of Technology</option>
+                        <option>McGill University</option>
+                        <option>McMaster University</option>
+                        <option>Miami University</option>
+                        <option>Michigan State University</option>
+                        <option>New York University</option>
+                        <option>North Carolina State University</option>
+                        <option>Northeastern University</option>
+                        <option>Northwestern University</option>
+                        <option>Ohio State University</option>
+                        <option>Oregon State University</option>
+                        <option>Pennsylvania State University</option>
+                        <option>Purdue University</option>
+                        <option>Rice University</option>
+                        <option>Rutgers University</option>
+                        <option>Stanford University</option>
+                        <option>Stony Brook University</option>
+                        <option>Syracuse University</option>
+                        <option>Tufts University</option>
+                        <option>University at Buffalo</option>
+                        <option>University of Akron</option>
+                        <option>University of Alberta</option>
+                        <option>University of Arizona</option>
+                        <option>University of British Columbia</option>
+                        <option>University of Calgary</option>
+                        <option>University of California, Berkeley</option>
+                        <option>University of California, Davis</option>
+                        <option>University of California, Irvine</option>
+                        <option>University of California, Los Angeles</option>
+                        <option>University of California, San Diego</option>
+                        <option>University of California, Santa Barbara</option>
+                        <option>University of Central Florida</option>
+                        <option>University of Chicago</option>
+                        <option>University of Cincinnati</option>
+                        <option>University of Colorado Boulder</option>
+                        <option>University of Connecticut</option>
+                        <option>University of Dayton</option>
+                        <option>University of Delaware</option>
+                        <option>University of Florida</option>
+                        <option>University of Houston</option>
+                        <option>University of Kentucky</option>
+                        <option>University of Louisville</option>
+                        <option>University of Massachusetts Amherst</option>
+                        <option>University of Michigan</option>
+                        <option>University of Minnesota Twin Cities</option>
+                        <option>University of Notre Dame</option>
+                        <option>University of Pennsylvania</option>
+                        <option>University of Pittsburgh</option>
+                        <option>University of Southern California</option>
+                        <option>University of Tennessee</option>
+                        <option>University of Texas at Austin</option>
+                        <option>University of Texas at Dallas</option>
+                        <option>University of Toledo</option>
+                        <option>University of Toronto</option>
+                        <option>University of Utah</option>
+                        <option>University of Victoria</option>
+                        <option>University of Virginia</option>
+                        <option>University of Washington</option>
+                        <option>University of Waterloo</option>
+                        <option>University of Wisconsin-Madison</option>
+                        <option>Vanderbilt University</option>
+                        <option>Virginia Tech</option>
+                        <option>Washington University in St. Louis</option>
+                        <option>Wright State University</option>
+                        <option>Xavier University</option>
+                        <option>Yale University</option>
+                      </datalist>
                   </div>
                   
                   <div className="mb-4 text-left">
@@ -90,12 +184,10 @@ export default () => (
                       list="degrees"
                     />
                       <datalist id="degrees">
-                        <option>High school</option>
-                        <option>Bachelors</option>
-                        <option>Masters</option>
-                        <option>PhD.</option>
-                        <option>Associate</option>
-                        <option value='Other'>Other</option>
+                        <option>Bachelor's</option>
+                        <option>Master's</option>
+                        <option>Doctorate</option>
+                        <option>High School</option>
                       </datalist>
                   </div>
                   <div className="mb-4 text-left">
@@ -113,11 +205,25 @@ export default () => (
                       list="majors"
                     />
                     <datalist id="majors">
-                      <option>Undecided</option>
-                      <option>Computer Science</option>
+                      <option>Aerospace Engineering</option>
                       <option>Computer Engineering</option>
+                      <option>Computer Science</option>
+                      <option>Cyber Security</option>
+                      <option>Chemical Engineering</option>
+                      <option>Civil Engineering</option>
+                      <option>Electrical Engineering</option>
+                      <option>Engineering Science</option>
+                      <option>Engineering Technology</option>
+                      <option>Environmental Engineering</option>
+                      <option>Engineering Science</option>
+                      <option>Industrial Engineering</option>
                       <option>Information Technology</option>
-                      <option>Other</option>
+                      <option>Mechanical Engineering</option>
+                      <option>Metallurgic Engineering</option>
+                      <option>Petroleum Engineering</option>
+                      <option>Software Development</option>
+                      <option>Software Engineering</option>
+                      <option>User Experience Design</option>
                     </datalist>
                   </div>
                   <div className="mb-4 text-left">
@@ -140,18 +246,17 @@ export default () => (
                       className="block text-gray-700 text-sm font-bold mb-2"
                       htmlFor="hackathonsAttended"
                     >
-                      Number of Hackathons attended
+                      Number of Hackathons Attended
               
                     </label>
                     <select
                       className="shadow appearance-none border w-full rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                     >
-                      <option selected>Select and option</option>
-                      <option>0</option>
+                      <option selected>Select an option</option>
+                      <option>This is my first hackathon!</option>
                       <option>1</option>
                       <option>2</option>
                       <option>3</option>
-                      <option>4</option>
                       <option>4 or more</option>
                     </select>
                   </div>
@@ -160,7 +265,7 @@ export default () => (
                       className="block text-gray-700 text-sm font-bold mb-2"
                       htmlFor="resumeURL"
                     >
-                      Upload resume (optional)
+                      Resume (optional but highly recommended if you're interested in full time positions and internships)
                     </label>
                     <input
                       className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
@@ -178,7 +283,7 @@ export default () => (
                     <select
                       className="shadow appearance-none border  w-full rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                     >
-                      <option selected>Select and option</option>
+                      <option selected>Select an option</option>
                       <option>American Indian or Alaska Native</option>
                       <option>Asian</option>
                       <option>Black or African American</option>
@@ -198,7 +303,7 @@ export default () => (
                     <select
                       className="shadow appearance-none border w-full rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                     >
-                      <option selected>Select and option</option>                      
+                      <option selected>Select an option</option>                      
                       <option>Male</option>
                       <option>Female</option>
                       <option>Other</option>
@@ -208,15 +313,15 @@ export default () => (
                   <div className="mb-4 text-left">
                     <label
                       className="block text-gray-700 text-sm font-bold mb-2"
-                      htmlFor="notes"
+                      htmlFor="questions"
                     >
-                      Notes:
+                      Questions or Concerns
                     </label>
                     <input
                       className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                      name="notes"
+                      name="questions"
                       type="text"
-                      placeholder="Questions or Concerns"
+                      placeholder="Questions or concerns"
                     />
                     </div>
                   <div className="md:items-center py-20 lg:pb-20 lg:pt-10">

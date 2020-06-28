@@ -15,9 +15,6 @@ const Header = () => (
         </div>
       </a>
       <div className="flex mt-4 sm:mt-0">
-        <AnchorLink className="px-4" href="#about">
-          About
-        </AnchorLink>
         <AnchorLink className="px-4" href="#schedule">
           Schedule
         </AnchorLink>
@@ -30,15 +27,9 @@ const Header = () => (
         <AnchorLink className="px-4" href="#faq">
           FAQ
         </AnchorLink>
-        <AnchorLink className="px-4" href="#prizes">
+        {/* <AnchorLink className="px-4" href="#prizes">
           Prizes
-        </AnchorLink>
-        <AnchorLink className="px-4" href="#ideas">
-          Ideas
-        </AnchorLink>
-        <AnchorLink className="px-4" href="#statistics">
-          Statistics
-        </AnchorLink>
+        </AnchorLink> */}
       </div>
       <div className="hidden md:block">
         <a href="/register">
