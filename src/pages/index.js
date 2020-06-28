@@ -3,11 +3,13 @@ import Button from '../components/Button';
 import Card from '../components/Card';
 import LabelText from '../components/LabelText';
 import Layout from '../components/layout/Layout';
+import ScrollTopButton from '../components/ScrollTopButton';
 import StatsBox from '../components/StatsBox';
 import HeroImage from '../svg/HeroImage';
 
 export default () => (
   <Layout>
+    <ScrollTopButton />
     <section className="pt-20 md:pt-40">
       <div className="container mx-auto px-8 lg:flex">
         <div className="text-center lg:text-left lg:w-1/2">
