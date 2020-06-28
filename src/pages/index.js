@@ -6,6 +6,7 @@ import Layout from '../components/layout/Layout';
 import ScrollTopButton from '../components/ScrollTopButton';
 // import StatsBox from '../components/StatsBox';
 import HeroImage from '../svg/HeroImage';
+import Accordion from '../components/Accordion';
 
 export default () => (
   <Layout>
@@ -62,11 +63,26 @@ export default () => (
       </div>
     </section>
     <section id="faq" className="py-20 lg:pb-40 lg:pt-48">
-      <div className="container mx-auto text-center">
+      <div className="container mx-auto text-left">
         <h2 className="text-3xl lg:text-5xl font-semibold">FAQ</h2>
         <div className="sm:-mx-3 mt-12">
           <Card>
-            <p className="text-xl">FAQ</p>
+            <Accordion
+              title="What is a hackathon?"
+              content="A hackathon is an event where student developers bring their passion for technology to create a project in 24 hours. It’s a chance to collaborate and create something unique in any number of forms – an app, a robot, a website! You will hopefully learn something new along the way in our high energy, engaging environment!"
+            />
+            <Accordion
+              title="How much does it cost?"
+              content="Nothing! The entire event is free for any student, with tools and prizes all included."
+            />
+            <Accordion
+              title="What if I'm new to hackathons?"
+              content="You’re new to hackathons? Wonderful! MakeUC is open to all skill levels, beginners to veterans. There’s nothing we love more than helping our hackers learn something new while they build something cool!"
+            />
+            <Accordion
+              title="How do I form teams?"
+              content="Teams are formed at the event but you're free to organize before if all participants are registered."
+            />
           </Card>
         </div>
       </div>
