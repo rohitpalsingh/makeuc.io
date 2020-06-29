@@ -27,7 +27,7 @@ export default () => (
         </div>
       </div>
     </section>
-    <section id="schedule" className="py-20 lg:pb-40 lg:pt-48">
+    {/* <section id="schedule" className="py-20 lg:pb-40 lg:pt-48">
       <div className="container mx-auto text-center">
         <h2 className="text-3xl lg:text-5xl font-semibold">Schedule</h2>
         <div className="sm:-mx-3 mt-12">
@@ -39,49 +39,59 @@ export default () => (
           />
         </div>
       </div>
-    </section>
+    </section> */}
     <section id="tracks" className="py-20 lg:pb-40 lg:pt-48">
       <div className="container mx-auto text-center">
         <h2 className="text-3xl lg:text-5xl font-semibold">Tracks</h2>
         <div className="sm:-mx-3 mt-12">
-          <Card>
-            <Card>
-              <h1 className="text-2xl font-semibold">Education</h1>
-              <p>
-                The Education track aims to improve the accessibility of information and enhance the
-                learning experiences of students at any level. These projects include but are not
-                limited to increasing access to information and technologies related to space
-                science, and providing an improved learning experience for students with a variety
-                of learning styles.
+          <div className="flex flex-col sm:flex-row sm:-mx-3 mt-12">
+            <div className="flex-1 px-3">
+              <Card>
+                <h1 className="text-2xl font-semibold">Education</h1>
+                <p>
+                  The Education track aims to improve the accessibility of information and enhance the
+                  learning experiences of students at any level. These projects include but are not
+                  limited to increasing access to information and technologies related to space
+                  science, and providing an improved learning experience for students with a variety
+                  of learning styles.
               </p>
-            </Card>
-            <Card>
-              <h1 className="text-2xl font-semibold">Space Exploration</h1>
-              <p>
-                The Space Exploration track aligns with the main theme of this year’s hackathon.
-                This track includes any technologies aimed to enhance or otherwise improve any
-                aspect of space exploration.
+              </Card>
+            </div>
+            <div className="flex-1 px-3">
+              <Card>
+                <h1 className="text-2xl font-semibold">Space Exploration</h1>
+                <p>
+                  The Space Exploration track aligns with the main theme of this year’s hackathon.
+                  This track includes any technologies aimed to enhance or otherwise improve any
+                  aspect of space exploration.
               </p>
-            </Card>
-            <Card>
-              <h1 className="text-2xl font-semibold">Health Technology</h1>
-              <p>
-                The Health Technology track aims to make improvements to a variety of health
-                technologies including but not limited to medical imaging, healthcare technology
-                systems, and interpreting health-related data. This track also aims to improve
-                accessibility to medical technology improvements.
+              </Card>
+            </div>
+          </div>
+          <div className="flex flex-col sm:flex-row sm:-mx-3 mt-12">
+            <div className="flex-1 px-3">
+              <Card>
+                <h1 className="text-2xl font-semibold">Health Technology</h1>
+                <p>
+                  The Health Technology track aims to make improvements to a variety of health
+                  technologies including but not limited to medical imaging, healthcare technology
+                  systems, and interpreting health-related data. This track also aims to improve
+                  accessibility to medical technology improvements.
               </p>
-            </Card>
-            <Card>
-              <h1 className="text-2xl font-semibold">Social Responsibility</h1>
-              <p>
-                The Social Responsibility track encompasses technologies concerning social and
-                economic inequality as well as reducing environmental impact. This track aims to
-                increase overall social responsibility and make improvements on the current systems
-                we have in place.
+              </Card>
+            </div>
+            <div className="flex-1 px-3">
+              <Card>
+                <h1 className="text-2xl font-semibold">Social Responsibility</h1>
+                <p>
+                  The Social Responsibility track encompasses technologies concerning social and
+                  economic inequality as well as reducing environmental impact. This track aims to
+                  increase overall social responsibility and make improvements on the current systems
+                  we have in place.
               </p>
-            </Card>
-          </Card>
+              </Card>
+            </div>
+          </div>
         </div>
       </div>
     </section>
