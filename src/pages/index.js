@@ -1,13 +1,29 @@
 import React from 'react';
-import { Link } from 'gatsby';
+import { Link, useStaticQuery, graphql } from 'gatsby';
 import Button from '../components/Button';
 import Card from '../components/Card';
 import Layout from '../components/layout/Layout';
 import HeroImage from '../svg/HeroImage';
 import Accordion from '../components/Accordion';
 
-export default () => (
-  <Layout>
+export const query = graphql`
+  query {
+    site {
+      siteMetadata {
+        faq {
+          question
+          answer
+        }
+      }
+    }
+  }
+`;
+
+export default () => {
+  const data = useStaticQuery(query);
+  console.log({ data });
+
+  return <Layout>
     <section className="pt-20 md:pt-40">
       <div className="container mx-auto px-8 lg:flex">
         <div className="text-center lg:text-left lg:w-1/2">
@@ -46,7 +62,7 @@ export default () => (
         <div className="sm:-mx-3 mt-12">
           <div className="flex flex-col sm:flex-row sm:-mx-3 mt-12">
             <div className="flex-1 px-3">
-              <Card>
+              <Card style={{ height: `250px` }}>
                 <h1 className="text-2xl font-semibold">Education</h1>
                 <p>
                   The Education track aims to improve the accessibility of information and enhance the
@@ -58,7 +74,7 @@ export default () => (
               </Card>
             </div>
             <div className="flex-1 px-3">
-              <Card>
+              <Card style={{ height: `250px` }}>
                 <h1 className="text-2xl font-semibold">Space Exploration</h1>
                 <p>
                   The Space Exploration track aligns with the main theme of this year’s hackathon.
@@ -70,7 +86,7 @@ export default () => (
           </div>
           <div className="flex flex-col sm:flex-row sm:-mx-3 mt-12">
             <div className="flex-1 px-3">
-              <Card>
+              <Card style={{ height: `250px` }}>
                 <h1 className="text-2xl font-semibold">Health Technology</h1>
                 <p>
                   The Health Technology track aims to make improvements to a variety of health
@@ -81,7 +97,7 @@ export default () => (
               </Card>
             </div>
             <div className="flex-1 px-3">
-              <Card>
+              <Card style={{ height: `250px` }}>
                 <h1 className="text-2xl font-semibold">Social Responsibility</h1>
                 <p>
                   The Social Responsibility track encompasses technologies concerning social and
@@ -110,10 +126,13 @@ export default () => (
         <h2 className="text-3xl lg:text-5xl font-semibold text-center">FAQ</h2>
         <div className="sm:-mx-3 mt-12 text-left">
           <Card>
-            <Accordion
-              title="What is a hackathon?"
-              content="A hackathon is an event where student developers bring their passion for technology to create a project in 24 hours. It’s a chance to collaborate and create something unique in any number of forms – an app, a robot, a website! You will hopefully learn something new along the way in our high energy, engaging environment!"
-            />
+            {data.site.siteMetadata.faq.map(faq =>
+              <Accordion
+                key={faq.question}
+                title={faq.question}
+                content={faq.answer}
+              />
+            )}
             <Accordion
               title="How much does it cost?"
               content="Nothing! The entire event is free for any student, with tools and prizes all included."
@@ -141,4 +160,4 @@ export default () => (
       </div>
     </section> */}
   </Layout>
-);
+};
