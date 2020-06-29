@@ -12,5 +12,9 @@ deploy:
   github_token: $GITHUB_TOKEN
   local_dir: ./public
   keep_history: true
+  repo: MakeUC/makeuc.github.io
+  target_branch: master
+  fqdn: dev.makeuc.io
+  verbose: true
   on:
     branch: master
