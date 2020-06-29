@@ -1,25 +1,25 @@
 import React from 'react';
+import { Link } from 'gatsby';
 import Button from '../components/Button';
 import Card from '../components/Card';
-import LabelText from '../components/LabelText';
 import Layout from '../components/layout/Layout';
-import StatsBox from '../components/StatsBox';
 import HeroImage from '../svg/HeroImage';
+import Accordion from '../components/Accordion';
 
 export default () => (
   <Layout>
     <section className="pt-20 md:pt-40">
       <div className="container mx-auto px-8 lg:flex">
         <div className="text-center lg:text-left lg:w-1/2">
-          <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-none">MakeUC</h1>
+          <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-none">MakeUC 2020</h1>
           <p className="text-xl lg:text-3xl mt-6 font-light">
-            October 3–4, 2020. <br />
-            24-Hour Hackathon. #Virtual
+            Discovering the beyond <br />
+            <strong>October 3-4, 2020</strong>
           </p>
           <p className="mt-8 md:mt-12">
-            <a href="/register">
+            <Link to="/register">
               <Button size="lg">Register</Button>
-            </a>
+            </Link>
           </p>
         </div>
         <div className="lg:w-1/2">
@@ -27,37 +27,16 @@ export default () => (
         </div>
       </div>
     </section>
-    <section id="about" className="py-20 lg:pb-40 lg:pt-48">
-      <div className="container mx-auto text-center">
-        <h2 className="text-3xl lg:text-5xl font-semibold">About</h2>
-        <div className="sm:-mx-3 mt-12">
-          <Card className="mx-20">
-            <p className="text-xl">
-              At MakeUC, we focus on gathering a diverse community from across the United States and
-              Canada to collaborate on building projects that can help define the future. We are
-              inviting hundreds of students from across North America, to help them bring their big
-              ideas to life. Our team works year-round to provide a welcoming atmosphere to all of
-              our participants. Unleash your creativity and we will handle the rest! Make big ideas
-              a reality at MakeUC!
-            </p>
-            <p className="mt-4 text-xl">
-              All students are welcome and attendance is completely free. MakeUC is a great
-              opportunity to meet fellow students as well as our sponsoring partners!
-            </p>
-            <p className="mt-4 text-xl">
-              Come show off your skills, step out of your comfort zone, and build awesome hacks!
-            </p>
-          </Card>
-        </div>
-      </div>
-    </section>
     <section id="schedule" className="py-20 lg:pb-40 lg:pt-48">
       <div className="container mx-auto text-center">
         <h2 className="text-3xl lg:text-5xl font-semibold">Schedule</h2>
         <div className="sm:-mx-3 mt-12">
-          <Card>
-            <p className="text-xl">Schedule embedded here</p>
-          </Card>
+          <iframe
+            title="schedule"
+            src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSl9HPcmstfEHYhgx0RJO4F_jfGLmfnsiSWQRMSasb6oJXbcwk6NsLqzSD-GgtgSd8EP0ILKODmxllC/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"
+            width="100%"
+            height="500px"
+          />
         </div>
       </div>
     </section>
@@ -66,7 +45,7 @@ export default () => (
         <h2 className="text-3xl lg:text-5xl font-semibold">Tracks</h2>
         <div className="sm:-mx-3 mt-12">
           <Card>
-            <p className="text-xl">Tracks here</p>
+            <p className="text-xl">Tracks</p>
           </Card>
         </div>
       </div>
@@ -76,56 +55,45 @@ export default () => (
         <h2 className="text-3xl lg:text-5xl font-semibold">Sponsors</h2>
         <div className="sm:-mx-3 mt-12">
           <Card>
-            <p className="text-xl">Sponsor logos here</p>
+            <p className="text-xl">Sponsors</p>
           </Card>
         </div>
       </div>
     </section>
     <section id="faq" className="py-20 lg:pb-40 lg:pt-48">
-      <div className="container mx-auto text-center">
-        <h2 className="text-3xl lg:text-5xl font-semibold">FAQ</h2>
-        <div className="sm:-mx-3 mt-12">
+      <div className="container mx-auto">
+        <h2 className="text-3xl lg:text-5xl font-semibold text-center">FAQ</h2>
+        <div className="sm:-mx-3 mt-12 text-left">
           <Card>
-            <p className="text-xl">FAQ here</p>
+            <Accordion
+              title="What is a hackathon?"
+              content="A hackathon is an event where student developers bring their passion for technology to create a project in 24 hours. It’s a chance to collaborate and create something unique in any number of forms – an app, a robot, a website! You will hopefully learn something new along the way in our high energy, engaging environment!"
+            />
+            <Accordion
+              title="How much does it cost?"
+              content="Nothing! The entire event is free for any student, with tools and prizes all included."
+            />
+            <Accordion
+              title="What if I'm new to hackathons?"
+              content="You’re new to hackathons? Wonderful! MakeUC is open to all skill levels, beginners to veterans. There’s nothing we love more than helping our hackers learn something new while they build something cool!"
+            />
+            <Accordion
+              title="How do I form teams?"
+              content="Teams are formed at the event but you're free to organize before if all participants are registered."
+            />
           </Card>
         </div>
       </div>
     </section>
-    <section id="prizes" className="py-20 lg:pb-40 lg:pt-48">
+    {/* <section id="prizes" className="py-20 lg:pb-40 lg:pt-48">
       <div className="container mx-auto text-center">
         <h2 className="text-3xl lg:text-5xl font-semibold">Prizes</h2>
         <div className="sm:-mx-3 mt-12">
           <Card>
-            <p className="text-xl">Prizes here</p>
+            <p className="text-xl">Prizes</p>
           </Card>
         </div>
       </div>
-    </section>
-    <section id="ideas" className="py-20 lg:pb-40 lg:pt-48">
-      <div className="container mx-auto text-center">
-        <h2 className="text-3xl lg:text-5xl font-semibold">Ideas</h2>
-        <div className="sm:-mx-3 mt-12">
-          <Card>
-            <p className="text-xl">Ideas here</p>
-          </Card>
-        </div>
-      </div>
-    </section>
-    <section id="stats" className="py-20 lg:pt-32">
-      <div className="container mx-auto text-center">
-        <LabelText className="text-gray-600">MakeUC 2019 Statistics</LabelText>
-        <div className="flex flex-col sm:flex-row mt-8 lg:px-24">
-          <div className="w-full sm:w-1/3">
-            <StatsBox primaryText="180+" secondaryText="Registered Students" />
-          </div>
-          <div className="w-full sm:w-1/3">
-            <StatsBox primaryText="20+" secondaryText="Majors Represented" />
-          </div>
-          <div className="w-full sm:w-1/3">
-            <StatsBox primaryText="60.3%" secondaryText="Underrepresented Groups" />
-          </div>
-        </div>
-      </div>
-    </section>
+    </section> */}
   </Layout>
 );
