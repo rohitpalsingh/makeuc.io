@@ -6,10 +6,9 @@ const sizes = {
   xl: `py-5 px-16 text-lg`
 };
 
-const Button = ({ children, className = '', size }) => {
+const Button = ({ children, className = '', size, ...props }) => {
   return (
     <button
-      type="button"
       className={`
         ${sizes[size] || sizes.default}
         ${className}
@@ -18,6 +17,7 @@ const Button = ({ children, className = '', size }) => {
         rounded
         text-white
     `}
+    {...props}
     >
       {children}
     </button>

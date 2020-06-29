@@ -4,10 +4,10 @@ export class RegistrantDTO {
   readonly school: string
   readonly degree: string
   readonly major: string
-  readonly graduation: string
-  readonly hackathonsAttended: number
+  readonly graduation: number
+  readonly hackathonsAttended: string
   readonly resume?: FileList
   readonly ethnicity: string
   readonly gender: string
-  readonly questions: string
+  readonly questions?: string
 }
