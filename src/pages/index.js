@@ -16,10 +16,8 @@ export default () => (
         <div className="text-center lg:text-left lg:w-1/2">
           <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-none">MakeUC 2020</h1>
           <p className="text-xl lg:text-3xl mt-6 font-light">
-            Discovering the beyond <br/>
-            <strong>
-              October 3-4, 2020
-            </strong>
+            Discovering the beyond <br />
+            <strong>October 3-4, 2020</strong>
           </p>
           <p className="mt-8 md:mt-12">
             <a href="/register">
@@ -47,7 +45,42 @@ export default () => (
         <h2 className="text-3xl lg:text-5xl font-semibold">Tracks</h2>
         <div className="sm:-mx-3 mt-12">
           <Card>
-            <p className="text-xl">Tracks</p>
+            <Card>
+              <h1 className="text-2xl font-semibold">Education</h1>
+              <p>
+                The Education track aims to improve the accessibility of information and enhance the
+                learning experiences of students at any level. These projects include but are not
+                limited to increasing access to information and technologies related to space
+                science, and providing an improved learning experience for students with a variety
+                of learning styles.
+              </p>
+            </Card>
+            <Card>
+              <h1 className="text-2xl font-semibold">Space Exploration</h1>
+              <p>
+                The Space Exploration track aligns with the main theme of this year’s hackathon.
+                This track includes any technologies aimed to enhance or otherwise improve any
+                aspect of space exploration.
+              </p>
+            </Card>
+            <Card>
+              <h1 className="text-2xl font-semibold">Health Technology</h1>
+              <p>
+                The Health Technology track aims to make improvements to a variety of health
+                technologies including but not limited to medical imaging, healthcare technology
+                systems, and interpreting health-related data. This track also aims to improve
+                accessibility to medical technology improvements.
+              </p>
+            </Card>
+            <Card>
+              <h1 className="text-2xl font-semibold">Social Responsibility</h1>
+              <p>
+                The Social Responsibility track encompasses technologies concerning social and
+                economic inequality as well as reducing environmental impact. This track aims to
+                increase overall social responsibility and make improvements on the current systems
+                we have in place.
+              </p>
+            </Card>
           </Card>
         </div>
       </div>
