@@ -82,7 +82,7 @@ export default () => {
         </a>
         <div className="hidden md:block">
           <Link to="/">
-            <Button size="lg" className="text-sm">Home</Button>
+            <Button size="default" className="text-sm">Home</Button>
           </Link>
         </div>
       </div>
@@ -211,7 +211,7 @@ export default () => {
                           ref={register({ required: true })}
                           className="shadow appearance-none border rounded w-full py-2 px-3  leading-tight focus:outline-none focus:shadow-outline"
                           name="graduation"
-                          type="text"
+                          type="number"
                           placeholder="2023"
                           maxLength={4}
                         />
