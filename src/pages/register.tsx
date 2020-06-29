@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link, graphql, useStaticQuery } from 'gatsby';
 import { useForm } from 'react-hook-form';
 import { FaSpinner } from 'react-icons/fa';
+import { useDropzone } from 'react-dropzone';
 import LogoIcon from '../svg/LogoIcon';
 import Footer from '../components/layout/Footer';
 import Button from '../components/Button';
@@ -33,26 +34,17 @@ const SERVER_ERROR = 500;
 export default () => {
   const data = useStaticQuery(query);
   const { register, errors, handleSubmit } = useForm<RegistrantDTO>();
+  const { acceptedFiles, getRootProps, getInputProps } = useDropzone({ accept: `.pdf`, multiple: false });
   const [ result, setResult ] = useState<number>(0);
   const [ submitting, setSubmitting ] = useState(false);
-
-  const validateResumeUpload = (data: FileList) => {
-    const resume = data[0];
-    if(!resume) return true;
-
-    const extension = resume.name.split(`.`).pop();
-    if(extension !== `pdf`) return false;
-
-    return true;
-  };
 
   const onSubmit = async (data: RegistrantDTO, event: React.BaseSyntheticEvent) => {
     setResult(0);
     setSubmitting(true);
 
     const formData = new FormData(event.target);
-    if(data.resume.length) {
-      formData.set(`resume`, data.resume[0], data.resume[0].name);
+    if(acceptedFiles.length) {
+      formData.set(`resume`, acceptedFiles[0], acceptedFiles[0].name);
     }
     try {
       const res = await fetch(`https://makeuc-registration.herokuapp.com/registrant`, {
@@ -239,14 +231,14 @@ export default () => {
                         >
                           Resume (optional but highly recommended if you're interested in full time
                           positions and internships):
-                          {errors.resume && <span className="text-red-500 text-xs italic">&nbsp;&nbsp; Upload must be a PDF</span>}
                         </label>
-                        <input
-                          ref={register({ validate: validateResumeUpload })}
-                          className="shadow appearance-none border rounded w-full py-2 px-3  leading-tight focus:outline-none focus:shadow-outline"
-                          name="resume"
-                          type="file"
-                        />
+                        <div {...getRootProps({ className: `dropzone` })}>
+                          <input {...getInputProps()} />
+                          <span className="text-sm italic">{
+                            acceptedFiles.length ? acceptedFiles[0].name :
+                            `Drop your file in here, or click to browse (.pdf only)`
+                          }</span>
+                        </div>
                       </div>
                       <div className="mb-4 text-left">
                         <label

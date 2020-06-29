@@ -20,3 +20,9 @@ main > section {
 .register-form input[type="file"] {
   color: theme("colors.white");
 }
+
+.dropzone {
+  padding: 30px 10px;
+  border: dashed 1px white;
+  border-radius: 5px;
+}
