@@ -55,7 +55,7 @@ export default () => {
       formData.set(`resume`, data.resume[0], data.resume[0].name);
     }
     try {
-      const res = await fetch(`http://localhost:3000/registrant`, {
+      const res = await fetch(`https://makeuc-registration.herokuapp.com/registrant`, {
         method: `POST`,
         body: formData
       });
