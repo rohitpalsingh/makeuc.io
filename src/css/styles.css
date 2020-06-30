@@ -4,11 +4,6 @@ main {
   color: theme("colors.white");
 }
 
-main > section {
-  background-image: url("./background2.png");
-  background-size: cover;
-}
-
 .social-icon {
   font-size: 25px;
 }
