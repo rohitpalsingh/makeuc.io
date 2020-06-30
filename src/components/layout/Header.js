@@ -14,9 +14,9 @@ const Header = () => (
         MakeUC
       </div>
       <div className="flex mt-4 sm:mt-0">
-        <AnchorLink className="px-4" href="#schedule">
+        {/* <AnchorLink className="px-4" href="#schedule">
           Schedule
-        </AnchorLink>
+        </AnchorLink> */}
         <AnchorLink className="px-4" href="#tracks">
           Tracks
         </AnchorLink>
