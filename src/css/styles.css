@@ -4,6 +4,26 @@ main {
   color: theme("colors.white");
 }
 
+.navbar {
+  transition: 0.5s;
+}
+
+.navbar.top {
+  background-color: transparent;
+}
+
+.navbar.scrolling {
+  background-color: theme("colors.primary.translucent");
+}
+
+.navbar .nav-link {
+  font-weight: bold;
+}
+
+.navbar .nav-link:hover {
+  color: theme("colors.secondary.default");
+}
+
 .social-icon {
   font-size: 20px;
 }

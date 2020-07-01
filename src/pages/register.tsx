@@ -10,6 +10,7 @@ import FooterImage from '../components/FooterImage';
 import SEO from '../components/SEO';
 import LogoIcon from '../svg/LogoIcon';
 import { RegistrantDTO } from '../data/registrant.dto';
+import Header from '../components/layout/Header';
 
 export const query = graphql`
   query {
@@ -64,23 +65,8 @@ export default () => {
 
   return <>
     <SEO />
-    <header className="sticky top-0 bg-white shadow">
-      <div className="container flex flex-col sm:flex-row justify-between items-center max-w-full py-4 px-8">
-        <Link to="/">
-          <div className="flex items-center text-2xl">
-            <div className="w-12 mr-3">
-              <LogoIcon />
-            </div>
-          </div>
-        </Link>
-        <div className="hidden md:block">
-          <Link to="/">
-            <Button size="default" className="text-sm">Home</Button>
-          </Link>
-        </div>
-      </div>
-    </header>
     <main>
+      <Header page="register" />
       <section id="features" className="py-20 lg:pb-40 lg:pt-20">
         <div className="container mx-auto text-center">
           <h2 className="text-3xl lg:text-5xl font-semibold">Register</h2>

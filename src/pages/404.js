@@ -15,7 +15,7 @@ export default () => (
           <div className="text-center lg:text-left">
             <h1 className="text-404 font-bold leading-none">
               4
-              <img class="moon-404" src={moon} />
+              <img className="moon-404" src={moon} />
               4!
             </h1>
             <p className="text-xl lg:text-3xl mt-6 font-light">
