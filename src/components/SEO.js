@@ -22,5 +22,6 @@ export default () => {
   return <Helmet>
     <title>{title}</title>
     <meta name="description" content={description} />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon"></link>
   </Helmet>;
 };
