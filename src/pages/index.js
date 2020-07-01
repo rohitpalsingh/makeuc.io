@@ -5,6 +5,7 @@ import Card from '../components/Card';
 import Layout from '../components/layout/Layout';
 import HeaderImage from '../components/HeaderImage';
 import Accordion from '../components/Accordion';
+import SEO from '../components/SEO';
 
 export const query = graphql`
   query {
@@ -21,9 +22,9 @@ export const query = graphql`
 
 export default () => {
   const data = useStaticQuery(query);
-  console.log({ data });
 
   return <Layout>
+    <SEO />
     <section className="pt-20 md:pt-40">
       <div className="container mx-auto px-8 lg:flex">
         <div className="text-center lg:text-left lg:w-1/2">

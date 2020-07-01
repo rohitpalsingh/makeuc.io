@@ -3,11 +3,12 @@ import { Link, graphql, useStaticQuery } from 'gatsby';
 import { useForm } from 'react-hook-form';
 import { FaSpinner } from 'react-icons/fa';
 import { useDropzone } from 'react-dropzone';
-import LogoIcon from '../svg/LogoIcon';
 import Footer from '../components/layout/Footer';
 import Button from '../components/Button';
 import Card from '../components/Card';
 import FooterImage from '../components/FooterImage';
+import SEO from '../components/SEO';
+import LogoIcon from '../svg/LogoIcon';
 import { RegistrantDTO } from '../data/registrant.dto';
 
 export const query = graphql`
@@ -62,6 +63,7 @@ export default () => {
   };
 
   return <>
+    <SEO />
     <header className="sticky top-0 bg-white shadow">
       <div className="container flex flex-col sm:flex-row justify-between items-center max-w-full py-4 px-8">
         <Link to="/">
@@ -290,7 +292,7 @@ export default () => {
                           className="shadow focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
                           disabled={submitting}
                         >
-                          {submitting ? <FaSpinner /> : `Register`}
+                          {submitting ? <FaSpinner className="spinner" /> : `Register`}
                         </Button>
                       </div>
                     </form>

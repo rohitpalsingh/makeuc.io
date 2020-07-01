@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Card = ({ className, children, style }) => (
+const Card = ({ className, children, style = {} }) => (
   <div
     className={`p-12 rounded-lg border border-solid border-gray-200 ${className}`}
     style={{
