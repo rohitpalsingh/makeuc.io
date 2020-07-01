@@ -1,5 +1,8 @@
 module.exports = {
   siteMetadata: {
+    title: `MakeUC 2020`,
+    siteUrl: `https://makeuc.io`,
+    description: `MakeUC is a virtual 24 hour hackathon organized by the IEEE@UC organization`,
     registration: {
       schools: [
         `Arizona State University`,
@@ -95,24 +98,28 @@ module.exports = {
         `Yale University`
       ],
       majors: [
-        `Aerospace Engineering`,
+        `Aerospace Engineering`,    
+        `Chemical Engineering`,
+        `Civil Engineering`,
         `Computer Engineering`,
         `Computer Science`,
         `Cyber Security`,
-        `Chemical Engineering`,
-        `Civil Engineering`,
         `Electrical Engineering`,
         `Engineering Science`,
         `Engineering Technology`,
         `Environmental Engineering`,
+        `Fine Arts`,
+        `Game Development`,
+        `Graphic Design`,
+        `Human-Computer Interaction`,
+        `Industrial Design`,
         `Industrial Engineering`,
         `Information Technology`,
         `Mechanical Engineering`,
         `Metallurgic Engineering`,
         `Petroleum Engineering`,
         `Software Development`,
-        `Software Engineering`,
-        `User Experience Design`
+        `Software Engineering`
       ],
       degrees: [
         `Bachelor's`,
@@ -142,7 +149,19 @@ module.exports = {
         `3`,
         `4 or more`
       ]
-    }
+    },
+    tracks: [
+      {
+        title: `Education`,
+        content: `The Education track aims to improve the accessibility of information and enhance the learning experiences of students at any level. These projects include but are not limited to increasing access to information and technologies related to space science, and providing an improved learning experience for students with a variety of learning styles.`
+      }
+    ],
+    faq: [
+      {
+        question: `What is a hackathon?`,
+        answer: `A hackathon is an event where student developers bring their passion for technology to create a project in 24 hours. It’s a chance to collaborate and create something unique in any number of forms – an app, a robot, a website! You will hopefully learn something new along the way in our high energy, engaging environment!`
+      }
+    ]
   },
   plugins: [
     {

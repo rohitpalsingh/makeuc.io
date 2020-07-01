@@ -8,8 +8,8 @@ import ScrollTopButton from '../ScrollTopButton';
 const Layout = ({ children }) => {
   return (
     <>
-      <Header />
       <main>
+        <Header />
         <ScrollTopButton />
         {children}
         <FooterImage />
