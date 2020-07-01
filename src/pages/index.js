@@ -66,7 +66,7 @@ export default () => {
       <div className="container mx-auto text-center">
         <h2 className="text-3xl lg:text-5xl font-semibold">Tracks</h2>
         <div className="sm:-mx-3 mt-12">
-          <div className="grid grid-cols-2">
+          <div className="grid lg:grid-cols-2 sm:grid-cols-1">
             {tracks.map(track =>
               <Card key={track.title} className="m-4 text-secondary bg-primary-darker">
                 <h1 className="text-2xl font-semibold">{track.title}</h1>

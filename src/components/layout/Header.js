@@ -1,13 +1,31 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { Link } from 'gatsby';
 import LogoIcon from '../../svg/LogoIcon';
 import Button from '../Button';
 
-const Header = () => (
-  
-  <header className="sticky top-0 bg-white shadow">
-    <div className="container flex flex-col sm:flex-row justify-between items-center max-w-full py-4 px-8">
+const Header = ({ page = `index` } = {}) => {
+  const [ state, setState ] = useState(`top`);
+
+  useEffect(() => {
+    const listener = document.addEventListener(`scroll`, e => {
+      var scrolled = document.scrollingElement.scrollTop;
+      if (scrolled >= 200) {
+        if (state !== `scrolling`) {
+          setState(`scrolling`);
+        }
+      } else {
+        if (state !== `top`) {
+          setState(`top`);
+        }
+      }
+    });
+
+    return () => document.removeEventListener(`scroll`, listener);
+  });
+
+  return <header className={`sticky top-0 shadow navbar ${state}`}>
+    <div className="container flex flex-col sm:flex-row justify-between items-center max-w-full px-8 py-2">
       <Link to="/">
         <div className="flex items-center text-2xl">
           <div className="w-12 mr-3">
@@ -15,30 +33,37 @@ const Header = () => (
           </div>
         </div>
       </Link>
-      <div className="flex mt-4 sm:mt-0">
-        {/* <AnchorLink className="px-4" href="#schedule">
-          Schedule
-        </AnchorLink> */}
-        <AnchorLink className="px-4" href="#tracks">
-          Tracks
-        </AnchorLink>
-        <AnchorLink className="px-4" href="#faq">
-          FAQ
-        </AnchorLink>
-        {/* <AnchorLink className="px-4" href="#prizes">
-          Prizes
-        </AnchorLink> */}
-        <AnchorLink className="px-4" href="#sponsors">
-          Sponsors
-        </AnchorLink>
-      </div>
+      { (page === `index`) &&
+        <div className="flex mt-4 sm:mt-0">
+          {/* <AnchorLink className="px-4" href="#schedule">
+            Schedule
+          </AnchorLink> */}
+          <AnchorLink className="px-8 nav-link" href="#tracks">
+            Tracks
+          </AnchorLink>
+          <AnchorLink className="px-8 nav-link" href="#faq">
+            FAQ
+          </AnchorLink>
+          {/* <AnchorLink className="px-8 nav-link" href="#prizes">
+            Prizes
+          </AnchorLink> */}
+          <AnchorLink className="px-8 nav-link" href="#sponsors">
+            Sponsors
+          </AnchorLink>
+        </div>
+      }
       <div className="hidden md:block">
-        <Link to="/register">
-          <Button className="text-sm">Register</Button>
-        </Link>
+        { page === `index` ?
+          <Link to="/register">
+            <Button className="text-sm font-bold">Register</Button>
+          </Link> :
+          <Link to="/">
+            <Button size="default" className="text-sm">Home</Button>
+          </Link>
+        }
       </div>
     </div>
   </header>
-);
+};
 
 export default Header;
