@@ -14,7 +14,7 @@ deploy:
   keep_history: true
   repo: MakeUC/makeuc.github.io
   target_branch: master
-  fqdn: dev.makeuc.io
+  fqdn: makeuc.io
   verbose: true
   on:
     branch: master
