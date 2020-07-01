@@ -87,27 +87,19 @@ export default () => {
               <Card className="mb-8">
                 {(result === SUCCESS) ?
                   <div className="flex items-center bg-secondary-darker text-black text-sm font-bold px-4 py-3" role="alert">
-                    <span className="text-6xl">
-                      🎉 &nbsp;
-                    </span>
-                    <p>Almost done. Please check your email for a verification link. It might have landed in your spam/junk.</p>
+                    <p>We have sent you a confirmation email. In order to complete the sign-up process, 
+                      please click on the confirmation link. It might have landed in your spam folder.</p>
                   </div> :
                   <>
                     {
                       (result === ALREADY_EXISTS) ?
                         <div className="flex items-center bg-red-700 text-white text-sm font-bold px-4 py-3" role="alert">
-                          <span className="text-6xl">
-                            🎉 &nbsp;
-                          </span>
                           <p>
-                            This email has already been registered with us. If you have not received email confirmation, please contact us at <a href="mailto:info@makeuc.io" className="text-secondary">info@makeuc.io</a>
+                            This email has already been registered with us. If you have not received a confirmation email, please contact us at <a href="mailto:info@makeuc.io" className="text-secondary">info@makeuc.io</a>
                           </p>
                         </div> :
                       (result === SERVER_ERROR) ?
                         <div className="flex items-center bg-red-700 text-white text-sm font-bold px-4 py-3" role="alert">
-                          <span className="text-6xl">
-                            🎉 &nbsp;
-                          </span>
                           <p>
                             There was a problem with the registration, please try again or contact us at <a href="mailto:info@makeuc.io" className="text-secondary">info@makeuc.io</a>
                           </p>
