@@ -132,7 +132,7 @@ export default () => {
                           ref={register({ required: true })}
                           className="shadow appearance-none border rounded w-full py-2 px-3  leading-tight focus:outline-none focus:shadow-outline"
                           name="email"
-                          type="text"
+                          type="email"
                           placeholder="Email"
                         />
                       </div>

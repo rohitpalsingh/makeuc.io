@@ -11,6 +11,10 @@ export const query = graphql`
   query {
     site {
       siteMetadata {
+        tracks {
+          title
+          content
+        }
         faq {
           question
           answer
@@ -22,6 +26,7 @@ export const query = graphql`
 
 export default () => {
   const data = useStaticQuery(query);
+  const { tracks, faq } = data.site.siteMetadata;
 
   return <Layout>
     <SEO />
@@ -61,53 +66,13 @@ export default () => {
       <div className="container mx-auto text-center">
         <h2 className="text-3xl lg:text-5xl font-semibold">Tracks</h2>
         <div className="sm:-mx-3 mt-12">
-          <div className="flex flex-col sm:flex-row sm:-mx-3 mt-12">
-            <div className="flex-1 px-3">
-              <Card style={{ height: `250px` }}>
-                <h1 className="text-2xl font-semibold">Education</h1>
-                <p>
-                  The Education track aims to improve the accessibility of information and enhance the
-                  learning experiences of students at any level. These projects include but are not
-                  limited to increasing access to information and technologies related to space
-                  science, and providing an improved learning experience for students with a variety
-                  of learning styles.
-              </p>
+          <div className="grid grid-cols-2">
+            {tracks.map(track =>
+              <Card key={track.title} className="m-4 text-secondary bg-primary-darker">
+                <h1 className="text-2xl font-semibold">{track.title}</h1>
+                <p>{track.content}</p>
               </Card>
-            </div>
-            <div className="flex-1 px-3">
-              <Card style={{ height: `250px` }}>
-                <h1 className="text-2xl font-semibold">Space Exploration</h1>
-                <p>
-                  The Space Exploration track aligns with the main theme of this year’s hackathon.
-                  This track includes any technologies aimed to enhance or otherwise improve any
-                  aspect of space exploration.
-              </p>
-              </Card>
-            </div>
-          </div>
-          <div className="flex flex-col sm:flex-row sm:-mx-3 mt-12">
-            <div className="flex-1 px-3">
-              <Card style={{ height: `250px` }}>
-                <h1 className="text-2xl font-semibold">Health Technology</h1>
-                <p>
-                  The Health Technology track aims to make improvements to a variety of health
-                  technologies including but not limited to medical imaging, healthcare technology
-                  systems, and interpreting health-related data. This track also aims to improve
-                  accessibility to medical technology improvements.
-              </p>
-              </Card>
-            </div>
-            <div className="flex-1 px-3">
-              <Card style={{ height: `250px` }}>
-                <h1 className="text-2xl font-semibold">Social Responsibility</h1>
-                <p>
-                  The Social Responsibility track encompasses technologies concerning social and
-                  economic inequality as well as reducing environmental impact. This track aims to
-                  increase overall social responsibility and make improvements on the current systems
-                  we have in place.
-              </p>
-              </Card>
-            </div>
+            )}
           </div>
         </div>
       </div>
@@ -117,25 +82,13 @@ export default () => {
         <h2 className="text-3xl lg:text-5xl font-semibold text-center">FAQ</h2>
         <div className="sm:-mx-3 mt-12 text-left">
           <Card>
-            {data.site.siteMetadata.faq.map(faq =>
+            {faq.map(faq =>
               <Accordion
                 key={faq.question}
                 title={faq.question}
                 content={faq.answer}
               />
             )}
-            <Accordion
-              title="How much does it cost?"
-              content="Nothing! The entire event is free for any student, with tools and prizes all included."
-            />
-            <Accordion
-              title="What if I'm new to hackathons?"
-              content="You’re new to hackathons? Wonderful! MakeUC is open to all skill levels, beginners to veterans. There’s nothing we love more than helping our hackers learn something new while they build something cool!"
-            />
-            <Accordion
-              title="How do I form teams?"
-              content="Teams are formed at the event but you're free to organize before if all participants are registered."
-            />
           </Card>
         </div>
       </div>

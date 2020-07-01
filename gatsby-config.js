@@ -150,6 +150,12 @@ module.exports = {
         `4 or more`
       ]
     },
+    tracks: [
+      {
+        title: `Education`,
+        content: `The Education track aims to improve the accessibility of information and enhance the learning experiences of students at any level. These projects include but are not limited to increasing access to information and technologies related to space science, and providing an improved learning experience for students with a variety of learning styles.`
+      }
+    ],
     faq: [
       {
         question: `What is a hackathon?`,
