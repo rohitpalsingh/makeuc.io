@@ -9,7 +9,7 @@ const Footer = () => (
         <a
           target="_blank"
           rel="noopener noreferrer"
-          href="mailto:contact@makeuc.io"
+          href="mailto:info@makeuc.io"
           className="flex-1 social-icon"
         >
           <FaEnvelope />

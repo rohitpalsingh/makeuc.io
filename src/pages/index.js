@@ -1,24 +1,46 @@
 import React from 'react';
-import { Link } from 'gatsby';
+import { Link, useStaticQuery, graphql } from 'gatsby';
 import Button from '../components/Button';
 import Card from '../components/Card';
 import Layout from '../components/layout/Layout';
 import HeaderImage from '../components/HeaderImage';
 import Accordion from '../components/Accordion';
+import SEO from '../components/SEO';
 
-export default () => (
-  <Layout>
+export const query = graphql`
+  query {
+    site {
+      siteMetadata {
+        tracks {
+          title
+          content
+        }
+        faq {
+          question
+          answer
+        }
+      }
+    }
+  }
+`;
+
+export default () => {
+  const data = useStaticQuery(query);
+  const { tracks, faq } = data.site.siteMetadata;
+
+  return <Layout>
+    <SEO />
     <section className="pt-20 md:pt-40">
       <div className="container mx-auto px-8 lg:flex">
         <div className="text-center lg:text-left lg:w-1/2">
-          <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-none">MakeUC 2020</h1>
+          <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-none">MAKEUC 2020</h1>
           <p className="text-xl lg:text-3xl mt-6 font-light">
-            Discovering the beyond <br />
-            <strong>October 3-4, 2020</strong>
+            DISCOVERING THE BEYOND <br />
+            <strong>OCTOBER 3-4, 2020</strong>
           </p>
           <p className="mt-8 md:mt-12">
             <Link to="/register">
-              <Button size="lg">Register</Button>
+              <Button size="lg" className="font-sans text-md font-bold">REGISTER</Button>
             </Link>
           </p>
         </div>
@@ -33,80 +55,43 @@ export default () => (
         <div className="sm:-mx-3 mt-12">
           <iframe
             title="schedule"
-            src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSl9HPcmstfEHYhgx0RJO4F_jfGLmfnsiSWQRMSasb6oJXbcwk6NsLqzSD-GgtgSd8EP0ILKODmxllC/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"
+            src=""
             width="100%"
             height="500px"
           />
         </div>
       </div>
     </section> */}
-    <section id="tracks" className="py-20 lg:pb-40 lg:pt-48">
+    <section id="tracks" className="py-10 lg:pb-40 lg:pt-48">
       <div className="container mx-auto text-center">
-        <h2 className="text-3xl lg:text-5xl font-semibold">Tracks</h2>
+        <h2 className="text-3xl lg:text-5xl font-semibold underline">TRACKS</h2>
         <div className="sm:-mx-3 mt-12">
-          <Card>
-            <Card>
-              <h1 className="text-2xl font-semibold">Education</h1>
-              <p>
-                The Education track aims to improve the accessibility of information and enhance the
-                learning experiences of students at any level. These projects include but are not
-                limited to increasing access to information and technologies related to space
-                science, and providing an improved learning experience for students with a variety
-                of learning styles.
-              </p>
-            </Card>
-            <Card>
-              <h1 className="text-2xl font-semibold">Space Exploration</h1>
-              <p>
-                The Space Exploration track aligns with the main theme of this year’s hackathon.
-                This track includes any technologies aimed to enhance or otherwise improve any
-                aspect of space exploration.
-              </p>
-            </Card>
-            <Card>
-              <h1 className="text-2xl font-semibold">Health Technology</h1>
-              <p>
-                The Health Technology track aims to make improvements to a variety of health
-                technologies including but not limited to medical imaging, healthcare technology
-                systems, and interpreting health-related data. This track also aims to improve
-                accessibility to medical technology improvements.
-              </p>
-            </Card>
-            <Card>
-              <h1 className="text-2xl font-semibold">Social Responsibility</h1>
-              <p>
-                The Social Responsibility track encompasses technologies concerning social and
-                economic inequality as well as reducing environmental impact. This track aims to
-                increase overall social responsibility and make improvements on the current systems
-                we have in place.
-              </p>
-            </Card>
-          </Card>
+          <div className="grid lg:grid-cols-2 sm:grid-cols-1">
+            {tracks.map(track =>
+              <Card key={track.title} className="m-4 text-secondary bg-white">
+                <h1 className="text-2xl font-semibold text-black">{track.title}</h1>
+                <p className="text-black">{track.content}</p>
+              </Card>
+            )}
+          </div>
         </div>
       </div>
     </section>
-    <section id="faq" className="py-20 lg:pb-40 lg:pt-48">
+    <section id="faq" className="py-10 lg:pb-40 lg:pt-48">
       <div className="container mx-auto">
-        <h2 className="text-3xl lg:text-5xl font-semibold text-center">FAQ</h2>
-        <div className="sm:-mx-3 mt-12 text-left">
-          <Card>
-            <Accordion
-              title="What is a hackathon?"
-              content="A hackathon is an event where student developers bring their passion for technology to create a project in 24 hours. It’s a chance to collaborate and create something unique in any number of forms – an app, a robot, a website! You will hopefully learn something new along the way in our high energy, engaging environment!"
-            />
-            <Accordion
-              title="How much does it cost?"
-              content="Nothing! The entire event is free for any student, with tools and prizes all included."
-            />
-            <Accordion
-              title="What if I'm new to hackathons?"
-              content="You’re new to hackathons? Wonderful! MakeUC is open to all skill levels, beginners to veterans. There’s nothing we love more than helping our hackers learn something new while they build something cool!"
-            />
-            <Accordion
-              title="How do I form teams?"
-              content="Teams are formed at the event but you're free to organize before if all participants are registered."
-            />
-          </Card>
+        <h2 className="text-3xl lg:text-5xl font-semibold text-center underline">FAQ</h2>
+        <div className="grid sm:grid-cols-1">
+          <div className="sm:-mx-3 mt-12 text-left text-black">
+            <Card className="m-4 bg-white">
+              {faq.map(faq =>
+                <Accordion
+                  key={faq.question}
+                  title={faq.question}
+                  content={faq.answer}
+                />
+              )}
+            </Card>
+          </div>
         </div>
       </div>
     </section>
@@ -120,15 +105,18 @@ export default () => (
         </div>
       </div>
     </section> */}
-    <section id="sponsors" className="py-20 lg:pb-40 lg:pt-48">
+    <section id="sponsors" className="py-10 lg:pb-40 lg:pt-48">
       <div className="container mx-auto text-center">
-        <h2 className="text-3xl lg:text-5xl font-semibold">Sponsors</h2>
-        <div className="sm:-mx-3 mt-12">
-          <Card>
-            <p className="text-xl">Sponsors</p>
-          </Card>
+        <h2 className="text-3xl lg:text-5xl font-semibold underline">SPONSORS</h2>     
+        <div className="sm:-mx-3 mt-12 rounded-lg text-black">
+          <div className="grid sm:grid-cols-1">
+            <Card className="m-4 bg-white">
+              <p className="text-xl">INTERESTED IN SPONSORING MAKEUC? EMAIL US AT </p>
+              <p className="text-2xl"><a href="mailto:contact@makeuc.io"><u>CONTACT@MAKEUC.IO</u></a></p>
+            </Card>
+          </div>
         </div>
       </div>
     </section>
   </Layout>
-);
+};

@@ -3,12 +3,13 @@ import { Link, graphql, useStaticQuery } from 'gatsby';
 import { useForm } from 'react-hook-form';
 import { FaSpinner } from 'react-icons/fa';
 import { useDropzone } from 'react-dropzone';
-import LogoIcon from '../svg/LogoIcon';
 import Footer from '../components/layout/Footer';
 import Button from '../components/Button';
 import Card from '../components/Card';
 import FooterImage from '../components/FooterImage';
+import SEO from '../components/SEO';
 import { RegistrantDTO } from '../data/registrant.dto';
+import Header from '../components/layout/Header';
 
 export const query = graphql`
   query {
@@ -62,52 +63,30 @@ export default () => {
   };
 
   return <>
-    <header className="sticky top-0 bg-white shadow">
-      <div className="container flex flex-col sm:flex-row justify-between items-center max-w-full py-4 px-8">
-        <Link to="/">
-          <div className="flex items-center text-2xl">
-            <div className="w-12 mr-3">
-              <LogoIcon />
-            </div>
-          </div>
-        </Link>
-        <div className="hidden md:block">
-          <Link to="/">
-            <Button size="default" className="text-sm">Home</Button>
-          </Link>
-        </div>
-      </div>
-    </header>
+    <SEO />
     <main>
+      <Header page="register" />
       <section id="features" className="py-20 lg:pb-40 lg:pt-20">
         <div className="container mx-auto text-center">
-          <h2 className="text-3xl lg:text-5xl font-semibold">Register</h2>
+          <h2 className="text-3xl lg:text-5xl font-semibold">REGISTRATION FORM</h2>
           <div className="flex flex-col sm:flex-row sm:-mx-3 mt-12">
             <div className="flex-1 px-3">
               <Card className="mb-8">
                 {(result === SUCCESS) ?
                   <div className="flex items-center bg-secondary-darker text-black text-sm font-bold px-4 py-3" role="alert">
-                    <span className="text-6xl">
-                      🎉 &nbsp;
-                    </span>
-                    <p>Almost done. Please check your email for a verification link. It might have landed in your spam/junk.</p>
+                    <p>We have sent you a confirmation email. In order to complete the sign-up process, 
+                      please click on the confirmation link. It might have landed in your spam folder.</p>
                   </div> :
                   <>
                     {
                       (result === ALREADY_EXISTS) ?
                         <div className="flex items-center bg-red-700 text-white text-sm font-bold px-4 py-3" role="alert">
-                          <span className="text-6xl">
-                            🎉 &nbsp;
-                          </span>
                           <p>
-                            This email has already been registered with us. If you have not received email confirmation, please contact us at <a href="mailto:info@makeuc.io" className="text-secondary">info@makeuc.io</a>
+                            This email has already been registered with us. If you have not received a confirmation email, please contact us at <a href="mailto:info@makeuc.io" className="text-secondary">info@makeuc.io</a>
                           </p>
                         </div> :
                       (result === SERVER_ERROR) ?
                         <div className="flex items-center bg-red-700 text-white text-sm font-bold px-4 py-3" role="alert">
-                          <span className="text-6xl">
-                            🎉 &nbsp;
-                          </span>
                           <p>
                             There was a problem with the registration, please try again or contact us at <a href="mailto:info@makeuc.io" className="text-secondary">info@makeuc.io</a>
                           </p>
@@ -138,7 +117,7 @@ export default () => {
                           ref={register({ required: true })}
                           className="shadow appearance-none border rounded w-full py-2 px-3  leading-tight focus:outline-none focus:shadow-outline"
                           name="email"
-                          type="text"
+                          type="email"
                           placeholder="Email"
                         />
                       </div>
@@ -228,14 +207,14 @@ export default () => {
                           className="block text-sm font-bold mb-2"
                           htmlFor="resume"
                         >
-                          Resume (optional but highly recommended if you're interested in full time
+                          Resume (highly recommended if you're interested in full time
                           positions and internships):
                         </label>
                         <div {...getRootProps({ className: `dropzone` })}>
                           <input {...getInputProps()} />
                           <span className="text-sm italic">{
                             acceptedFiles.length ? acceptedFiles[0].name :
-                            `Drop your file in here, or click to browse (.pdf only)`
+                            `Drop your file in here, or click to browse (PDF only)`
                           }</span>
                         </div>
                       </div>
@@ -290,7 +269,7 @@ export default () => {
                           className="shadow focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
                           disabled={submitting}
                         >
-                          {submitting ? <FaSpinner /> : `Register`}
+                          {submitting ? <FaSpinner className="spinner" /> : `REGISTER`}
                         </Button>
                       </div>
                     </form>
