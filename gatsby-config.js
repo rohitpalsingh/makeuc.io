@@ -1,5 +1,8 @@
 module.exports = {
   siteMetadata: {
+    title: `MakeUC 2020`,
+    siteUrl: `https://makeuc.io`,
+    description: `MakeUC is a virtual 24 hour hackathon organized by the IEEE@UC organization`,
     registration: {
       schools: [
         `Arizona State University`,
@@ -146,7 +149,13 @@ module.exports = {
         `3`,
         `4 or more`
       ]
-    }
+    },
+    faq: [
+      {
+        question: `What is a hackathon?`,
+        answer: `A hackathon is an event where student developers bring their passion for technology to create a project in 24 hours. It’s a chance to collaborate and create something unique in any number of forms – an app, a robot, a website! You will hopefully learn something new along the way in our high energy, engaging environment!`
+      }
+    ]
   },
   plugins: [
     {

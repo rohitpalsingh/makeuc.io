@@ -21,3 +21,28 @@ main {
   border: dashed 1px white;
   border-radius: 5px;
 }
+
+.spinner {
+  animation: spinning 1s linear;
+  animation-iteration-count: infinite;
+}
+
+.text-404 {
+  font-size: 6rem;
+}
+
+.moon-404 {
+  width: 6rem;
+  display: inline;
+  margin: 3px;
+  margin-bottom: 20px;
+}
+
+@keyframes spinning {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
