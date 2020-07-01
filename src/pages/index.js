@@ -40,7 +40,7 @@ export default () => {
           </p>
           <p className="mt-8 md:mt-12">
             <Link to="/register">
-              <Button size="lg">Register</Button>
+              <Button size="lg" className="font-sans text-md">Register</Button>
             </Link>
           </p>
         </div>
@@ -62,34 +62,36 @@ export default () => {
         </div>
       </div>
     </section> */}
-    <section id="tracks" className="py-20 lg:pb-40 lg:pt-48">
+    <section id="tracks" className="py-10 lg:pb-40 lg:pt-48">
       <div className="container mx-auto text-center">
-        <h2 className="text-3xl lg:text-5xl font-semibold">Tracks</h2>
+        <h2 className="text-3xl lg:text-5xl font-semibold underline">Tracks</h2>
         <div className="sm:-mx-3 mt-12">
           <div className="grid lg:grid-cols-2 sm:grid-cols-1">
             {tracks.map(track =>
-              <Card key={track.title} className="m-4 text-secondary bg-primary-darker">
-                <h1 className="text-2xl font-semibold">{track.title}</h1>
-                <p>{track.content}</p>
+              <Card key={track.title} className="m-4 text-secondary bg-white">
+                <h1 className="text-2xl font-semibold text-black">{track.title}</h1>
+                <p className="text-black">{track.content}</p>
               </Card>
             )}
           </div>
         </div>
       </div>
     </section>
-    <section id="faq" className="py-20 lg:pb-40 lg:pt-48">
+    <section id="faq" className="py-10 lg:pb-40 lg:pt-48">
       <div className="container mx-auto">
-        <h2 className="text-3xl lg:text-5xl font-semibold text-center">FAQ</h2>
-        <div className="sm:-mx-3 mt-12 text-left">
-          <Card>
-            {faq.map(faq =>
-              <Accordion
-                key={faq.question}
-                title={faq.question}
-                content={faq.answer}
-              />
-            )}
-          </Card>
+        <h2 className="text-3xl lg:text-5xl font-semibold text-center underline">FAQ</h2>
+        <div className="grid sm:grid-cols-1">
+          <div className="sm:-mx-3 mt-12 text-left text-black">
+            <Card className="m-4 bg-white">
+              {faq.map(faq =>
+                <Accordion
+                  key={faq.question}
+                  title={faq.question}
+                  content={faq.answer}
+                />
+              )}
+            </Card>
+          </div>
         </div>
       </div>
     </section>
@@ -103,13 +105,16 @@ export default () => {
         </div>
       </div>
     </section> */}
-    <section id="sponsors" className="py-20 lg:pb-40 lg:pt-48">
+    <section id="sponsors" className="py-10 lg:pb-40 lg:pt-48">
       <div className="container mx-auto text-center">
-        <h2 className="text-3xl lg:text-5xl font-semibold">Sponsors</h2>
-        <div className="sm:-mx-3 mt-12">
-          <Card>
-            <p className="text-xl">Sponsors</p>
-          </Card>
+        <h2 className="text-3xl lg:text-5xl font-semibold underline">Sponsors</h2>     
+        <div className="sm:-mx-3 mt-12 rounded-lg text-black">
+          <div className="grid sm:grid-cols-1">
+            <Card className="m-4 bg-white">
+              <p className="text-xl">Interested in sponsoring MakeUC? Reach out to us at: </p>
+              <p className="text-2xl"><a href="mailto:contact@makeuc.io"><u>contact@makeuc.io</u></a></p>
+            </Card>
+          </div>
         </div>
       </div>
     </section>
