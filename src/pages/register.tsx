@@ -64,14 +64,13 @@ export default () => {
   return <>
     <header className="sticky top-0 bg-white shadow">
       <div className="container flex flex-col sm:flex-row justify-between items-center max-w-full py-4 px-8">
-        <a className="text-black" href="/">
+        <Link to="/">
           <div className="flex items-center text-2xl">
             <div className="w-12 mr-3">
               <LogoIcon />
             </div>
-            MakeUC
           </div>
-        </a>
+        </Link>
         <div className="hidden md:block">
           <Link to="/">
             <Button size="default" className="text-sm">Home</Button>
@@ -121,7 +120,7 @@ export default () => {
                           className="block  text-sm font-bold mb-2"
                           htmlFor="fullName"
                         >
-                          Full name: {errors.fullName && <span className="text-red-500 text-xs italic">&nbsp;&nbsp;required field</span>}
+                          Full Name: {errors.fullName && <span className="text-red-500 text-xs italic">&nbsp;&nbsp;required field</span>}
                         </label>
                         <input
                           ref={register({ required: true })}

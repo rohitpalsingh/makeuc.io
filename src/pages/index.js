@@ -3,7 +3,7 @@ import { Link, useStaticQuery, graphql } from 'gatsby';
 import Button from '../components/Button';
 import Card from '../components/Card';
 import Layout from '../components/layout/Layout';
-import HeroImage from '../svg/HeroImage';
+import HeaderImage from '../components/HeaderImage';
 import Accordion from '../components/Accordion';
 
 export const query = graphql`
@@ -39,7 +39,7 @@ export default () => {
           </p>
         </div>
         <div className="lg:w-1/2">
-          <HeroImage />
+          <HeaderImage />
         </div>
       </div>
     </section>
@@ -111,16 +111,6 @@ export default () => {
         </div>
       </div>
     </section>
-    <section id="sponsors" className="py-20 lg:pb-40 lg:pt-48">
-      <div className="container mx-auto text-center">
-        <h2 className="text-3xl lg:text-5xl font-semibold">Sponsors</h2>
-        <div className="sm:-mx-3 mt-12">
-          <Card>
-            <p className="text-xl">Sponsors</p>
-          </Card>
-        </div>
-      </div>
-    </section>
     <section id="faq" className="py-20 lg:pb-40 lg:pt-48">
       <div className="container mx-auto">
         <h2 className="text-3xl lg:text-5xl font-semibold text-center">FAQ</h2>
@@ -159,5 +149,15 @@ export default () => {
         </div>
       </div>
     </section> */}
+    <section id="sponsors" className="py-20 lg:pb-40 lg:pt-48">
+      <div className="container mx-auto text-center">
+        <h2 className="text-3xl lg:text-5xl font-semibold">Sponsors</h2>
+        <div className="sm:-mx-3 mt-12">
+          <Card>
+            <p className="text-xl">Sponsors</p>
+          </Card>
+        </div>
+      </div>
+    </section>
   </Layout>
 };
