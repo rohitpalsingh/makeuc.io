@@ -95,24 +95,28 @@ module.exports = {
         `Yale University`
       ],
       majors: [
-        `Aerospace Engineering`,
+        `Aerospace Engineering`,    
+        `Chemical Engineering`,
+        `Civil Engineering`,
         `Computer Engineering`,
         `Computer Science`,
         `Cyber Security`,
-        `Chemical Engineering`,
-        `Civil Engineering`,
         `Electrical Engineering`,
         `Engineering Science`,
         `Engineering Technology`,
         `Environmental Engineering`,
+        `Fine Arts`,
+        `Game Development`,
+        `Graphic Design`,
+        `Human-Computer Interaction`,
+        `Industrial Design`,
         `Industrial Engineering`,
         `Information Technology`,
         `Mechanical Engineering`,
         `Metallurgic Engineering`,
         `Petroleum Engineering`,
         `Software Development`,
-        `Software Engineering`,
-        `User Experience Design`
+        `Software Engineering`
       ],
       degrees: [
         `Bachelor's`,
