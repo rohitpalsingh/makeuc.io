@@ -39,7 +39,7 @@ const Header = ({ page = `index` } = {}) => {
             Schedule
           </AnchorLink> */}
           <AnchorLink className="px-8 nav-link" href="#tracks">
-            Tracks
+            TRACKS
           </AnchorLink>
           <AnchorLink className="px-8 nav-link" href="#faq">
             FAQ
@@ -48,17 +48,17 @@ const Header = ({ page = `index` } = {}) => {
             Prizes
           </AnchorLink> */}
           <AnchorLink className="px-8 nav-link" href="#sponsors">
-            Sponsors
+            SPONSORS
           </AnchorLink>
         </div>
       }
       <div className="hidden md:block">
         { page === `index` ?
           <Link to="/register">
-            <Button className="text-sm font-bold">Register</Button>
+            <Button className="text-sm font-bold">REGISTER</Button>
           </Link> :
           <Link to="/">
-            <Button size="default" className="text-sm">Home</Button>
+            <Button size="default" className="text-sm font-bold">HOME</Button>
           </Link>
         }
       </div>

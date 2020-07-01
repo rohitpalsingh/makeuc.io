@@ -33,14 +33,14 @@ export default () => {
     <section className="pt-20 md:pt-40">
       <div className="container mx-auto px-8 lg:flex">
         <div className="text-center lg:text-left lg:w-1/2">
-          <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-none">MakeUC 2020</h1>
+          <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-none">MAKEUC 2020</h1>
           <p className="text-xl lg:text-3xl mt-6 font-light">
-            Discovering the beyond <br />
-            <strong>October 3-4, 2020</strong>
+            DISCOVERING THE BEYOND <br />
+            <strong>OCTOBER 3-4, 2020</strong>
           </p>
           <p className="mt-8 md:mt-12">
             <Link to="/register">
-              <Button size="lg" className="font-sans text-md">Register</Button>
+              <Button size="lg" className="font-sans text-md font-bold">REGISTER</Button>
             </Link>
           </p>
         </div>
@@ -55,7 +55,7 @@ export default () => {
         <div className="sm:-mx-3 mt-12">
           <iframe
             title="schedule"
-            src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSl9HPcmstfEHYhgx0RJO4F_jfGLmfnsiSWQRMSasb6oJXbcwk6NsLqzSD-GgtgSd8EP0ILKODmxllC/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"
+            src=""
             width="100%"
             height="500px"
           />
@@ -64,7 +64,7 @@ export default () => {
     </section> */}
     <section id="tracks" className="py-10 lg:pb-40 lg:pt-48">
       <div className="container mx-auto text-center">
-        <h2 className="text-3xl lg:text-5xl font-semibold underline">Tracks</h2>
+        <h2 className="text-3xl lg:text-5xl font-semibold underline">TRACKS</h2>
         <div className="sm:-mx-3 mt-12">
           <div className="grid lg:grid-cols-2 sm:grid-cols-1">
             {tracks.map(track =>
@@ -107,12 +107,12 @@ export default () => {
     </section> */}
     <section id="sponsors" className="py-10 lg:pb-40 lg:pt-48">
       <div className="container mx-auto text-center">
-        <h2 className="text-3xl lg:text-5xl font-semibold underline">Sponsors</h2>     
+        <h2 className="text-3xl lg:text-5xl font-semibold underline">SPONSORS</h2>     
         <div className="sm:-mx-3 mt-12 rounded-lg text-black">
           <div className="grid sm:grid-cols-1">
             <Card className="m-4 bg-white">
-              <p className="text-xl">Interested in sponsoring MakeUC? Reach out to us at: </p>
-              <p className="text-2xl"><a href="mailto:contact@makeuc.io"><u>contact@makeuc.io</u></a></p>
+              <p className="text-xl">INTERESTED IN SPONSORING MAKEUC? EMAIL US AT </p>
+              <p className="text-2xl"><a href="mailto:contact@makeuc.io"><u>CONTACT@MAKEUC.IO</u></a></p>
             </Card>
           </div>
         </div>

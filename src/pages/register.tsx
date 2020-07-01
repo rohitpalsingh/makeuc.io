@@ -8,7 +8,6 @@ import Button from '../components/Button';
 import Card from '../components/Card';
 import FooterImage from '../components/FooterImage';
 import SEO from '../components/SEO';
-import LogoIcon from '../svg/LogoIcon';
 import { RegistrantDTO } from '../data/registrant.dto';
 import Header from '../components/layout/Header';
 
@@ -69,7 +68,7 @@ export default () => {
       <Header page="register" />
       <section id="features" className="py-20 lg:pb-40 lg:pt-20">
         <div className="container mx-auto text-center">
-          <h2 className="text-3xl lg:text-5xl font-semibold">Register</h2>
+          <h2 className="text-3xl lg:text-5xl font-semibold">REGISTRATION FORM</h2>
           <div className="flex flex-col sm:flex-row sm:-mx-3 mt-12">
             <div className="flex-1 px-3">
               <Card className="mb-8">
@@ -208,14 +207,14 @@ export default () => {
                           className="block text-sm font-bold mb-2"
                           htmlFor="resume"
                         >
-                          Resume (optional but highly recommended if you're interested in full time
+                          Resume (highly recommended if you're interested in full time
                           positions and internships):
                         </label>
                         <div {...getRootProps({ className: `dropzone` })}>
                           <input {...getInputProps()} />
                           <span className="text-sm italic">{
                             acceptedFiles.length ? acceptedFiles[0].name :
-                            `Drop your file in here, or click to browse (.pdf only)`
+                            `Drop your file in here, or click to browse (PDF only)`
                           }</span>
                         </div>
                       </div>
@@ -270,7 +269,7 @@ export default () => {
                           className="shadow focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
                           disabled={submitting}
                         >
-                          {submitting ? <FaSpinner className="spinner" /> : `Register`}
+                          {submitting ? <FaSpinner className="spinner" /> : `REGISTER`}
                         </Button>
                       </div>
                     </form>
