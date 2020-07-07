@@ -111,8 +111,8 @@ export default () => {
         <div className="sm:-mx-3 mt-12 rounded-lg text-black">
           <div className="grid sm:grid-cols-1">
             <Card className="m-4 bg-white">
-              <p className="text-xl">INTERESTED IN SPONSORING MAKEUC? EMAIL US AT </p>
-              <p className="text-2xl"><a href="mailto:contact@makeuc.io"><u>CONTACT@MAKEUC.IO</u></a></p>
+              <p className="text-md sm:text-xl">INTERESTED IN SPONSORING MAKEUC? EMAIL US AT </p>
+              <p className="text-md sm:text-xl"><a href="mailto:contact@makeuc.io"><u>CONTACT@MAKEUC.IO</u></a></p>
             </Card>
           </div>
         </div>

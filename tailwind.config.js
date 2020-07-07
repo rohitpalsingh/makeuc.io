@@ -14,6 +14,9 @@ module.exports = {
           default: '#a0eec0',
           darker: '#8ae9c1'
         }
+      },
+      screens: {
+        'xs': '375px'
       }
     }
   },
