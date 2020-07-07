@@ -49,7 +49,7 @@ export default () => {
         </div>
       </div>
     </section>
-    {/* <section id="schedule" className="py-20 lg:pb-40 lg:pt-48">
+    {/* <section id="schedule" className="py-20 lg:pb-24 lg:pt-24">
       <div className="container mx-auto text-center">
         <h2 className="text-3xl lg:text-5xl font-semibold">Schedule</h2>
         <div className="sm:-mx-3 mt-12">
@@ -62,7 +62,7 @@ export default () => {
         </div>
       </div>
     </section> */}
-    <section id="tracks" className="py-10 lg:pb-40 lg:pt-48">
+    <section id="tracks" className="py-10 lg:pb-24 lg:pt-24">
       <div className="container mx-auto text-center">
         <h2 className="text-3xl lg:text-5xl font-semibold underline">TRACKS</h2>
         <div className="sm:-mx-3 mt-12">
@@ -77,7 +77,7 @@ export default () => {
         </div>
       </div>
     </section>
-    <section id="faq" className="py-10 lg:pb-40 lg:pt-48">
+    <section id="faq" className="py-10 lg:pb-24 lg:pt-24">
       <div className="container mx-auto">
         <h2 className="text-3xl lg:text-5xl font-semibold text-center underline">FAQ</h2>
         <div className="grid sm:grid-cols-1">
@@ -95,7 +95,7 @@ export default () => {
         </div>
       </div>
     </section>
-    {/* <section id="prizes" className="py-20 lg:pb-40 lg:pt-48">
+    {/* <section id="prizes" className="py-20 lg:pb-24 lg:pt-24">
       <div className="container mx-auto text-center">
         <h2 className="text-3xl lg:text-5xl font-semibold">Prizes</h2>
         <div className="sm:-mx-3 mt-12">
@@ -105,7 +105,7 @@ export default () => {
         </div>
       </div>
     </section> */}
-    <section id="sponsors" className="py-10 lg:pb-40 lg:pt-48">
+    <section id="sponsors" className="py-10 lg:pb-24 lg:pt-24">
       <div className="container mx-auto text-center">
         <h2 className="text-3xl lg:text-5xl font-semibold underline">SPONSORS</h2>     
         <div className="sm:-mx-3 mt-12 rounded-lg text-black">
