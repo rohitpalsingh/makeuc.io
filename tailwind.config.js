@@ -15,9 +15,6 @@ module.exports = {
           darker: '#8ae9c1'
         }
       }
-    },
-    screens: {
-      'xs': '375px'
     }
   },
   variants: {},
