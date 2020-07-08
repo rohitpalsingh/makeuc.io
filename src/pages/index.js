@@ -52,7 +52,7 @@ export default () => {
     {/* <section id="schedule" className="py-20 lg:pb-24 lg:pt-24">
       <div className="container mx-auto text-center">
         <h2 className="text-3xl lg:text-5xl font-semibold">Schedule</h2>
-        <div className="sm:-mx-3 mt-12">
+        <div className="mt-12">
           <iframe
             title="schedule"
             src=""
@@ -65,7 +65,7 @@ export default () => {
     <section id="tracks" className="py-10 lg:pb-24 lg:pt-24">
       <div className="container mx-auto text-center">
         <h2 className="text-3xl lg:text-5xl font-semibold underline">TRACKS</h2>
-        <div className="sm:-mx-3 mt-12">
+        <div className="mt-12">
           <div className="grid lg:grid-cols-2 sm:grid-cols-1">
             {tracks.map(track =>
               <Card key={track.title} className="m-4 text-secondary bg-white">
@@ -81,7 +81,7 @@ export default () => {
       <div className="container mx-auto">
         <h2 className="text-3xl lg:text-5xl font-semibold text-center underline">FAQ</h2>
         <div className="grid sm:grid-cols-1">
-          <div className="sm:-mx-3 mt-12 text-left text-black">
+          <div className="mt-12 text-left text-black">
             <Card className="m-4 bg-white">
               {faq.map(faq =>
                 <Accordion
@@ -98,7 +98,7 @@ export default () => {
     {/* <section id="prizes" className="py-20 lg:pb-24 lg:pt-24">
       <div className="container mx-auto text-center">
         <h2 className="text-3xl lg:text-5xl font-semibold">Prizes</h2>
-        <div className="sm:-mx-3 mt-12">
+        <div className="mt-12">
           <Card>
             <p className="text-xl">Prizes</p>
           </Card>
@@ -108,7 +108,7 @@ export default () => {
     <section id="sponsors" className="py-10 lg:pb-24 lg:pt-24">
       <div className="container mx-auto text-center">
         <h2 className="text-3xl lg:text-5xl font-semibold underline">SPONSORS</h2>     
-        <div className="sm:-mx-3 mt-12 rounded-lg text-black">
+        <div className="mt-12 rounded-lg text-black">
           <div className="grid sm:grid-cols-1">
             <Card className="m-4 bg-white">
               <p className="text-xl">INTERESTED IN SPONSORING MAKEUC? EMAIL US AT </p>
