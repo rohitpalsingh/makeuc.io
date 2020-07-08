@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link, graphql, useStaticQuery } from 'gatsby';
+import { graphql, useStaticQuery } from 'gatsby';
 import { useForm } from 'react-hook-form';
 import { FaSpinner } from 'react-icons/fa';
 import { useDropzone } from 'react-dropzone';
@@ -22,6 +22,7 @@ export const query = graphql`
           ethnicities
           genders
           hackathonsAttended
+          countries
         }
       }
     }
@@ -136,6 +137,22 @@ export default () => {
                         <datalist id="schools">
                           {data.site.siteMetadata.registration.schools.map(school => <option key={school} value={school}>{school}</option>)}
                         </datalist>
+                      </div>
+                      <div className="mb-4 text-left">
+                        <label
+                          className="block text-sm font-bold mb-2"
+                          htmlFor="country"
+                        >
+                          Country: {errors.country && <span className="text-red-500 text-xs italic">&nbsp;&nbsp;required field</span>}
+                        </label>
+                        <select
+                          ref={register({ required: true })}
+                          name="country"
+                          className="shadow appearance-none border w-full rounded py-2 px-3 leading-tight focus:outline-none focus:shadow-outline"
+                        >
+                          <option value="">Select an option</option>
+                          {data.site.siteMetadata.registration.countries.map(country => <option key={country} value={country}>{country}</option>)}
+                        </select>
                       </div>
 
                       <div className="mb-4 text-left">
@@ -261,6 +278,9 @@ export default () => {
                           type="text"
                           placeholder="Questions or concerns"
                         />
+                      </div>
+                      <div className="text-left text-sm">
+                        By registering, you agree to let us share this information with our sponsor companies for statistical data, and for the companies to reach out to you for possible opportunities.
                       </div>
                       <div className="md:items-center py-20 lg:pb-20 lg:pt-10">
                         <Button

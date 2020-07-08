@@ -10,7 +10,7 @@ const Header = ({ page = `index` } = {}) => {
   useEffect(() => {
     const listener = document.addEventListener(`scroll`, e => {
       var scrolled = document.scrollingElement.scrollTop;
-      if (scrolled >= 200) {
+      if (scrolled >= 100) {
         if (state !== `scrolling`) {
           setState(`scrolling`);
         }
@@ -44,7 +44,7 @@ const Header = ({ page = `index` } = {}) => {
           <AnchorLink className="px-3 xs:px-8 nav-link" href="#faq">
             FAQ
           </AnchorLink>
-          {/* <AnchorLink className="px-8 nav-link" href="#prizes">
+          {/* <AnchorLink className="px-4 sm:px-8 nav-link" href="#prizes">
             Prizes
           </AnchorLink> */}
           <AnchorLink className="px-3 xs:px-8 nav-link" href="#sponsors">
