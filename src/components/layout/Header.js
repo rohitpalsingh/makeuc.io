@@ -38,16 +38,16 @@ const Header = ({ page = `index` } = {}) => {
           {/* <AnchorLink className="px-4" href="#schedule">
             Schedule
           </AnchorLink> */}
-          <AnchorLink className="px-4 sm:px-8 nav-link" href="#tracks">
+          <AnchorLink className="px-3 xs:px-8 nav-link" href="#tracks">
             TRACKS
           </AnchorLink>
-          <AnchorLink className="px-4 sm:px-8 nav-link" href="#faq">
+          <AnchorLink className="px-3 xs:px-8 nav-link" href="#faq">
             FAQ
           </AnchorLink>
           {/* <AnchorLink className="px-4 sm:px-8 nav-link" href="#prizes">
             Prizes
           </AnchorLink> */}
-          <AnchorLink className="px-4 sm:px-8 nav-link" href="#sponsors">
+          <AnchorLink className="px-3 xs:px-8 nav-link" href="#sponsors">
             SPONSORS
           </AnchorLink>
         </div>
