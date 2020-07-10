@@ -11,7 +11,7 @@ deploy:
     skip_cleanup: true
     access_key_id: $AWS_KEY
     secret_access_key: $AWS_SECRET
-    bucket: "dev.makeuc.io"
+    bucket: makeuc-dev
     local_dir: ./public
     on:
       branch: dev
