@@ -4,10 +4,7 @@ import {
   ViewsDirective,
   ViewDirective,
   Inject,
-  TimelineViews,
-  Agenda,
-  Resize,
-  DragAndDrop
+  TimelineViews
 } from '@syncfusion/ej2-react-schedule';
 import { enableRipple } from '@syncfusion/ej2-base';
 
@@ -19,7 +16,8 @@ const onPopupOpen = args => {
   }
 }
 const onActionBegin = args => {
-  if ((args.requestType === 'eventCreate') || args.requestType === 'eventChange') {
+  console.log(args);
+  if ((args.requestType === 'eventCreate') || args.requestType === 'eventChange' || args.requestType === 'dateNavigate') {
     args.cancel = true;
   }
 }
@@ -58,13 +56,14 @@ export default ({ schedule, height }) => {
         actionBegin={onActionBegin}
         dragStop={onDragStop}
         resizeStop={onResizeStop}
+        showHeaderBar={false}
+        timeScale={{ enable: true, interval: 60 }}
         eventRendered={args => applyCategoryColor(args, scheduleObj.currentView)}
       >
           <ViewsDirective>
-            <ViewDirective option='TimelineDay' />
-            <ViewDirective option='Agenda' />
+            <ViewDirective option='TimelineDay' startHour="9:00" endHour="15:00" interval={2} />
           </ViewsDirective>
-          <Inject services={[TimelineViews, Agenda, Resize, DragAndDrop]} />
+          <Inject services={[TimelineViews]} />
         </ScheduleComponent>
       </div>
     </div>
