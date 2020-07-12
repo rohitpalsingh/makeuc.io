@@ -66,3 +66,7 @@ main {
     transform: rotate(360deg);
   }
 }
+
+.e-btn.e-edit, .e-btn.e-delete {
+  display: none !important;
+}
