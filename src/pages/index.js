@@ -49,19 +49,29 @@ export default () => {
         </div>
       </div>
     </section>
-    {/* <section id="schedule" className="py-20 lg:pb-24 lg:pt-24">
-      <div className="container mx-auto text-center">
-        <h2 className="text-3xl lg:text-5xl font-semibold">Schedule</h2>
-        <div className="mt-12">
-          <iframe
-            title="schedule"
-            src=""
-            width="100%"
-            height="500px"
-          />
+    <section id="about" className="py-10 lg:pb-24 lg:pt-24">
+      <div className="container mx-auto">
+        <h2 className="text-3xl lg:text-5xl font-semibold text-center underline">ABOUT</h2>
+        <div className="grid sm:grid-cols-1">
+          <div className="mt-12 text-left text-black">
+            <Card className="m-4 bg-white">
+            MakeUC is a student-run hackathon organized by IEEE at <a target="_blank" href="https://uc.edu/"> 
+            University of Cincinnati</a>! At MakeUC, 
+            we believe that the most critical technical challenges must be solved by interdisciplinary and diverse 
+            teams. We do not care about whether or not you are pursuing an engineering degree. 
+            All you need is a passion for bettering the world. We have hosted hackers with diverse majors ranging 
+            from computer science and engineering to mechanical engineering to mathematics (and 20+ more majors). 
+            For 24 hours, MakeUC hackers will work on bringing their ideas to reality. At the end of the event, they will 
+            have the opportunity to present their projects not just to our judges but also to the world.
+            Due to the unprecedented coming of COVID-19; MakeUC 2020 will take place virtually this year.
+            <br></br><br></br>
+            Check out our FAQ section to learn more!
+            </Card>
+          </div>
         </div>
       </div>
-    </section> */}
+    </section>
+    {/* <section id="schedule"></section> */}
     <section id="tracks" className="py-10 lg:pb-24 lg:pt-24">
       <div className="container mx-auto text-center">
         <h2 className="text-3xl lg:text-5xl font-semibold underline">TRACKS</h2>
@@ -95,16 +105,7 @@ export default () => {
         </div>
       </div>
     </section>
-    {/* <section id="prizes" className="py-20 lg:pb-24 lg:pt-24">
-      <div className="container mx-auto text-center">
-        <h2 className="text-3xl lg:text-5xl font-semibold">Prizes</h2>
-        <div className="mt-12">
-          <Card>
-            <p className="text-xl">Prizes</p>
-          </Card>
-        </div>
-      </div>
-    </section> */}
+    {/* <section id="prizes"></section> */}
     <section id="sponsors" className="py-10 lg:pb-24 lg:pt-24">
       <div className="container mx-auto text-center">
         <h2 className="text-3xl lg:text-5xl font-semibold underline">SPONSORS</h2>     
