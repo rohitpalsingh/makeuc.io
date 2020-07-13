@@ -409,6 +409,18 @@ module.exports = {
       options: {
         tailwindConfig: `tailwind.config.js`
       }
+    },
+    { 
+      resolve: `gatsby-plugin-purgecss`,
+      options: {
+        printRejected: true, // Print removed selectors and processed file names
+        develop: true, // Enable while using `gatsby develop`
+        debug: true,
+        tailwind: true, // Enable tailwindcss support
+        // whitelist: ['whitelist'], // Don't remove this selector
+        ignore: ['material.css', 'tailwind.css'], // Ignore files/folders
+        // purgeOnly : ['components/', '/main.css', 'bootstrap/'], // Purge only these files/folders
+      }
     }
   ]
 };
