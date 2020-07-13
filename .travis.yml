@@ -10,7 +10,8 @@ deploy:
   - provider: s3
     access_key_id: $AWS_KEY
     secret_access_key: $AWS_SECRET
-    bucket: "dev.makeuc.io"
+    skip_cleanup: true
+    bucket: dev.makeuc.io
     local_dir: ./public
     on:
       branch: dev
