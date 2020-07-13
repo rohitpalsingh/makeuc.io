@@ -35,10 +35,10 @@ const Header = ({ page = `index` } = {}) => {
       </Link>
       { (page === `index`) &&
         <div className="flex mt-4 sm:mt-0">
-          {/* <AnchorLink href="#schedule"></AnchorLink> */}
           <AnchorLink className="px-3 xs:px-8 nav-link" href="#about">
             ABOUT
           </AnchorLink>
+          {/* <AnchorLink href="#schedule"></AnchorLink> */}
           <AnchorLink className="px-3 xs:px-8 nav-link" href="#tracks">
             TRACKS
           </AnchorLink>
