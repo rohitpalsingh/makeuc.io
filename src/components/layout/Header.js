@@ -35,18 +35,17 @@ const Header = ({ page = `index` } = {}) => {
       </Link>
       { (page === `index`) &&
         <div className="flex mt-4 sm:mt-0">
-          {/* <AnchorLink className="px-4" href="#schedule">
-            Schedule
-          </AnchorLink> */}
+          <AnchorLink className="px-3 xs:px-8 nav-link" href="#about">
+            ABOUT
+          </AnchorLink>
+          {/* <AnchorLink href="#schedule"></AnchorLink> */}
           <AnchorLink className="px-3 xs:px-8 nav-link" href="#tracks">
             TRACKS
           </AnchorLink>
           <AnchorLink className="px-3 xs:px-8 nav-link" href="#faq">
             FAQ
           </AnchorLink>
-          {/* <AnchorLink className="px-4 sm:px-8 nav-link" href="#prizes">
-            Prizes
-          </AnchorLink> */}
+          {/* <AnchorLink href="#prizes"></AnchorLink> */}
           <AnchorLink className="px-3 xs:px-8 nav-link" href="#sponsors">
             SPONSORS
           </AnchorLink>
