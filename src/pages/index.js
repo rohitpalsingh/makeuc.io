@@ -9,7 +9,8 @@ import SEO from '../components/SEO';
 import balsamiq from '../../images/sponsors/balsamiq.svg';
 import linode from '../../images/sponsors/linode.svg';
 import wolfram from '../../images/sponsors/wolfram.svg';
-import echoAR from '../../images/sponsors/echoAR - Logo 2020 - Dark.png';
+import echoAR from '../../images/sponsors/echoAR.png';
+import twilio from '../../images/sponsors/twilio.png';
 // import Schedule from '../components/schedule';
 // import scheduleData from '../../content/schedule.yaml';
 
@@ -153,13 +154,14 @@ export default () => {
           <div className="mt-12 text-center text-black sm:grid-cols-1">
             <Card className="m-4 bg-white">
               <div className="sm:mx-auto px-auto flex justify-center content-around flex-wrap">
-                <img src={linode} style={{height: '60px'}} className="px-5"/>
-                <img src={wolfram} style={{height: '62px'}} className="px-5"/>
+                <img src={linode} style={{height: '50px'}} className="px-5 mt-5"/>
+                <img src={wolfram} style={{height: '52px'}} className="px-5 mt-5"/>
               </div>
               <hr className="mt-5"></hr>
               <div className="sm:mx-auto px-auto flex justify-center content-around flex-wrap">
-                <img src={echoAR} style={{height: '20px'}} className="px-5 mt-5"/>
-                <img src={balsamiq} style={{height: '30px'}} className="px-5 mt-4"/>
+                <img src={echoAR} style={{height: '15px'}} className="px-5 mt-5"/>
+                <img src={balsamiq} style={{height: '25px'}} className="px-5 mt-4"/>
+                <img src={twilio} style={{height: '23px'}} className="px-5 mt-4"/>
               </div>
               <div className="grid sm:grid-cols-1 mt-10">
                   <p className="text-md sm:text-xl">INTERESTED IN SPONSORING MAKEUC? EMAIL US AT </p>
