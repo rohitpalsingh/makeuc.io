@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `MakeUC 2020`,
     siteUrl: `https://makeuc.io`,
-    description: `MakeUC 2020: Discovering the beyond!`,
+    description: `MakeUC 2020 is a 24-hour hackathon hosted by IEEE at University of Cincinnati!`,
     registration: {
       schools: [
         `Arizona State University`,

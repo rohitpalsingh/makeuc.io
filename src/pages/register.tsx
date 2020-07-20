@@ -10,6 +10,7 @@ import FooterImage from '../components/FooterImage';
 import SEO from '../components/SEO';
 import { RegistrantDTO } from '../data/registrant.dto';
 import Header from '../components/layout/Header';
+import * as tooltip from '../components/ToolTips'
 
 export const query = graphql`
   query {
@@ -67,12 +68,17 @@ export default () => {
     <SEO />
     <main>
       <Header page="register" />
-      <section id="features" className="py-20 lg:pb-40 lg:pt-20">
+      <section id="features" className="py-20 lg:pt-20">
         <div className="container mx-auto text-center">
-          <h2 className="text-3xl lg:text-5xl font-semibold">REGISTRATION FORM</h2>
+          <h2 className="text-3xl lg:text-5xl font-semibold"
+          style={{  
+            textDecoration: 'underline',
+            textDecorationColor: '#8ae9c1'
+          }}
+          >REGISTRATION FORM</h2>
           <div className="flex flex-col sm:flex-row sm:-mx-3 mt-12">
             <div className="flex-1 px-3">
-              <Card className="mb-8">
+              <Card className="mb-0">
                 {(result === SUCCESS) ?
                   <div className="flex items-center bg-secondary-darker text-black text-sm font-bold px-4 py-3" role="alert">
                     <p>We have sent you a confirmation email. In order to complete the sign-up process, 
@@ -97,41 +103,41 @@ export default () => {
                     <form className="w-full max-w-5xl mx-auto register-form" onSubmit={handleSubmit(onSubmit)}>
                       <div className="mb-4 text-left">
                         <label
-                          className="block  text-sm font-bold mb-2"
+                          className="block text-sm font-bold mb-2"
                           htmlFor="fullName"
                         >
-                          Full Name: {errors.fullName && <span className="text-red-500 text-xs italic">&nbsp;&nbsp;required field</span>}
+                          Full Name{errors.fullName && <span className="text-red-500 text-xs italic">&nbsp;&nbsp;required field</span>}
                         </label>
                         <input
                           ref={register({ required: true })}
                           className="shadow appearance-none border rounded w-full py-2 px-3  leading-tight focus:outline-none focus:shadow-outline"
                           name="fullName"
                           type="text"
-                          placeholder="Full name"
+                          placeholder="Jon Doe"
                         />
                       </div>
                       <div className="mb-4 text-left">
                         <label className="block  text-sm font-bold mb-2" htmlFor="email">
-                          Email: {errors.email && <span className="text-red-500 text-xs italic">&nbsp;&nbsp;required field</span>}
+                          Email{errors.email && <span className="text-red-500 text-xs italic">&nbsp;&nbsp;required field</span>}
                         </label>
                         <input
                           ref={register({ required: true })}
                           className="shadow appearance-none border rounded w-full py-2 px-3  leading-tight focus:outline-none focus:shadow-outline"
                           name="email"
                           type="email"
-                          placeholder="Email"
+                          placeholder="jon.doe@starfleet.edu"
                         />
                       </div>
                       <div className="mb-4 text-left">
                         <label className="block  text-sm font-bold mb-2" htmlFor="school">
-                          School: {errors.school && <span className="text-red-500 text-xs italic">&nbsp;&nbsp;required field</span>}
+                          School{errors.school && <span className="text-red-500 text-xs italic">&nbsp;&nbsp;required field</span>}
                         </label>
                         <input
                           ref={register({ required: true })}
                           className="shadow appearance-none border rounded w-full py-2 px-3  leading-tight focus:outline-none focus:shadow-outline"
                           name="school"
                           type="text"
-                          placeholder="Current school"
+                          placeholder="Starfleet Academy"
                           list="schools"
                         />
                         <datalist id="schools">
@@ -143,7 +149,7 @@ export default () => {
                           className="block text-sm font-bold mb-2"
                           htmlFor="country"
                         >
-                          Country: {errors.country && <span className="text-red-500 text-xs italic">&nbsp;&nbsp;required field</span>}
+                          Country{errors.country && <span className="text-red-500 text-xs italic">&nbsp;&nbsp;required field</span>}
                         </label>
                         <select
                           ref={register({ required: true })}
@@ -157,7 +163,7 @@ export default () => {
 
                       <div className="mb-4 text-left">
                         <label className="block  text-sm font-bold mb-2" htmlFor="degree">
-                          Degree: {errors.degree && <span className="text-red-500 text-xs italic">&nbsp;&nbsp;required field</span>}
+                          Degree{errors.degree && <span className="text-red-500 text-xs italic">&nbsp;&nbsp;required field</span>}
                         </label>
                         <input
                           ref={register({ required: true })}
@@ -173,7 +179,7 @@ export default () => {
                       </div>
                       <div className="mb-4 text-left">
                         <label className="block  text-sm font-bold mb-2" htmlFor="degree">
-                          Major: {errors.major && <span className="text-red-500 text-xs italic">&nbsp;&nbsp;required field</span>}
+                          Major(s){errors.major && <span className="text-red-500 text-xs italic">&nbsp;&nbsp;required field</span>}
                         </label>
                         <input
                           ref={register({ required: true })}
@@ -192,7 +198,7 @@ export default () => {
                           className="block text-sm font-bold mb-2"
                           htmlFor="graduation"
                         >
-                          Expected Graduation Year: {errors.graduation && <span className="text-red-500 text-xs italic">&nbsp;&nbsp;required field</span>}
+                          Expected Graduation Year{errors.graduation && <span className="text-red-500 text-xs italic">&nbsp;&nbsp;required field</span>}
                         </label>
                         <input
                           ref={register({ required: true })}
@@ -208,7 +214,7 @@ export default () => {
                           className="block text-sm font-bold mb-2"
                           htmlFor="hackathonsAttended"
                         >
-                          Number of Hackathons Attended: {errors.hackathonsAttended && <span className="text-red-500 text-xs italic">&nbsp;&nbsp;required field</span>}
+                          Number of Hackathons Attended{errors.hackathonsAttended && <span className="text-red-500 text-xs italic">&nbsp;&nbsp;required field</span>}
                         </label>
                         <select
                           ref={register({ required: true })}
@@ -224,8 +230,7 @@ export default () => {
                           className="block text-sm font-bold mb-2"
                           htmlFor="resume"
                         >
-                          Resume (highly recommended if you're interested in full time
-                          positions and internships):
+                          Resume - <i>Optional</i><tooltip.Resume />
                         </label>
                         <div {...getRootProps({ className: `dropzone` })}>
                           <input {...getInputProps()} />
@@ -240,7 +245,7 @@ export default () => {
                           className="block  text-sm font-bold mb-2"
                           htmlFor="ethnicity"
                         >
-                          Ethnicity: {errors.ethnicity && <span className="text-red-500 text-xs italic">&nbsp;&nbsp;required field</span>}
+                          Ethnicity{errors.ethnicity && <span className="text-red-500 text-xs italic">&nbsp;&nbsp;required field</span>}
                         </label>
                         <select
                           ref={register({ required: true })}
@@ -253,7 +258,7 @@ export default () => {
                       </div>
                       <div className="mb-4 text-left">
                         <label className="block  text-sm font-bold mb-2" htmlFor="gender">
-                          Gender: {errors.gender && <span className="text-red-500 text-xs italic">&nbsp;&nbsp;required field</span>}
+                          Gender{errors.gender && <span className="text-red-500 text-xs italic">&nbsp;&nbsp;required field</span>}
                         </label>
                         <select
                           ref={register({ required: true })}
@@ -269,18 +274,19 @@ export default () => {
                           className="block  text-sm font-bold mb-2"
                           htmlFor="questions"
                         >
-                          Questions or Concerns:
+                          Notes - <i>Optional</i><tooltip.Questions />
                         </label>
                         <input
                           ref={register}
-                          className="shadow appearance-none border rounded w-full py-2 px-3  leading-tight focus:outline-none focus:shadow-outline"
+                          className="shadow appearance-none border rounded w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline"
                           name="questions"
                           type="text"
-                          placeholder="Questions or concerns"
+                          placeholder="Notes"
                         />
                       </div>
                       <div className="text-left text-sm">
-                        By registering, you agree to let us share this information with our sponsor companies for statistical data, and for the companies to reach out to you for possible opportunities.
+                        By registering, you agree to let us share your response with our sponsors for statistical data, 
+                        and for the sponsors to reach out to you for possible opportunities.
                       </div>
                       <div className="md:items-center py-20 lg:pb-20 lg:pt-10">
                         <Button
