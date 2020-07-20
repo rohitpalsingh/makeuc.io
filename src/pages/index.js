@@ -8,7 +8,7 @@ import Accordion from '../components/Accordion';
 import SEO from '../components/SEO';
 import balsamiq from '../../images/sponsors/balsamiq.svg';
 import linode from '../../images/sponsors/linode.svg';
-import wolfram from '../../images/sponsors/wolfram.png';
+import wolfram from '../../images/sponsors/wolfram.svg';
 import echoAR from '../../images/sponsors/echoAR - Logo 2020 - Dark.png';
 // import Schedule from '../components/schedule';
 // import scheduleData from '../../content/schedule.yaml';
@@ -60,7 +60,7 @@ export default () => {
         <h2 className="text-3xl lg:text-5xl font-semibold text-center underline">ABOUT</h2>
         <div className="grid sm:grid-cols-1">
           <div className="mt-12 text-left text-black">
-            <Card className="m-4 bg-white">
+            <Card className="m-4 bg-white text-center">
             MakeUC is a student-run hackathon organized by IEEE at <a target="_blank" href="https://uc.edu/"> 
             University of Cincinnati</a>! At MakeUC, 
             we believe that the most critical technical challenges must be solved by interdisciplinary and diverse 
@@ -129,10 +129,14 @@ export default () => {
               {/* <div className="sm:mx-auto px-auto grid xs:grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 "> */}
               <div className="sm:mx-auto px-auto flex justify-center content-around flex-wrap">
                 <img src={linode} style={{height: '60px'}} className="px-5"/>
-                <img src={wolfram} style={{height: '60px'}} className="px-5"/>
+                <img src={wolfram} style={{height: '62px'}} className="px-5"/>
+              </div>
+              <hr className="mt-5"></hr>
+              <div className="sm:mx-auto px-auto flex justify-center content-around flex-wrap">
                 <img src={echoAR} style={{height: '20px'}} className="px-5 mt-5"/>
                 <img src={balsamiq} style={{height: '30px'}} className="px-5 mt-4"/>
               </div>
+              <hr className="mt-5"></hr>
             {/* <div className="mt-12 rounded-lg text-black"> */}
               <div className="grid sm:grid-cols-1 mt-10">
                 {/* <Card className="m-4 p-1" style={{boxShadow: 'none', border: 'none'}}> */}
