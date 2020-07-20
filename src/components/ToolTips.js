@@ -94,7 +94,7 @@ export function Gender() {
 
 export function Questions() {
     return (
-      <Tooltip title="Questions" arrow placement="right">
+      <Tooltip title="Let us know if you have any questions, special requests and/or need any accommodations." arrow placement="right">
         <Button><img src={tt} style={{height: '20px'}}/></Button>
       </Tooltip>
     );

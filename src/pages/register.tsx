@@ -97,11 +97,13 @@ export default () => {
                     <br />
                     <form className="w-full max-w-5xl mx-auto register-form" onSubmit={handleSubmit(onSubmit)}>
                       <div className="mb-4 text-left">
+                        <label className="italic text-red-700">* Required</label>
+                        <hr className="py-5"></hr>
                         <label
-                          className="block  text-sm font-bold mb-2"
+                          className="block text-sm font-bold mb-2"
                           htmlFor="fullName"
                         >
-                          Full Name:{errors.fullName && <span className="text-red-500 text-xs italic">&nbsp;&nbsp;required field</span>}
+                          Full Name:<label className="italic text-red-700">*</label>{errors.fullName && <span className="text-red-500 text-xs italic">&nbsp;&nbsp;required field</span>}
                         </label>
                         <input
                           ref={register({ required: true })}
@@ -113,7 +115,7 @@ export default () => {
                       </div>
                       <div className="mb-4 text-left">
                         <label className="block  text-sm font-bold mb-2" htmlFor="email">
-                          Email:{errors.email && <span className="text-red-500 text-xs italic">&nbsp;&nbsp;required field</span>}
+                          Email:<label className="italic text-red-700">*</label>{errors.email && <span className="text-red-500 text-xs italic">&nbsp;&nbsp;required field</span>}
                         </label>
                         <input
                           ref={register({ required: true })}
@@ -125,7 +127,7 @@ export default () => {
                       </div>
                       <div className="mb-4 text-left">
                         <label className="block  text-sm font-bold mb-2" htmlFor="school">
-                          School: {errors.school && <span className="text-red-500 text-xs italic">&nbsp;&nbsp;required field</span>}
+                          School:<label className="italic text-red-700">*</label>{errors.school && <span className="text-red-500 text-xs italic">&nbsp;&nbsp;required field</span>}
                         </label>
                         <input
                           ref={register({ required: true })}
@@ -144,7 +146,7 @@ export default () => {
                           className="block text-sm font-bold mb-2"
                           htmlFor="country"
                         >
-                          Country: {errors.country && <span className="text-red-500 text-xs italic">&nbsp;&nbsp;required field</span>}
+                          Country:<label className="italic text-red-700">*</label>{errors.country && <span className="text-red-500 text-xs italic">&nbsp;&nbsp;required field</span>}
                         </label>
                         <select
                           ref={register({ required: true })}
@@ -158,7 +160,7 @@ export default () => {
 
                       <div className="mb-4 text-left">
                         <label className="block  text-sm font-bold mb-2" htmlFor="degree">
-                          Degree: {errors.degree && <span className="text-red-500 text-xs italic">&nbsp;&nbsp;required field</span>}
+                          Degree:<label className="italic text-red-700">*</label>{errors.degree && <span className="text-red-500 text-xs italic">&nbsp;&nbsp;required field</span>}
                         </label>
                         <input
                           ref={register({ required: true })}
@@ -174,7 +176,7 @@ export default () => {
                       </div>
                       <div className="mb-4 text-left">
                         <label className="block  text-sm font-bold mb-2" htmlFor="degree">
-                          Major: {errors.major && <span className="text-red-500 text-xs italic">&nbsp;&nbsp;required field</span>}
+                          Major:<label className="italic text-red-700">*</label>{errors.major && <span className="text-red-500 text-xs italic">&nbsp;&nbsp;required field</span>}
                         </label>
                         <input
                           ref={register({ required: true })}
@@ -193,7 +195,7 @@ export default () => {
                           className="block text-sm font-bold mb-2"
                           htmlFor="graduation"
                         >
-                          Expected Graduation Year: {errors.graduation && <span className="text-red-500 text-xs italic">&nbsp;&nbsp;required field</span>}
+                          Expected Graduation Year:<label className="italic text-red-700">*</label>{errors.graduation && <span className="text-red-500 text-xs italic">&nbsp;&nbsp;required field</span>}
                         </label>
                         <input
                           ref={register({ required: true })}
@@ -209,7 +211,7 @@ export default () => {
                           className="block text-sm font-bold mb-2"
                           htmlFor="hackathonsAttended"
                         >
-                          Number of Hackathons Attended: {errors.hackathonsAttended && <span className="text-red-500 text-xs italic">&nbsp;&nbsp;required field</span>}
+                          Number of Hackathons Attended:<label className="italic text-red-700">*</label>{errors.hackathonsAttended && <span className="text-red-500 text-xs italic">&nbsp;&nbsp;required field</span>}
                         </label>
                         <select
                           ref={register({ required: true })}
@@ -240,7 +242,7 @@ export default () => {
                           className="block  text-sm font-bold mb-2"
                           htmlFor="ethnicity"
                         >
-                          Ethnicity: {errors.ethnicity && <span className="text-red-500 text-xs italic">&nbsp;&nbsp;required field</span>}
+                          Ethnicity:<label className="italic text-red-700">*</label>{errors.ethnicity && <span className="text-red-500 text-xs italic">&nbsp;&nbsp;required field</span>}
                         </label>
                         <select
                           ref={register({ required: true })}
@@ -253,7 +255,7 @@ export default () => {
                       </div>
                       <div className="mb-4 text-left">
                         <label className="block  text-sm font-bold mb-2" htmlFor="gender">
-                          Gender: {errors.gender && <span className="text-red-500 text-xs italic">&nbsp;&nbsp;required field</span>}
+                          Gender:<label className="italic text-red-700">*</label>{errors.gender && <span className="text-red-500 text-xs italic">&nbsp;&nbsp;required field</span>}
                         </label>
                         <select
                           ref={register({ required: true })}
