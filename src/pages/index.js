@@ -136,7 +136,6 @@ export default () => {
                 <img src={echoAR} style={{height: '20px'}} className="px-5 mt-5"/>
                 <img src={balsamiq} style={{height: '30px'}} className="px-5 mt-4"/>
               </div>
-              <hr className="mt-5"></hr>
             {/* <div className="mt-12 rounded-lg text-black"> */}
               <div className="grid sm:grid-cols-1 mt-10">
                 {/* <Card className="m-4 p-1" style={{boxShadow: 'none', border: 'none'}}> */}
