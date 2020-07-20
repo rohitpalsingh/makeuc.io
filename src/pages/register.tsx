@@ -10,6 +10,7 @@ import FooterImage from '../components/FooterImage';
 import SEO from '../components/SEO';
 import { RegistrantDTO } from '../data/registrant.dto';
 import Header from '../components/layout/Header';
+import * as tooltip from '../components/ToolTips'
 
 export const query = graphql`
   query {
@@ -100,7 +101,7 @@ export default () => {
                           className="block  text-sm font-bold mb-2"
                           htmlFor="fullName"
                         >
-                          Full Name: {errors.fullName && <span className="text-red-500 text-xs italic">&nbsp;&nbsp;required field</span>}
+                          Full Name:{errors.fullName && <span className="text-red-500 text-xs italic">&nbsp;&nbsp;required field</span>}
                         </label>
                         <input
                           ref={register({ required: true })}
@@ -112,7 +113,7 @@ export default () => {
                       </div>
                       <div className="mb-4 text-left">
                         <label className="block  text-sm font-bold mb-2" htmlFor="email">
-                          Email: {errors.email && <span className="text-red-500 text-xs italic">&nbsp;&nbsp;required field</span>}
+                          Email:{errors.email && <span className="text-red-500 text-xs italic">&nbsp;&nbsp;required field</span>}
                         </label>
                         <input
                           ref={register({ required: true })}
@@ -224,8 +225,7 @@ export default () => {
                           className="block text-sm font-bold mb-2"
                           htmlFor="resume"
                         >
-                          Resume (highly recommended if you're interested in full time
-                          positions and internships):
+                          Resume: <tooltip.Resume />
                         </label>
                         <div {...getRootProps({ className: `dropzone` })}>
                           <input {...getInputProps()} />
@@ -269,7 +269,7 @@ export default () => {
                           className="block  text-sm font-bold mb-2"
                           htmlFor="questions"
                         >
-                          Questions or Concerns:
+                          Questions or Concerns:<tooltip.Questions />
                         </label>
                         <input
                           ref={register}

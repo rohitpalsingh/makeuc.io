@@ -6,6 +6,10 @@ import Layout from '../components/layout/Layout';
 import HeaderImage from '../components/HeaderImage';
 import Accordion from '../components/Accordion';
 import SEO from '../components/SEO';
+import balsamiq from '../../images/sponsors/balsamiq.svg';
+import linode from '../../images/sponsors/linode.svg';
+import wolfram from '../../images/sponsors/wolfram.png';
+import echoAR from '../../images/sponsors/echoAR - Logo 2020 - Dark.png';
 // import Schedule from '../components/schedule';
 // import scheduleData from '../../content/schedule.yaml';
 
@@ -117,14 +121,27 @@ export default () => {
     {/* <section id="prizes"></section> */}
     <section id="sponsors" className="py-10 lg:pb-24 lg:pt-24">
       <div className="container mx-auto text-center">
-        <h2 className="text-3xl lg:text-5xl font-semibold underline">SPONSORS</h2>     
-        <div className="mt-12 rounded-lg text-black">
-          <div className="grid sm:grid-cols-1">
+        <h2 className="text-3xl lg:text-5xl font-semibold underline">SPONSORS</h2> 
+        {/* <div className="mt-12 rounded-lg text-black bg-white rounded-lg"> */}
+        <div className="container mx-auto grid sm:grid-cols-1 p-5">
+          <div className="mt-12 text-center text-black sm:grid-cols-1">
             <Card className="m-4 bg-white">
-              <p className="text-md sm:text-xl">INTERESTED IN SPONSORING MAKEUC? EMAIL US AT </p>
-              <p className="text-md sm:text-xl"><a href="mailto:contact@makeuc.io"><u>CONTACT@MAKEUC.IO</u></a></p>
+              {/* <div className="sm:mx-auto px-auto grid xs:grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 "> */}
+              <div className="sm:mx-auto px-auto flex justify-center content-around flex-wrap">
+                <img src={linode} style={{height: '60px'}} className="px-5"/>
+                <img src={wolfram} style={{height: '60px'}} className="px-5"/>
+                <img src={echoAR} style={{height: '20px'}} className="px-5 mt-5"/>
+                <img src={balsamiq} style={{height: '30px'}} className="px-5 mt-4"/>
+              </div>
+            {/* <div className="mt-12 rounded-lg text-black"> */}
+              <div className="grid sm:grid-cols-1 mt-10">
+                {/* <Card className="m-4 p-1" style={{boxShadow: 'none', border: 'none'}}> */}
+                  <p className="text-md sm:text-xl">INTERESTED IN SPONSORING MAKEUC? EMAIL US AT </p>
+                  <p className="text-md sm:text-xl"><a href="mailto:contact@makeuc.io"><u>CONTACT@MAKEUC.IO</u></a></p>
+                {/* </Card> */}
+              </div>
             </Card>
-          </div>
+          </div> 
         </div>
       </div>
     </section>

@@ -10,6 +10,7 @@
     "build": "gatsby build"
   },
   "dependencies": {
+    "@material-ui/core": "^4.11.0",
     "@progress/kendo-react-upload": "^3.14.0",
     "@syncfusion/ej2-react-schedule": "^18.2.44",
     "gatsby": "^2.23.9",
