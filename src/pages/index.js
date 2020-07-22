@@ -6,12 +6,12 @@ import Layout from '../components/layout/Layout';
 import HeaderImage from '../components/HeaderImage';
 import Accordion from '../components/Accordion';
 import SEO from '../components/SEO';
-import balsamiq from '../../images/sponsors/balsamiq.svg';
-import linode from '../../images/sponsors/linode.svg';
-import wolfram from '../../images/sponsors/wolfram.svg';
-import echoAR from '../../images/sponsors/echoAR.png';
-import twilio from '../../images/sponsors/twilio.png';
-// import Schedule from '../components/schedule';
+import Balsamiq from '../../images/sponsors/balsamiq.svg';
+import Linode from '../../images/sponsors/linode.svg';
+import Wolfram from '../../images/sponsors/wolfram.svg';
+import EchoAR from '../../images/sponsors/echoAR.png';
+import Twilio from '../../images/sponsors/twilio.png';
+// import Schedule from '../components/Schedule';
 // import scheduleData from '../../content/schedule.yaml';
 
 export const query = graphql`
@@ -154,14 +154,34 @@ export default () => {
           <div className="mt-12 text-center text-black sm:grid-cols-1">
             <Card className="m-4 bg-white">
               <div className="sm:mx-auto px-auto flex justify-center content-around flex-wrap">
-                <img src={linode} style={{height: '50px'}} className="px-5 mt-5"/>
-                <img src={wolfram} style={{height: '52px'}} className="px-5 mt-5"/>
+                <img 
+                src={ Linode } 
+                style={{ height: '50px' }} 
+                className="px-5 mt-5"
+                />
+                <img 
+                src={ Wolfram } 
+                style={{ height: '52px' }} 
+                className="px-5 mt-5"
+                />
               </div>
               <hr className="mt-5"></hr>
               <div className="sm:mx-auto px-auto flex justify-center content-around flex-wrap">
-                <img src={echoAR} style={{height: '15px'}} className="px-5 mt-5"/>
-                <img src={balsamiq} style={{height: '25px'}} className="px-5 mt-4"/>
-                <img src={twilio} style={{height: '23px'}} className="px-5 mt-4"/>
+                <img 
+                src={ EchoAR } 
+                style={{ height: '15px' }} 
+                className="px-5 mt-5"
+                />
+                <img 
+                src={ Balsamiq } 
+                style={{ height: '25px' }} 
+                className="px-5 mt-4"
+                />
+                <img 
+                src={ Twilio } 
+                style={{ height: '21px' }} 
+                className="px-5 mt-4"
+                />
               </div>
               <div className="grid sm:grid-cols-1 mt-10">
                   <p className="text-md sm:text-xl">INTERESTED IN SPONSORING MAKEUC? EMAIL US AT </p>

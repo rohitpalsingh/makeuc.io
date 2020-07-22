@@ -1,5 +1,5 @@
 import React from 'react';
-import ScrollTop from './react-scrolltop-button';
+import ScrollTop from './ScrollTop';
 import hovering from '../svg/hovering.svg';
 import lit from '../svg/onclick.svg';
 
