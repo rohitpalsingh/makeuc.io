@@ -168,7 +168,7 @@ class ScrollTop extends Component {
       }}
     ><img 
     src={this.state.isFlying ? this.props.litSrc : this.props.hoveringSrc} 
-    alt="Btn"
+    alt="scroll to top button"
     /></div>
   }
 
