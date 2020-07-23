@@ -166,7 +166,10 @@ class ScrollTop extends Component {
         width: '60px',
         padding: `10px 15px`
       }}
-    ><img src={this.state.isFlying ? this.props.litSrc : this.props.hoveringSrc} /></div>
+    ><img 
+    src={this.state.isFlying ? this.props.litSrc : this.props.hoveringSrc} 
+    alt="Btn"
+    /></div>
   }
 
   render() {
