@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'gatsby';
 import Button from '../components/Button';
 import FooterImage from '../components/FooterImage';
-import Footer from '../components/layout/Footer';
 import SEO from '../components/SEO';
 import moon from '../svg/moon.png';
 
@@ -15,7 +14,7 @@ export default () => (
           <div className="text-center lg:text-left">
             <h1 className="text-404 font-bold leading-none">
               4
-              <img className="moon-404" src={moon} />
+              <img className="moon-404" src={moon} alt="Moon" />
               4!
             </h1>
             <p className="text-xl lg:text-3xl mt-6 font-light">

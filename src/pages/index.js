@@ -70,7 +70,7 @@ export default () => {
             <h1 className="text-2xl font-semibold text-black">BACKGROUND</h1>
             <br></br>
             <p>
-            MakeUC is a 24-hour hackathon hosted by IEEE at <a target="_blank" href="https://uc.edu/"> 
+            MakeUC is a 24-hour hackathon hosted by IEEE at <a target="_blank" rel="noopener noreferrer" href="https://uc.edu/"> 
             University of Cincinnati</a>! At MakeUC, we believe that the most critical challenges must be 
             solved by interdisciplinary and diverse teams. All you need to participate is a passion 
             for bettering the world. We offer workshops, APIs and resources to help you succeed!
@@ -158,11 +158,13 @@ export default () => {
                 src={ Linode } 
                 style={{ height: '50px' }} 
                 className="px-5 mt-5"
+                alt="Linode"
                 />
                 <img 
                 src={ Wolfram } 
                 style={{ height: '52px' }} 
                 className="px-5 mt-5"
+                alt="Wolfram"
                 />
               </div>
               <hr className="mt-5"></hr>
@@ -171,16 +173,19 @@ export default () => {
                 src={ EchoAR } 
                 style={{ height: '15px' }} 
                 className="px-5 mt-5"
+                alt="echoAR"
                 />
                 <img 
                 src={ Balsamiq } 
                 style={{ height: '25px' }} 
                 className="px-5 mt-4"
+                alt="Balsamiq"
                 />
                 <img 
                 src={ Twilio } 
                 style={{ height: '21px' }} 
                 className="px-5 mt-4"
+                alt="Twilio"
                 />
               </div>
               <div className="grid sm:grid-cols-1 mt-10">
