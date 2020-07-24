@@ -154,39 +154,64 @@ export default () => {
           <div className="mt-12 text-center text-black sm:grid-cols-1">
             <Card className="m-4 bg-white">
               <div className="sm:mx-auto px-auto flex justify-center content-around flex-wrap">
-                <img 
-                src={ Linode } 
-                style={{ height: '50px' }} 
-                className="px-5 mt-5"
-                alt="Linode"
-                />
-                <img 
-                src={ Wolfram } 
-                style={{ height: '52px' }} 
-                className="px-5 mt-5"
-                alt="Wolfram"
-                />
+                <a 
+                href="https://www.linode.com/" 
+                target="_blank" 
+                rel="noopener noreferrer">
+                  <img 
+                  src={ Linode } 
+                  style={{ height: '50px' }} 
+                  className="px-5 mt-5"
+                  alt="Linode"
+                  />
+                </a>
+                <a 
+                href="https://www.wolfram.com/language/" 
+                target="_blank" 
+                rel="noopener noreferrer">
+                  <img 
+                  src={ Wolfram } 
+                  style={{ height: '52px' }} 
+                  className="px-5 mt-5"
+                  alt="Wolfram"
+                  />
+                </a>
               </div>
               <hr className="mt-5"></hr>
               <div className="sm:mx-auto px-auto flex justify-center content-around flex-wrap">
-                <img 
-                src={ EchoAR } 
-                style={{ height: '15px' }} 
-                className="px-5 mt-5"
-                alt="echoAR"
-                />
-                <img 
-                src={ Balsamiq } 
-                style={{ height: '25px' }} 
-                className="px-5 mt-4"
-                alt="Balsamiq"
-                />
-                <img 
-                src={ Twilio } 
-                style={{ height: '21px' }} 
-                className="px-5 mt-4"
-                alt="Twilio"
-                />
+                <a 
+                href="https://www.echoar.xyz/" 
+                target="_blank" 
+                rel="noopener noreferrer">
+                  <img 
+                  src={ EchoAR } 
+                  style={{ height: '15px' }} 
+                  className="px-5 mt-5"
+                  alt="echoAR"
+                  />
+                </a>
+                <a 
+                href="https://balsamiq.com/" 
+                target="_blank" 
+                rel="noopener noreferrer">
+                  <img 
+                  src={ Balsamiq } 
+                  style={{ height: '25px' }} 
+                  className="px-5 mt-4"
+                  alt="Balsamiq"
+                  />
+                </a>
+                <a 
+                href="https://www.twilio.com/" 
+                target="_blank" 
+                rel="noopener noreferrer">
+                  <img 
+                  src={ Twilio } 
+                  style={{ height: '21px' }} 
+                  className="px-5 mt-4"
+                  alt="Twilio"
+                  />
+                </a>
               </div>
               <div className="grid sm:grid-cols-1 mt-10">
                   <p className="text-md sm:text-xl">INTERESTED IN SPONSORING MAKEUC? EMAIL US AT </p>
