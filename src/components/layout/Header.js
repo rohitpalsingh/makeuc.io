@@ -24,7 +24,7 @@ const Header = ({ page = `index` } = {}) => {
     return () => document.removeEventListener(`scroll`, listener);
   });
 
-  return <header className={`sticky top-0 shadow navbar ${state}`}>
+  return <header className={`sticky top-0 shadow navbar ${state}`} style={{zIndex: 10}}>
     <div className="container flex flex-col sm:flex-row justify-between items-center max-w-full px-8 py-2">
       <Link to="/">
         <div className="flex items-center text-2xl">
