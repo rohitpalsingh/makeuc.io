@@ -10,6 +10,7 @@
 @import '../../node_modules/@syncfusion/ej2-react-schedule/styles/material.css';
 
 main {
+  background-color: black;
   background-image: url("./background.png");
   background-attachment: fixed;
   color: theme("colors.white");
