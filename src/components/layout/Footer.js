@@ -8,6 +8,7 @@ const Footer = () => (
       <IconContext.Provider value={{ size: '2em', className: 'mx-auto' }}>
         <a
           target="_blank"
+          aria-label = "Email"
           rel="noopener noreferrer"
           href="mailto:info@makeuc.io"
           className="flex-1 social-icon"
@@ -16,6 +17,7 @@ const Footer = () => (
         </a>
         <a
           target="_blank"
+          aria-label = "LinkedIn"
           rel="noopener noreferrer"
           href="https://www.linkedin.com/company/makeuc"
           className="flex-1 social-icon"
@@ -24,6 +26,7 @@ const Footer = () => (
         </a>
         <a
           target="_blank"
+          aria-label = "Instagram"
           rel="noopener noreferrer"
           href="https://www.instagram.com/uc_ieee"
           className="flex-1 social-icon"
@@ -32,6 +35,7 @@ const Footer = () => (
         </a>
         <a
           target="_blank"
+          aria-label = "Twitter"
           rel="noopener noreferrer"
           href="https://twitter.com/uc_ieee"
           className="flex-1 social-icon"
@@ -40,6 +44,7 @@ const Footer = () => (
         </a>
         <a
           target="_blank"
+          aria-label = "GitHub"
           rel="noopener noreferrer"
           href="https://github.com/makeuc"
           className="flex-1 social-icon"
