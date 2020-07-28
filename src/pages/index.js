@@ -9,8 +9,9 @@ import SEO from '../components/SEO';
 import Balsamiq from '../../images/sponsors/balsamiq.svg';
 import Linode from '../../images/sponsors/linode.svg';
 import Wolfram from '../../images/sponsors/wolfram.svg';
-import EchoAR from '../../images/sponsors/echoAR.png';
+import EchoAR from '../../images/sponsors/echoAR.webp';
 import Twilio from '../../images/sponsors/twilio.png';
+import Brooksource from '../../images/sponsors/brooksource.svg'
 // import Schedule from '../components/Schedule';
 // import scheduleData from '../../content/schedule.yaml';
 
@@ -154,13 +155,29 @@ export default () => {
           <div className="mt-12 text-center text-black sm:grid-cols-1">
             <Card className="m-4 bg-white">
               <div className="sm:mx-auto px-auto flex justify-center content-around flex-wrap">
+                {/* L */}
+                <a 
+                href="https://www.brooksource.com/" 
+                target="_blank" 
+                rel="noopener noreferrer">
+                  <img 
+                  src={ Brooksource } 
+                  style={{ height: '100px' }} 
+                  className="px-5 mt-5"
+                  alt="Brooksource"
+                  />
+                </a>
+              </div>
+              <hr className="mt-5"></hr>
+              <div className="sm:mx-auto px-auto flex justify-center content-around flex-wrap">
+                {/* M */}
                 <a 
                 href="https://www.linode.com/" 
                 target="_blank" 
                 rel="noopener noreferrer">
                   <img 
                   src={ Linode } 
-                  style={{ height: '50px' }} 
+                  style={{ height: '42px' }} 
                   className="px-5 mt-5"
                   alt="Linode"
                   />
@@ -171,21 +188,28 @@ export default () => {
                 rel="noopener noreferrer">
                   <img 
                   src={ Wolfram } 
-                  style={{ height: '52px' }} 
+                  style={{ height: '44px' }} 
                   className="px-5 mt-5"
                   alt="Wolfram"
                   />
                 </a>
               </div>
-              <hr className="mt-5"></hr>
-              <div className="sm:mx-auto px-auto flex justify-center content-around flex-wrap">
+              <hr 
+              className="mt-5"></hr>
+              {/* S */}
+              <div 
+              className="sm:mx-auto px-auto flex justify-center content-around flex-wrap"
+              style={{ 
+                marginTop: '5px'
+               }}
+              >
                 <a 
                 href="https://www.echoar.xyz/" 
                 target="_blank" 
                 rel="noopener noreferrer">
                   <img 
                   src={ EchoAR } 
-                  style={{ height: '15px' }} 
+                  style={{ height: '18px' }} 
                   className="px-5 mt-5"
                   alt="echoAR"
                   />
@@ -196,7 +220,7 @@ export default () => {
                 rel="noopener noreferrer">
                   <img 
                   src={ Balsamiq } 
-                  style={{ height: '25px' }} 
+                  style={{ height: '28px' }} 
                   className="px-5 mt-4"
                   alt="Balsamiq"
                   />
@@ -207,7 +231,7 @@ export default () => {
                 rel="noopener noreferrer">
                   <img 
                   src={ Twilio } 
-                  style={{ height: '21px' }} 
+                  style={{ height: '24px' }} 
                   className="px-5 mt-4"
                   alt="Twilio"
                   />
