@@ -11,4 +11,6 @@ export class RegistrantDTO {
   readonly ethnicity: string
   readonly gender: string
   readonly questions?: string
+  readonly agreed: boolean
+  readonly authorized: boolean
 }
