@@ -82,3 +82,7 @@ main {
 .e-btn.e-edit, .e-btn.e-delete {
   display: none !important;
 }
+
+.light-link:hover {
+  color: theme("colors.secondary.default");
+}
