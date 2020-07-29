@@ -273,7 +273,7 @@ export default () => {
                             type="checkbox"
                             className="mr-2 leading-tight"
                           />
-                          I have read and agree to the <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf">MLH Code of Conduct</a>.
+                          I have read and agree to the <a className="light-link" href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf">MLH Code of Conduct</a>.
                         </label>
                         {errors.agreed && <span className="text-red-500 font-bold text-xs italic">&nbsp;&nbsp;Please check this box</span>}
                       </div>
@@ -285,7 +285,7 @@ export default () => {
                             type="checkbox"
                             className="mr-2 leading-tight"
                           />
-                          I authorize you to share my application/registration information for event administration, ranking, MLH administration, pre- and post-event informational e-mails, and occasional messages about hackathons in-line with the <a href="https://mlh.io/privacy">MLH Privacy Policy</a>. I further agree to the terms of both the <a href="https://github.com/MLH/mlh-policies/tree/master/prize-terms-and-conditions">MLH Contest Terms and Conditions</a> and the <a href="https://mlh.io/privacy">MLH Privacy Policy</a>.
+                          I authorize you to share my application/registration information for event administration, ranking, MLH administration, pre- and post-event informational e-mails, and occasional messages about hackathons in-line with the <a className="light-link" href="https://mlh.io/privacy">MLH Privacy Policy</a>. I further agree to the terms of both the <a className="light-link" href="https://github.com/MLH/mlh-policies/tree/master/prize-terms-and-conditions">MLH Contest Terms and Conditions</a> and the <a className="light-link" href="https://mlh.io/privacy">MLH Privacy Policy</a>.
                         </label>
                         {errors.authorized && <span className="text-red-500 font-bold text-xs italic">&nbsp;&nbsp;Please check this box</span>}
                       </div>
