@@ -4,7 +4,7 @@ import { FaEnvelope, FaLinkedin, FaInstagram, FaTwitter, FaGithub } from 'react-
 
 const Footer = () => (
   <>
-    <footer className="container mx-auto py-8 px-3 mb-8 text-gray-800 flex">
+    <footer className="container mx-auto py-6 px-3 mb-0 text-gray-800 flex">
       <IconContext.Provider value={{ size: '2em', className: 'mx-auto' }}>
         <a
           target="_blank"
@@ -53,6 +53,22 @@ const Footer = () => (
         </a>
       </IconContext.Provider>
     </footer>
+    <div
+      style={{
+        width: '100%',
+        textAlign: 'center',
+        marginBottom: '35px',
+      }}
+    >
+      <a
+        target="_blank"
+        aria-label = "Code of Conduct"
+        rel="noopener noreferrer"
+        href="https://mlh.io/code-of-conduct"
+      >
+        CODE OF CONDUCT
+      </a>
+    </div>
   </>
 );
 
