@@ -9,7 +9,7 @@ import SEO from '../components/SEO';
 import Balsamiq from '../../images/sponsors/balsamiq.svg';
 import Linode from '../../images/sponsors/linode.svg';
 import Wolfram from '../../images/sponsors/wolfram.svg';
-import EchoAR from '../../images/sponsors/echoAR.webp';
+import EchoAR from '../../images/sponsors/echoAR.png';
 import Twilio from '../../images/sponsors/twilio.png';
 import Brooksource from '../../images/sponsors/brooksource.svg'
 // import Schedule from '../components/Schedule';
