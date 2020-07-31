@@ -11,9 +11,9 @@
 
 main {
   background-color: black;
-  background-image: url("./background.png");
+  background-image: url('./background.png');
   background-attachment: fixed;
-  color: theme("colors.white");
+  color: theme('colors.white');
 }
 
 .navbar {
@@ -25,7 +25,7 @@ main {
 }
 
 .navbar.scrolling {
-  background-color: theme("colors.primary.translucent");
+  background-color: theme('colors.primary.translucent');
 }
 
 .navbar .nav-link {
@@ -33,19 +33,20 @@ main {
 }
 
 .navbar .nav-link:hover {
-  color: theme("colors.secondary.default");
+  color: theme('colors.secondary.default');
 }
 
 .social-icon {
   font-size: 20px;
 }
 
-.register-form input, .register-form select {
-  color: theme("colors.black");
+.register-form input,
+.register-form select {
+  color: theme('colors.black');
 }
 
-.register-form input[type="file"] {
-  color: theme("colors.white");
+.register-form input[type='file'] {
+  color: theme('colors.white');
 }
 
 .dropzone {
@@ -79,6 +80,11 @@ main {
   }
 }
 
-.e-btn.e-edit, .e-btn.e-delete {
+.e-btn.e-edit,
+.e-btn.e-delete {
   display: none !important;
+}
+
+.light-link:hover {
+  color: theme('colors.secondary.default');
 }

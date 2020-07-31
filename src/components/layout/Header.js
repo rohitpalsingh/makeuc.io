@@ -51,17 +51,35 @@ const Header = ({ page = `index` } = {}) => {
           </AnchorLink>
         </div>
       }
-      <div className="hidden md:block">
+      <div className="hidden md:block pr-32">
         { page === `index` ?
           <Link to="/register">
-            <Button className="text-sm font-bold">REGISTER</Button>
           </Link> :
           <Link to="/">
-            <Button size="default" className="text-sm font-bold">HOME</Button>
           </Link>
         }
       </div>
     </div>
+    <a 
+    id="mlh-trust-badge" 
+    style={{ 
+      display: `block`, 
+      maxWidth: `100px`, 
+      minWidth: `50px`, 
+      position:`fixed`, 
+      right: `50px`, 
+      top: 0, 
+      width: `10%`,
+      zIndex: 10000 
+      }} 
+      href="https://mlh.io/seasons/na-2021/events?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2021-season&utm_content=black" 
+      target="_blank"
+      >
+      <img 
+      src="https://s3.amazonaws.com/logged-assets/trust-badge/2021/mlh-trust-badge-2021-white.svg" 
+      alt="Major League Hacking 2021 Hackathon Season" 
+      style={{ width: `100%` }} 
+      /></a>
   </header>
 };
 

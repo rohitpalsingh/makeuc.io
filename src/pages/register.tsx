@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import { graphql, useStaticQuery } from 'gatsby';
+import React, { useState, useEffect } from 'react';
 import { useForm } from 'react-hook-form';
 import { FaSpinner } from 'react-icons/fa';
 import { useDropzone } from 'react-dropzone';
@@ -11,37 +10,19 @@ import SEO from '../components/SEO';
 import { RegistrantDTO } from '../data/registrant.dto';
 import Header from '../components/layout/Header';
 import * as tooltip from '../components/ToolTips'
-
-export const query = graphql`
-  query {
-    site {
-      siteMetadata {
-        registration {
-          schools
-          majors
-          degrees
-          ethnicities
-          genders
-          hackathonsAttended
-          countries
-        }
-      }
-    }
-  }
-`;
+import regData from '../../content/registration.yaml';
 
 const SUCCESS = 201;
 const ALREADY_EXISTS = 400;
 const SERVER_ERROR = 500;
 
 export default () => {
-  const data = useStaticQuery(query);
   const { register, errors, handleSubmit } = useForm<RegistrantDTO>();
   const { acceptedFiles, getRootProps, getInputProps } = useDropzone({ accept: `.pdf`, multiple: false });
-  const [ result, setResult ] = useState<number>(0);
   const [ submitting, setSubmitting ] = useState(false);
+  const [ result, setResult ] = useState<number>(0);
 
-  const onSubmit = async (data: RegistrantDTO, event: React.BaseSyntheticEvent) => {
+  const onSubmit = async (event: React.BaseSyntheticEvent) => {
     setResult(0);
     setSubmitting(true);
 
@@ -117,7 +98,7 @@ export default () => {
                         />
                       </div>
                       <div className="mb-4 text-left">
-                        <label className="block  text-sm font-bold mb-2" htmlFor="email">
+                        <label className="block text-sm font-bold mb-2" htmlFor="email">
                           Email{errors.email && <span className="text-red-500 text-xs italic">&nbsp;&nbsp;required field</span>}
                         </label>
                         <input
@@ -129,7 +110,7 @@ export default () => {
                         />
                       </div>
                       <div className="mb-4 text-left">
-                        <label className="block  text-sm font-bold mb-2" htmlFor="school">
+                        <label className="block text-sm font-bold mb-2" htmlFor="school">
                           School{errors.school && <span className="text-red-500 text-xs italic">&nbsp;&nbsp;required field</span>}
                         </label>
                         <input
@@ -141,7 +122,7 @@ export default () => {
                           list="schools"
                         />
                         <datalist id="schools">
-                          {data.site.siteMetadata.registration.schools.map(school => <option key={school} value={school}>{school}</option>)}
+                          {regData.schools.map(school => <option key={school} value={school}>{school}</option>)}
                         </datalist>
                       </div>
                       <div className="mb-4 text-left">
@@ -157,12 +138,12 @@ export default () => {
                           className="shadow appearance-none border w-full rounded py-2 px-3 leading-tight focus:outline-none focus:shadow-outline"
                         >
                           <option value="">Select an option</option>
-                          {data.site.siteMetadata.registration.countries.map(country => <option key={country} value={country}>{country}</option>)}
+                          {regData.countries.map(country => <option key={country} value={country}>{country}</option>)}
                         </select>
                       </div>
 
                       <div className="mb-4 text-left">
-                        <label className="block  text-sm font-bold mb-2" htmlFor="degree">
+                        <label className="block text-sm font-bold mb-2" htmlFor="degree">
                           Degree{errors.degree && <span className="text-red-500 text-xs italic">&nbsp;&nbsp;required field</span>}
                         </label>
                         <input
@@ -174,11 +155,11 @@ export default () => {
                           list="degrees"
                         />
                         <datalist id="degrees">
-                          {data.site.siteMetadata.registration.degrees.map(degree => <option key={degree} value={degree}>{degree}</option>)}
+                          {regData.degrees.map(degree => <option key={degree} value={degree}>{degree}</option>)}
                         </datalist>
                       </div>
                       <div className="mb-4 text-left">
-                        <label className="block  text-sm font-bold mb-2" htmlFor="degree">
+                        <label className="block text-sm font-bold mb-2" htmlFor="degree">
                           Major(s){errors.major && <span className="text-red-500 text-xs italic">&nbsp;&nbsp;required field</span>}
                         </label>
                         <input
@@ -190,7 +171,7 @@ export default () => {
                           list="majors"
                         />
                         <datalist id="majors">
-                          {data.site.siteMetadata.registration.majors.map(major => <option key={major} value={major}>{major}</option>)}
+                          {regData.majors.map(major => <option key={major} value={major}>{major}</option>)}
                         </datalist>
                       </div>
                       <div className="mb-4 text-left">
@@ -222,7 +203,7 @@ export default () => {
                           className="shadow appearance-none border w-full rounded py-2 px-3 leading-tight focus:outline-none focus:shadow-outline"
                         >
                           <option value="">Select an option</option>
-                          {data.site.siteMetadata.registration.hackathonsAttended.map(option => <option key={option} value={option}>{option}</option>)}
+                          {regData.hackathonsAttended.map(option => <option key={option} value={option}>{option}</option>)}
                         </select>
                       </div>
                       <div className="mb-4 text-left">
@@ -242,7 +223,7 @@ export default () => {
                       </div>
                       <div className="mb-4 text-left">
                         <label
-                          className="block  text-sm font-bold mb-2"
+                          className="block text-sm font-bold mb-2"
                           htmlFor="ethnicity"
                         >
                           Ethnicity{errors.ethnicity && <span className="text-red-500 text-xs italic">&nbsp;&nbsp;required field</span>}
@@ -253,11 +234,11 @@ export default () => {
                           className="shadow appearance-none border w-full rounded py-2 px-3 leading-tight focus:outline-none focus:shadow-outline"
                         >
                           <option value="">Select an option</option>
-                          {data.site.siteMetadata.registration.ethnicities.map(ethnicity => <option key={ethnicity} value={ethnicity}>{ethnicity}</option>)}
+                          {regData.ethnicities.map(ethnicity => <option key={ethnicity} value={ethnicity}>{ethnicity}</option>)}
                         </select>
                       </div>
                       <div className="mb-4 text-left">
-                        <label className="block  text-sm font-bold mb-2" htmlFor="gender">
+                        <label className="block text-sm font-bold mb-2" htmlFor="gender">
                           Gender{errors.gender && <span className="text-red-500 text-xs italic">&nbsp;&nbsp;required field</span>}
                         </label>
                         <select
@@ -266,12 +247,12 @@ export default () => {
                           className="shadow appearance-none border w-full rounded py-2 px-3 leading-tight focus:outline-none focus:shadow-outline"
                         >
                           <option value="">Select an option</option>
-                          {data.site.siteMetadata.registration.genders.map(gender => <option key={gender} value={gender}>{gender}</option>)}
+                          {regData.genders.map(gender => <option key={gender} value={gender}>{gender}</option>)}
                         </select>
                       </div>
                       <div className="mb-4 text-left">
                         <label
-                          className="block  text-sm font-bold mb-2"
+                          className="block text-sm font-bold mb-2"
                           htmlFor="questions"
                         >
                           Notes - <i>Optional</i><tooltip.Questions />
@@ -285,8 +266,28 @@ export default () => {
                         />
                       </div>
                       <div className="text-left text-sm">
-                        By registering, you agree to let us share your response with our sponsors for statistical data, 
-                        and for the sponsors to reach out to you for possible opportunities.
+                        <label>
+                          <input
+                            name="agreed"
+                            ref={register({ validate: v => v })}
+                            type="checkbox"
+                            className="mr-2 leading-tight"
+                          />
+                          I have read and agree to the <a className="light-link" href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf">MLH Code of Conduct</a>.
+                        </label>
+                        {errors.agreed && <span className="text-red-500 font-bold text-xs italic">&nbsp;&nbsp;Please check this box</span>}
+                      </div>
+                      <div className="text-left text-sm">
+                        <label>
+                          <input
+                            name="authorized"
+                            ref={register({ validate: v => v })}
+                            type="checkbox"
+                            className="mr-2 leading-tight"
+                          />
+                          I authorize you to share my application/registration information for event administration, ranking, MLH administration, pre- and post-event informational e-mails, and occasional messages about hackathons in-line with the <a className="light-link" href="https://mlh.io/privacy">MLH Privacy Policy</a>. I further agree to the terms of both the <a className="light-link" href="https://github.com/MLH/mlh-policies/tree/master/prize-terms-and-conditions">MLH Contest Terms and Conditions</a> and the <a className="light-link" href="https://mlh.io/privacy">MLH Privacy Policy</a>.
+                        </label>
+                        {errors.authorized && <span className="text-red-500 font-bold text-xs italic">&nbsp;&nbsp;Please check this box</span>}
                       </div>
                       <div className="md:items-center py-20 lg:pb-20 lg:pt-10">
                         <Button

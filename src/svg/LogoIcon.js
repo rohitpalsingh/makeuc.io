@@ -1,7 +1,7 @@
 import React from "react";
 
 const LogoIcon = () => (
-  <svg id="U" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 86.6 98.67">
+  <svg height="70px" id="U" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 86.6 98.67">
     <defs>
       <linearGradient
         id="linear-gradient"
