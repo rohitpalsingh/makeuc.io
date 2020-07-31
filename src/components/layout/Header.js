@@ -87,7 +87,6 @@ const Header = ({ page = `index` } = {}) => {
         <img
           src="https://s3.amazonaws.com/logged-assets/trust-badge/2021/mlh-trust-badge-2021-white.svg"
           alt="Major League Hacking 2021 Hackathon Season"
-          // style={{ width: `85%` }}
         />
       </a>
     </header>
