@@ -10,6 +10,8 @@ import SEO from '../components/SEO';
 import { RegistrantDTO } from '../data/registrant.dto';
 import Header from '../components/layout/Header';
 import * as tooltip from '../components/ToolTips'
+
+// @ts-ignore
 import regData from '../../content/registration.yaml';
 
 const SUCCESS = 201;
@@ -22,7 +24,7 @@ export default () => {
   const [ submitting, setSubmitting ] = useState(false);
   const [ result, setResult ] = useState<number>(0);
 
-  const onSubmit = async (event: React.BaseSyntheticEvent) => {
+  const onSubmit = async (data: RegistrantDTO, event: React.BaseSyntheticEvent) => {
     setResult(0);
     setSubmitting(true);
 
