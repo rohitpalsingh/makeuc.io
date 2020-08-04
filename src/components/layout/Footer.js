@@ -65,8 +65,9 @@ const Footer = () => (
         aria-label = "Code of Conduct"
         rel="noopener noreferrer"
         href="https://mlh.io/code-of-conduct"
-      >
+      ><b>
         CODE OF CONDUCT
+        </b>
       </a>
     </div>
   </>
