@@ -12,7 +12,9 @@ import Wolfram from "../../images/sponsors/wolfram.svg";
 import EchoAR from "../../images/sponsors/echoAR.png";
 import Twilio from "../../images/sponsors/twilio.png";
 import Brooksource from "../../images/sponsors/brooksource.svg";
-import Axure from '../../images/sponsors/axure.svg'
+import Axure from "../../images/sponsors/axure.svg";
+import GoogleCloud from "../../images/sponsors/google-cloud.png";
+import SoIT from "../../images/sponsors/soit.png";
 // import Schedule from '../components/Schedule';
 // import scheduleData from '../../content/schedule.yaml';
 
@@ -190,6 +192,17 @@ export default () => {
                 <div className="sm:mx-auto px-auto flex justify-center content-around flex-wrap">
                   {/* L */}
                   <a
+                    href="https://cloud.google.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src={GoogleCloud}
+                      style={{ height: "100px" }}
+                      alt="Google Cloud"
+                    />
+                  </a>
+                  <a
                     href="https://www.brooksource.com/"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -197,7 +210,6 @@ export default () => {
                     <img
                       src={Brooksource}
                       style={{ height: "100px" }}
-                      className="px-5 mt-5"
                       alt="Brooksource"
                     />
                   </a>
@@ -205,6 +217,22 @@ export default () => {
                 <hr className="mt-5"></hr>
                 <div className="sm:mx-auto px-auto flex justify-center content-around flex-wrap">
                   {/* M */}
+                  <a
+                    href="https://cech.uc.edu/schools/it.html/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src={SoIT}
+                      style={{ height: "70px" }}
+                      className="px-5 mt-5"
+                      alt="School of IT"
+                    />
+                  </a>
+                </div>
+                <hr className="mt-5"></hr>
+                <div className="sm:mx-auto px-auto flex justify-center content-around flex-wrap">
+                  {/* S */}
                   <a
                     href="https://www.linode.com/"
                     target="_blank"
@@ -231,7 +259,7 @@ export default () => {
                   </a>
                 </div>
                 <hr className="mt-5"></hr>
-                {/* S */}
+                {/* XS */}
                 <div
                   className="sm:mx-auto px-auto flex justify-center content-around flex-wrap"
                   style={{
