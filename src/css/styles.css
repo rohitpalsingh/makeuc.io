@@ -88,3 +88,7 @@ main {
 .light-link:hover {
   color: theme('colors.secondary.default');
 }
+
+.partner:hover {
+  opacity: 0.60;
+}
