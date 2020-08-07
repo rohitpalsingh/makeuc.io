@@ -13,7 +13,7 @@ import EchoAR from "../../images/sponsors/echoAR.png";
 import Twilio from "../../images/sponsors/twilio.png";
 import Brooksource from "../../images/sponsors/brooksource.svg";
 import Axure from "../../images/sponsors/axure.svg";
-import GoogleCloud from "../../images/sponsors/google-cloud.png";
+import GoogleCloud from "../../images/sponsors/google-cloud.svg";
 import SoIT from "../../images/sponsors/soit.png";
 // import Schedule from '../components/Schedule';
 // import scheduleData from '../../content/schedule.yaml';
@@ -198,7 +198,8 @@ export default () => {
                   >
                     <img
                       src={GoogleCloud}
-                      style={{ height: "100px" }}
+                      style={{ height: "55px" }}
+                      className="px-5 mt-5 partner"
                       alt="Google Cloud"
                     />
                   </a>
@@ -210,6 +211,7 @@ export default () => {
                     <img
                       src={Brooksource}
                       style={{ height: "100px" }}
+                      className="px-5 mt-15 partner"
                       alt="Brooksource"
                     />
                   </a>
@@ -225,7 +227,7 @@ export default () => {
                     <img
                       src={SoIT}
                       style={{ height: "70px" }}
-                      className="px-5 mt-5"
+                      className="px-5 mt-5 partner"
                       alt="School of IT"
                     />
                   </a>
@@ -241,19 +243,19 @@ export default () => {
                     <img
                       src={Linode}
                       style={{ height: "42px" }}
-                      className="px-5 mt-5"
+                      className="px-5 mt-5 partner"
                       alt="Linode"
                     />
                   </a>
                   <a
-                    href="https://www.wolfram.com/language/"
+                    href="https://www.wolfram.com/hackathons/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     <img
                       src={Wolfram}
                       style={{ height: "44px" }}
-                      className="px-5 mt-5"
+                      className="px-5 mt-5 partner"
                       alt="Wolfram"
                     />
                   </a>
@@ -274,7 +276,7 @@ export default () => {
                     <img
                       src={EchoAR}
                       style={{ height: "18px" }}
-                      className="px-5 mt-5"
+                      className="px-5 mt-5 partner"
                       alt="echoAR"
                     />
                   </a>
@@ -286,7 +288,7 @@ export default () => {
                     <img
                       src={Balsamiq}
                       style={{ height: "28px" }}
-                      className="px-5 mt-4"
+                      className="px-5 mt-4 partner"
                       alt="Balsamiq"
                     />
                   </a>
@@ -298,7 +300,7 @@ export default () => {
                     <img
                       src={Twilio}
                       style={{ height: "24px" }}
-                      className="px-5 mt-4"
+                      className="px-5 mt-4 partner"
                       alt="Twilio"
                     />
                   </a>
@@ -310,7 +312,7 @@ export default () => {
                     <img
                       src={Axure}
                       style={{ height: "24px" }}
-                      className="px-5 mt-4"
+                      className="px-5 mt-4 partner"
                       alt="Axure"
                     />
                   </a>
