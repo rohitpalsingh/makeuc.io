@@ -15,6 +15,7 @@ import Brooksource from "../../images/sponsors/brooksource.svg";
 import Axure from "../../images/sponsors/axure.svg";
 import GoogleCloud from "../../images/sponsors/google-cloud.svg";
 import SoIT from "../../images/sponsors/soit.png";
+import StickerMule from "../../images/sponsors/stickermule.svg";
 // import Schedule from '../components/Schedule';
 // import scheduleData from '../../content/schedule.yaml';
 
@@ -311,9 +312,21 @@ export default () => {
                   >
                     <img
                       src={Axure}
-                      style={{ height: "24px" }}
+                      style={{ height: "22px" }}
                       className="px-5 mt-4 partner"
                       alt="Axure"
+                    />
+                  </a>
+                  <a
+                    href="https://hackp.ac/mlh-stickermule-hackathons/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src={StickerMule}
+                      style={{ height: "19px" }}
+                      className="px-5 mt-4 partner"
+                      alt="Sticker Mule"
                     />
                   </a>
                 </div>
