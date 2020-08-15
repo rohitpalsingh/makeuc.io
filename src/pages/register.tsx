@@ -188,6 +188,8 @@ export default () => {
                           className="shadow appearance-none border rounded w-full py-2 px-3  leading-tight focus:outline-none focus:shadow-outline"
                           name="graduation"
                           type="number"
+                          min="2000"
+                          max="2040"
                           placeholder="2023"
                           maxLength={4}
                         />
