@@ -1,7 +1,7 @@
 {
   "name": "makeuc.io",
-  "author": "IEEE at UC",
-  "repository": "https://github.com/ieeeatuc/makeuc.io",
+  "author": "MakeUC",
+  "repository": "https://github.com/makeuc/makeuc.io/",
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
