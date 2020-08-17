@@ -14,6 +14,8 @@ import * as tooltip from '../components/ToolTips'
 // @ts-ignore
 import regData from '../../content/registration.yaml';
 
+const apiUrl = process.env.GATSBY_API_URL || `https://makeuc-registration-dev.herokuapp.com`;
+
 const SUCCESS = 201;
 const ALREADY_EXISTS = 400;
 const SERVER_ERROR = 500;
@@ -33,7 +35,7 @@ export default () => {
       formData.set(`resume`, acceptedFiles[0], acceptedFiles[0].name);
     }
     try {
-      const res = await fetch(`https://makeuc-registration.herokuapp.com/registrant`, {
+      const res = await fetch(`${apiUrl}/registrant`, {
         method: `POST`,
         body: formData
       });
