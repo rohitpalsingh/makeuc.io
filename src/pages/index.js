@@ -1,11 +1,13 @@
 import React from "react";
 import { Link, useStaticQuery, graphql } from "gatsby";
+
 import Button from "../components/Button";
 import Card from "../components/Card";
 import Layout from "../components/layout/Layout";
 import HeaderImage from "../components/HeaderImage";
 import Accordion from "../components/Accordion";
 import SEO from "../components/SEO";
+
 import Balsamiq from "../../images/sponsors/balsamiq.svg";
 import Linode from "../../images/sponsors/linode.svg";
 import Wolfram from "../../images/sponsors/wolfram.svg";
@@ -16,6 +18,9 @@ import Axure from "../../images/sponsors/axure.svg";
 import GoogleCloud from "../../images/sponsors/google-cloud.svg";
 import SoIT from "../../images/sponsors/soit.png";
 import StickerMule from "../../images/sponsors/stickermule.svg";
+import Northrop from "../../images/sponsors/northrop.svg";
+import Centauri from "../../images/sponsors/centauri.svg";
+
 // import Schedule from '../components/Schedule';
 // import scheduleData from '../../content/schedule.yaml';
 
@@ -216,7 +221,33 @@ export default () => {
                       alt="Brooksource"
                     />
                   </a>
-                </div>
+                  <a
+                    href="https://www.northropgrumman.com/careers/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src={Northrop}
+                      style={{ height: "100px" }}
+                      className="px-5 mt-0 partner"
+                      alt="Northrop Grumman"
+                    />
+                  </a>
+                  </div>
+                  <div className="sm:mx-auto px-auto flex justify-center content-around flex-wrap mt-5">
+                    <a
+                      href="https://www.centauricorp.com/your-career/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        src={Centauri}
+                        style={{ height: "95px" }}
+                        className="px-10 mt-0 partner"
+                        alt="Centauri"
+                      />
+                    </a>
+                  </div>
                 <hr className="mt-5"></hr>
                 <div className="sm:mx-auto px-auto flex justify-center content-around flex-wrap">
                   {/* M */}
