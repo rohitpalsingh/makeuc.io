@@ -20,6 +20,7 @@ import SoIT from "../../images/sponsors/soit.png";
 import StickerMule from "../../images/sponsors/stickermule.svg";
 import Northrop from "../../images/sponsors/northrop.svg";
 import Centauri from "../../images/sponsors/centauri.svg";
+import CincinnatiBell from "../../images/sponsors/cbts.png";
 
 // import Schedule from '../components/Schedule';
 // import scheduleData from '../../content/schedule.yaml';
@@ -289,6 +290,18 @@ export default () => {
                       style={{ height: "44px" }}
                       className="px-5 mt-5 partner"
                       alt="Wolfram"
+                    />
+                  </a>
+                  <a
+                    href="https://www.cbts.com/careers/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src={CincinnatiBell}
+                      style={{ height: "44px" }}
+                      className="px-5 mt-5 partner"
+                      alt="Cincinnati Bell"
                     />
                   </a>
                 </div>
