@@ -3,24 +3,11 @@ import { Link, useStaticQuery, graphql } from "gatsby";
 
 import Button from "../components/Button";
 import Card from "../components/Card";
+import SponsorCard from "../components/Sponsors";
 import Layout from "../components/layout/Layout";
 import HeaderImage from "../components/HeaderImage";
 import Accordion from "../components/Accordion";
 import SEO from "../components/SEO";
-
-import Balsamiq from "../../images/sponsors/balsamiq.svg";
-import Linode from "../../images/sponsors/linode.svg";
-import Wolfram from "../../images/sponsors/wolfram.svg";
-import EchoAR from "../../images/sponsors/echoAR.png";
-import Twilio from "../../images/sponsors/twilio.png";
-import Brooksource from "../../images/sponsors/brooksource.svg";
-import Axure from "../../images/sponsors/axure.svg";
-import GoogleCloud from "../../images/sponsors/google-cloud.svg";
-import SoIT from "../../images/sponsors/soit.png";
-import StickerMule from "../../images/sponsors/stickermule.svg";
-import Northrop from "../../images/sponsors/northrop.svg";
-import Centauri from "../../images/sponsors/centauri.svg";
-import CincinnatiBell from "../../images/sponsors/cbts.png";
 
 // import Schedule from '../components/Schedule';
 // import scheduleData from '../../content/schedule.yaml';
@@ -29,14 +16,12 @@ export const query = graphql`
   query {
     site {
       siteMetadata {
-        tracks {
-          title
-          content
-        }
-        faq {
-          question
-          answer
-        }
+        tracks { title content }
+        faq { question answer }
+        sponsors_L { link target rel src imageHeight className alt }
+        sponsors_M { link target rel src imageHeight className alt }
+        sponsors_S { link target rel src imageHeight className alt }
+        sponsors_XS { link target rel src imageHeight className alt }
       }
     }
   }
@@ -44,7 +29,7 @@ export const query = graphql`
 
 export default () => {
   const data = useStaticQuery(query);
-  const { tracks, faq } = data.site.siteMetadata;
+  const { tracks, faq, sponsors_L, sponsors_M, sponsors_S, sponsors_XS } = data.site.siteMetadata;
 
   return (
     <Layout>
@@ -198,112 +183,35 @@ export default () => {
               <Card className="m-4 bg-white">
                 <div className="sm:mx-auto px-auto flex justify-center content-around flex-wrap">
                   {/* L */}
-                  <a
-                    href="https://cloud.google.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img
-                      src={GoogleCloud}
-                      style={{ height: "55px" }}
-                      className="px-5 mt-5 partner"
-                      alt="Google Cloud"
-                    />
-                  </a>
-                  <a
-                    href="https://www.brooksource.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img
-                      src={Brooksource}
-                      style={{ height: "100px" }}
-                      className="px-5 mt-15 partner"
-                      alt="Brooksource"
-                    />
-                  </a>
-                  <a
-                    href="https://www.northropgrumman.com/careers/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img
-                      src={Northrop}
-                      style={{ height: "100px" }}
-                      className="px-5 mt-0 partner"
-                      alt="Northrop Grumman"
-                    />
-                  </a>
-                  </div>
-                  <div className="sm:mx-auto px-auto flex justify-center content-around flex-wrap mt-5">
-                    <a
-                      href="https://www.centauricorp.com/your-career/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <img
-                        src={Centauri}
-                        style={{ height: "95px" }}
-                        className="px-10 mt-0 partner"
-                        alt="Centauri"
-                      />
-                    </a>
+                  {sponsors_L.map((spl) => (
+                    <SponsorCard key={spl.link} className="m-4 text-secondary bg-white">
+                      <a href={spl.link} target={spl.target} rel={spl.rel}>
+                      <img src={spl.src} style={{ height: spl.imageHeight }} className={spl.className} alt={spl.alt} />
+                      </a>
+                    </SponsorCard>
+                  ))}
                   </div>
                 <hr className="mt-5"></hr>
                 <div className="sm:mx-auto px-auto flex justify-center content-around flex-wrap">
                   {/* M */}
-                  <a
-                    href="https://cech.uc.edu/schools/it.html/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img
-                      src={SoIT}
-                      style={{ height: "70px" }}
-                      className="px-5 mt-5 partner"
-                      alt="School of IT"
-                    />
-                  </a>
+                  {sponsors_M.map((spm) => (
+                    <SponsorCard key={spm.link} className="m-4 text-secondary bg-white">
+                      <a href={spm.link} target={spm.target} rel={spm.rel}>
+                      <img src={spm.src} style={{ height: spm.imageHeight }} className={spm.className} alt={spm.alt} />
+                      </a>
+                    </SponsorCard>
+                  ))}
                 </div>
                 <hr className="mt-5"></hr>
                 <div className="sm:mx-auto px-auto flex justify-center content-around flex-wrap">
                   {/* S */}
-                  <a
-                    href="https://www.linode.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img
-                      src={Linode}
-                      style={{ height: "42px" }}
-                      className="px-5 mt-5 partner"
-                      alt="Linode"
-                    />
-                  </a>
-                  <a
-                    href="https://www.wolfram.com/hackathons/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img
-                      src={Wolfram}
-                      style={{ height: "44px" }}
-                      className="px-5 mt-5 partner"
-                      alt="Wolfram"
-                    />
-                  </a>
-                  <a
-                    href="https://www.cbts.com/careers/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img
-                      src={CincinnatiBell}
-                      style={{ height: "44px" }}
-                      className="px-5 mt-5 partner"
-                      alt="Cincinnati Bell"
-                    />
-                  </a>
+                  {sponsors_S.map((sps) => (
+                    <SponsorCard key={sps.link} className="m-4 text-secondary bg-white">
+                      <a href={sps.link} target={sps.target} rel={sps.rel}>
+                      <img src={sps.src} style={{ height: sps.imageHeight }} className={sps.className} alt={sps.alt} />
+                      </a>
+                    </SponsorCard>
+                  ))}
                 </div>
                 <hr className="mt-5"></hr>
                 {/* XS */}
@@ -313,76 +221,13 @@ export default () => {
                     marginTop: "5px",
                   }}
                 >
-                  <a
-                    href="https://www.echoar.xyz/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img
-                      src={EchoAR}
-                      style={{ height: "18px" }}
-                      className="px-5 mt-5 partner"
-                      alt="echoAR"
-                    />
-                  </a>
-                  <a
-                    href="https://balsamiq.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img
-                      src={Balsamiq}
-                      style={{ height: "28px" }}
-                      className="px-5 mt-4 partner"
-                      alt="Balsamiq"
-                    />
-                  </a>
-                  <a
-                    href="https://www.twilio.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img
-                      src={Twilio}
-                      style={{ height: "24px" }}
-                      className="px-5 mt-4 partner"
-                      alt="Twilio"
-                    />
-                  </a>
-                  <a
-                    href="https://www.axure.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img
-                      src={Axure}
-                      style={{ height: "22px" }}
-                      className="px-5 mt-4 partner"
-                      alt="Axure"
-                    />
-                  </a>
-                  <a
-                    href="https://hackp.ac/mlh-stickermule-hackathons/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img
-                      src={StickerMule}
-                      style={{ height: "19px" }}
-                      className="px-5 mt-4 partner"
-                      alt="Sticker Mule"
-                    />
-                  </a>
-                </div>
-                <div className="grid sm:grid-cols-1 mt-10">
-                  <p className="text-md sm:text-xl">
-                    INTERESTED IN SPONSORING MAKEUC? EMAIL US AT{" "}
-                  </p>
-                  <p className="text-md sm:text-xl">
-                    <a href="mailto:contact@makeuc.io">
-                      <u>CONTACT@MAKEUC.IO</u>
-                    </a>
-                  </p>
+                  {sponsors_XS.map((spx) => (
+                    <SponsorCard key={spx.link} className="m-4 text-secondary bg-white">
+                      <a href={spx.link} target={spx.target} rel={spx.rel}>
+                      <img src={spx.src} style={{ height: spx.imageHeight }} className={spx.className} alt={spx.alt} />
+                      </a>
+                    </SponsorCard>
+                  ))}
                 </div>
               </Card>
             </div>

@@ -68,8 +68,134 @@ module.exports = {
         answer: `We have developed 4 tracks (impact areas) to assist you with building your idea. However, you're not 
         required to submit your hack to a track to win a prize!`
       }
-    ]
+    ],
+    sponsors_L: [
+      {
+        link: "https://cloud.google.com/",
+        target: "_blank",
+        rel: "noopener noreferrer",
+        src: "google-cloud.svg",
+        imageHeight: "55px",
+        className: "px-5 mt-5 partner",
+        alt: "Google Cloud"
+      },
+      {
+        link: "https://www.brooksource.com/",
+        target: "_blank",
+        rel: "noopener noreferrer",
+        src: "brooksource.svg",
+        imageHeight: "100px",
+        className: "px-5 mt-15 partner",
+        alt: "Brooksource"
+      },
+      {
+        link: "https://www.northropgrumman.com/careers/",
+        target: "_blank",
+        rel: "noopener noreferrer",
+        src: "northrop.svg",
+        imageHeight: "100px",
+        className: "px-5 mt-0 partner",
+        alt: "Northrop Grumman"
+      },
+      {
+        link: "https://www.centauricorp.com/your-career/",
+        target: "_blank",
+        rel: "noopener noreferrer",
+        src: "centauri.svg",
+        imageHeight: "95px",
+        className: "px-10 mt-0 partner",
+        alt: "Centauri"
+      }
+    ],
+    sponsors_M: [
+      {
+        link: "https://cech.uc.edu/schools/it.html/",
+        target: "_blank",
+        rel: "noopener noreferrer",
+        src: "soit.png",
+        imageHeight: "70px",
+        className: "px-5 mt-5 partner",
+        alt: "School of IT"
+      }
+    ],
+    sponsors_S: [
+      {
+        link: "https://www.linode.com/",
+        target: "_blank",
+        rel: "noopener noreferrer",
+        src: "linode.svg",
+        imageHeight: "42px",
+        className: "px-5 mt-5 partner",
+        alt: "Linode"
+      },
+      {
+        link: "https://www.wolfram.com/hackathons/",
+        target: "_blank",
+        rel: "noopener noreferrer",
+        src: "wolfram.svg",
+        imageHeight: "44px",
+        className: "px-5 mt-5 partner",
+        alt: "Wolfram"
+      },
+      {
+        link: "https://www.cbts.com/careers/",
+        target: "_blank",
+        rel: "noopener noreferrer",
+        src: "cbts.png",
+        imageHeight: "44px",
+        className: "px-5 mt-5 partner",
+        alt: "Cincinnati Bell"
+      }
+    ],
+    sponsors_XS: [
+      {
+        link: "https://www.echoar.xyz/",
+        target: "_blank",
+        rel: "noopener noreferrer",
+        src: "echoAR.png",
+        imageHeight: "18px",
+        className: "px-5 mt-5 partner",
+        alt: "EchoAR"
+      },
+      {
+        link: "https://balsamiq.com/",
+        target: "_blank",
+        rel: "noopener noreferrer",
+        src: "balsamiq.svg",
+        imageHeight: "28px",
+        className: "px-5 mt-4 partner",
+        alt: "Balsamiq"
+      },
+      {
+        link: "https://www.twilio.com/",
+        target: "_blank",
+        rel: "noopener noreferrer",
+        src: "twilio.png",
+        imageHeight: "24px",
+        className: "px-5 mt-4 partner",
+        alt: "Twilio"
+      },
+      {
+        link: "https://www.axure.com/",
+        target: "_blank",
+        rel: "noopener noreferrer",
+        src: "axure.svg",
+        imageHeight: "22px",
+        className: "px-5 mt-4 partner",
+        alt: "Axure"
+      },
+      {
+        link: "https://hackp.ac/mlh-stickermule-hackathons/",
+        target: "_blank",
+        rel: "noopener noreferrer",
+        src: "stickermule.svg",
+        imageHeight: "19px",
+        className: "px-5 mt-4 partner",
+        alt: "Sticker Mule"
+      }
+    ],
   },
+
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
