@@ -18,10 +18,10 @@ export const query = graphql`
       siteMetadata {
         tracks { title content }
         faq { question answer }
-        sponsors_L { link target rel src imageHeight className alt }
-        sponsors_M { link target rel src imageHeight className alt }
-        sponsors_S { link target rel src imageHeight className alt }
-        sponsors_XS { link target rel src imageHeight className alt }
+        sponsors_L { link src imageHeight className alt }
+        sponsors_M { link src imageHeight className alt }
+        sponsors_S { link src imageHeight className alt }
+        sponsors_XS { link src imageHeight className alt }
       }
     }
   }
@@ -185,7 +185,7 @@ export default () => {
                   {/* L */}
                   {sponsors_L.map((spl) => (
                     <SponsorCard key={spl.link} className="m-4 text-secondary bg-white">
-                      <a href={spl.link} target={spl.target} rel={spl.rel}>
+                      <a href={spl.link} target={"_blank"} rel={"noopener noreferrer"}>
                       <img src={spl.src} style={{ height: spl.imageHeight }} className={spl.className} alt={spl.alt} />
                       </a>
                     </SponsorCard>
@@ -196,7 +196,7 @@ export default () => {
                   {/* M */}
                   {sponsors_M.map((spm) => (
                     <SponsorCard key={spm.link} className="m-4 text-secondary bg-white">
-                      <a href={spm.link} target={spm.target} rel={spm.rel}>
+                      <a href={spm.link} target={"_blank"} rel={"noopener noreferrer"}>
                       <img src={spm.src} style={{ height: spm.imageHeight }} className={spm.className} alt={spm.alt} />
                       </a>
                     </SponsorCard>
@@ -207,7 +207,7 @@ export default () => {
                   {/* S */}
                   {sponsors_S.map((sps) => (
                     <SponsorCard key={sps.link} className="m-4 text-secondary bg-white">
-                      <a href={sps.link} target={sps.target} rel={sps.rel}>
+                      <a href={sps.link} target={"_blank"} rel={"noopener noreferrer"}>
                       <img src={sps.src} style={{ height: sps.imageHeight }} className={sps.className} alt={sps.alt} />
                       </a>
                     </SponsorCard>
@@ -223,7 +223,7 @@ export default () => {
                 >
                   {sponsors_XS.map((spx) => (
                     <SponsorCard key={spx.link} className="m-4 text-secondary bg-white">
-                      <a href={spx.link} target={spx.target} rel={spx.rel}>
+                      <a href={spx.link} target={"_blank"} rel={"noopener noreferrer"}>
                       <img src={spx.src} style={{ height: spx.imageHeight }} className={spx.className} alt={spx.alt} />
                       </a>
                     </SponsorCard>
