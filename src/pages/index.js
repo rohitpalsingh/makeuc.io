@@ -184,7 +184,7 @@ export default () => {
                 <div className="sm:mx-auto px-auto flex justify-center content-around flex-wrap">
                   {/* L */}
                   {sponsors_L.map((spl) => (
-                    <SponsorCard key={spl.link} className="m-4 text-secondary bg-white">
+                    <SponsorCard key={spl.link} className="mt-1 text-secondary bg-white">
                       <a href={spl.link} target={"_blank"} rel={"noopener noreferrer"}>
                       <img src={spl.src} style={{ height: spl.imageHeight }} className={spl.className} alt={spl.alt} />
                       </a>
@@ -195,7 +195,7 @@ export default () => {
                 <div className="sm:mx-auto px-auto flex justify-center content-around flex-wrap">
                   {/* M */}
                   {sponsors_M.map((spm) => (
-                    <SponsorCard key={spm.link} className="m-4 text-secondary bg-white">
+                    <SponsorCard key={spm.link} className="mt-1 text-secondary bg-white">
                       <a href={spm.link} target={"_blank"} rel={"noopener noreferrer"}>
                       <img src={spm.src} style={{ height: spm.imageHeight }} className={spm.className} alt={spm.alt} />
                       </a>
@@ -206,7 +206,7 @@ export default () => {
                 <div className="sm:mx-auto px-auto flex justify-center content-around flex-wrap">
                   {/* S */}
                   {sponsors_S.map((sps) => (
-                    <SponsorCard key={sps.link} className="m-4 text-secondary bg-white">
+                    <SponsorCard key={sps.link} className="mt-1 text-secondary bg-white">
                       <a href={sps.link} target={"_blank"} rel={"noopener noreferrer"}>
                       <img src={sps.src} style={{ height: sps.imageHeight }} className={sps.className} alt={sps.alt} />
                       </a>
@@ -222,7 +222,7 @@ export default () => {
                   }}
                 >
                   {sponsors_XS.map((spx) => (
-                    <SponsorCard key={spx.link} className="m-4 text-secondary bg-white">
+                    <SponsorCard key={spx.link} className="mt-1 text-secondary bg-white">
                       <a href={spx.link} target={"_blank"} rel={"noopener noreferrer"}>
                       <img src={spx.src} style={{ height: spx.imageHeight }} className={spx.className} alt={spx.alt} />
                       </a>

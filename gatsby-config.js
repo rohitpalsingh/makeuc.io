@@ -88,14 +88,14 @@ module.exports = {
         link: "https://www.northropgrumman.com/careers/",
         src: "northrop.svg",
         imageHeight: "100px",
-        className: "px-5 mt-0 partner",
+        className: "px-5 mt-2 partner",
         alt: "Northrop Grumman"
       },
       {
         link: "https://www.centauricorp.com/your-career/",
         src: "centauri.svg",
         imageHeight: "95px",
-        className: "px-10 mt-0 partner",
+        className: "px-10 mt-1 partner",
         alt: "Centauri"
       }
     ],
