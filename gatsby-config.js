@@ -74,14 +74,14 @@ module.exports = {
         link: "https://cloud.google.com/",
         src: "google-cloud.svg",
         imageHeight: "55px",
-        className: "mb-5 lg:px-5 mt-5 partner",
+        className: "mb-5 lg:px-5 mt-8 partner",
         alt: "Google Cloud"
       },
       {
         link: "https://www.brooksource.com/",
         src: "brooksource.svg",
         imageHeight: "100px",
-        className: "px-5 mt-15 partner",
+        className: "px-5 mt-2 partner",
         alt: "Brooksource"
       },
       {
@@ -95,7 +95,7 @@ module.exports = {
         link: "https://www.centauricorp.com/your-career/",
         src: "centauri.svg",
         imageHeight: "95px",
-        className: "px-10 mt-1 partner",
+        className: "px-10 mt-4 partner",
         alt: "Centauri"
       }
     ],
@@ -110,7 +110,7 @@ module.exports = {
       {
         link: "https://ceas.uc.edu",
         src: "uc-ceas_logo.png",
-        imageHeight: "70px lg:90px",
+        imageHeight: "90px",
         className: "lg:px-5 mt-5 partner",
         alt: "CEAS"
       }
