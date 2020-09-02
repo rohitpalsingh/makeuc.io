@@ -74,7 +74,7 @@ module.exports = {
         link: "https://cloud.google.com/",
         src: "google-cloud.svg",
         imageHeight: "55px",
-        className: "px-5 mt-5 partner",
+        className: "mb-5 lg:px-5 mt-5 partner",
         alt: "Google Cloud"
       },
       {
@@ -104,8 +104,15 @@ module.exports = {
         link: "https://cech.uc.edu/schools/it.html/",
         src: "soit.png",
         imageHeight: "70px",
-        className: "px-5 mt-5 partner",
+        className: "mb-5 lg:px-5 mt-10 partner",
         alt: "School of IT"
+      },
+      {
+        link: "https://ceas.uc.edu",
+        src: "uc-ceas_logo.png",
+        imageHeight: "70px lg:90px",
+        className: "lg:px-5 mt-5 partner",
+        alt: "CEAS"
       }
     ],
     sponsors_S: [
