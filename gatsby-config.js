@@ -107,13 +107,13 @@ module.exports = {
         className: "mb-5 lg:px-5 mt-10 partner",
         alt: "School of IT"
       },
-      {
-        link: "https://ceas.uc.edu",
-        src: "uc-ceas_logo.png",
-        imageHeight: "90px",
-        className: "lg:px-5 mt-5 partner",
-        alt: "CEAS"
-      }
+      // {
+      //   link: "https://ceas.uc.edu",
+      //   src: "uc-ceas_logo.png",
+      //   imageHeight: "90px",
+      //   className: "lg:px-5 mt-5 partner",
+      //   alt: "CEAS"
+      // }
     ],
     sponsors_S: [
       {
