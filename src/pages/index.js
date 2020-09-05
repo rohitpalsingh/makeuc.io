@@ -76,13 +76,13 @@ export default () => {
                 </h1>
                 <br></br>
                 <p>
-                  MakeUC is a 24-hour hackathon hosted by IEEE at{" "}
+                  MakeUC is a 24-hour hackathon hosted by {" "} 
                   <a
                     target="_blank"
                     rel="noopener noreferrer"
-                    href="https://uc.edu/"
+                    href="https://ieee.uc.edu/"
                   >
-                    University of Cincinnati
+                    IEEE at University of Cincinnati
                   </a>
                   ! At MakeUC, we believe that the most critical challenges must
                   be solved by interdisciplinary and diverse teams. All you need
@@ -97,7 +97,7 @@ export default () => {
                 </h1>
                 <br></br>
                 <p>
-                  Due to the unprecedented COVID-19 pandemic, MakeUC 2020 will
+                  Due to the unprecedented COVID-19 pandemic 😷, MakeUC 2020 will
                   take place virtually this year. Check out our FAQ section to
                   learn more!
                 </p>
