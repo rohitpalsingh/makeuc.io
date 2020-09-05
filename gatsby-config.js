@@ -74,28 +74,28 @@ module.exports = {
         link: "https://cloud.google.com/",
         src: "google-cloud.svg",
         imageHeight: "55px",
-        className: "mb-5 px-10 mt-8 partner",
+        className: "mb-5 px-8 mt-8 partner",
         alt: "Google Cloud"
       },
       {
         link: "https://www.brooksource.com/",
         src: "brooksource.svg",
         imageHeight: "100px",
-        className: "px-10 mt-2 partner",
+        className: "px-8 mt-2 partner",
         alt: "Brooksource"
       },
       {
         link: "https://www.northropgrumman.com/careers/",
         src: "northrop.svg",
         imageHeight: "100px",
-        className: "px-10 mt-2 partner",
+        className: "px-8 mt-2 partner",
         alt: "Northrop Grumman"
       },
       {
         link: "https://www.centauricorp.com/your-career/",
         src: "centauri.svg",
         imageHeight: "95px",
-        className: "px-10 mt-4 partner",
+        className: "px-8 mt-4 partner",
         alt: "Centauri"
       }
     ],
