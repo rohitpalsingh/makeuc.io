@@ -3,7 +3,6 @@ import { Link, useStaticQuery, graphql } from "gatsby";
 
 import Button from "../components/Button";
 import Card from "../components/Card";
-import SponsorCard from "../components/Sponsors";
 import Layout from "../components/layout/Layout";
 import HeaderImage from "../components/HeaderImage";
 import Accordion from "../components/Accordion";
