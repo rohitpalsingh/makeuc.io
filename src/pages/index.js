@@ -197,6 +197,7 @@ export default () => {
           </div>
         </div>
       </section>
+      <div id="ghost" className="mb-5 mt-2 mt-4 px-5 mt-4" />
     </Layout>
   );
 };
