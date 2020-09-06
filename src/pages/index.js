@@ -18,10 +18,7 @@ export const query = graphql`
       siteMetadata {
         tracks { title content }
         faq { question answer }
-        sponsors_L { link src imageHeight className alt }
-        sponsors_M { link src imageHeight className alt }
-        sponsors_S { link src imageHeight className alt }
-        sponsors_XS { link src imageHeight className alt }
+        sponsors { link src imageHeight className alt }
       }
     }
   }
@@ -29,7 +26,7 @@ export const query = graphql`
 
 export default () => {
   const data = useStaticQuery(query);
-  const { tracks, faq, sponsors_L, sponsors_M, sponsors_S, sponsors_XS } = data.site.siteMetadata;
+  const { tracks, faq, sponsors } = data.site.siteMetadata;
 
   return (
     <Layout>
@@ -181,54 +178,21 @@ export default () => {
           <div className="container mx-auto grid sm:grid-cols-1">
             <div className="mt-12 text-center text-black sm:grid-cols-1">
               <Card className="m-4 bg-white">
-                <div className="sm:mx-auto px-auto flex justify-center content-around flex-wrap">
-                  {/* L */}
-                  {sponsors_L.map((spl) => (
-                    <SponsorCard key={spl.link} className="mt-1 text-secondary bg-white">
-                      <a href={spl.link} target={"_blank"} rel={"noopener noreferrer"}>
-                      <img src={spl.src} style={{ height: spl.imageHeight }} className={spl.className} alt={spl.alt} />
-                      </a>
-                    </SponsorCard>
-                  ))}
-                  </div>
-                <hr className="mt-5"></hr>
-                <div className="sm:mx-auto px-auto flex justify-center content-around flex-wrap">
-                  {/* M */}
-                  {sponsors_M.map((spm) => (
-                    <SponsorCard key={spm.link} className="mt-1 text-secondary bg-white">
-                      <a href={spm.link} target={"_blank"} rel={"noopener noreferrer"}>
-                      <img src={spm.src} style={{ height: spm.imageHeight }} className={spm.className} alt={spm.alt} />
-                      </a>
-                    </SponsorCard>
-                  ))}
-                </div>
-                <hr className="mt-5"></hr>
-                <div className="sm:mx-auto px-auto flex justify-center content-around flex-wrap">
-                  {/* S */}
-                  {sponsors_S.map((sps) => (
-                    <SponsorCard key={sps.link} className="mt-1 text-secondary bg-white">
-                      <a href={sps.link} target={"_blank"} rel={"noopener noreferrer"}>
-                      <img src={sps.src} style={{ height: sps.imageHeight }} className={sps.className} alt={sps.alt} />
-                      </a>
-                    </SponsorCard>
-                  ))}
-                </div>
-                <hr className="mt-5"></hr>
-                {/* XS */}
-                <div
-                  className="sm:mx-auto px-auto flex justify-center content-around flex-wrap"
-                  style={{
-                    marginTop: "5px",
-                  }}
-                >
-                  {sponsors_XS.map((spx) => (
-                    <SponsorCard key={spx.link} className="mt-1 text-secondary bg-white">
-                      <a href={spx.link} target={"_blank"} rel={"noopener noreferrer"}>
-                      <img src={spx.src} style={{ height: spx.imageHeight }} className={spx.className} alt={spx.alt} />
-                      </a>
-                    </SponsorCard>
-                  ))}
-                </div>
+                {sponsors.map((category, index) =>
+                  <>
+                    {!!index && <hr className="mt-5"></hr>}
+
+                    <div className="sm:mx-auto px-auto flex justify-center content-around flex-wrap">
+                      {category.map((sponsor) => (
+                        <div key={sponsor.link} className="mt-1 text-secondary bg-white">
+                          <a href={sponsor.link} target={"_blank"} rel={"noopener noreferrer"}>
+                          <img src={sponsor.src} style={{ height: sponsor.imageHeight }} className={sponsor.className} alt={sponsor.alt} />
+                          </a>
+                        </div>
+                      ))}
+                    </div>
+                  </>
+                )}
               </Card>
             </div>
           </div>
