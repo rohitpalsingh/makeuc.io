@@ -69,112 +69,119 @@ module.exports = {
         required to submit your hack to a track to win a prize!`
       }
     ],
-    sponsors_L: [
-      {
-        link: "https://cloud.google.com/",
-        src: "google-cloud.svg",
-        imageHeight: "55px",
-        className: "mb-5 px-8 mt-8 partner",
-        alt: "Google Cloud"
-      },
-      {
-        link: "https://www.brooksource.com/",
-        src: "brooksource.svg",
-        imageHeight: "100px",
-        className: "px-8 mt-2 partner",
-        alt: "Brooksource"
-      },
-      {
-        link: "https://www.northropgrumman.com/careers/",
-        src: "northrop.svg",
-        imageHeight: "100px",
-        className: "px-8 mt-2 partner",
-        alt: "Northrop Grumman"
-      },
-      {
-        link: "https://www.centauricorp.com/your-career/",
-        src: "centauri.svg",
-        imageHeight: "95px",
-        className: "px-8 mt-4 partner",
-        alt: "Centauri"
-      }
-    ],
-    sponsors_M: [
-      {
-        link: "https://cech.uc.edu/schools/it.html/",
-        src: "soit.png",
-        imageHeight: "70px",
-        className: "mb-5 px-5 mt-10 partner",
-        alt: "School of IT"
-      },
-      {
-        link: "https://ceas.uc.edu",
-        src: "uc-ceas_logo.png",
-        imageHeight: "90px",
-        className: "px-5 mt-5 partner",
-        alt: "CEAS"
-      }
-    ],
-    sponsors_S: [
-      {
-        link: "https://www.linode.com/",
-        src: "linode.svg",
-        imageHeight: "42px",
-        className: "px-5 mt-5 partner",
-        alt: "Linode"
-      },
-      {
-        link: "https://www.wolfram.com/hackathons/",
-        src: "wolfram.svg",
-        imageHeight: "44px",
-        className: "px-5 mt-5 partner",
-        alt: "Wolfram"
-      },
-      {
-        link: "https://www.cbts.com/careers/",
-        src: "cbts.png",
-        imageHeight: "44px",
-        className: "px-5 mt-5 partner",
-        alt: "Cincinnati Bell"
-      }
-    ],
-    sponsors_XS: [
-      {
-        link: "https://www.echoar.xyz/",
-        src: "echoAR.png",
-        imageHeight: "18px",
-        className: "px-5 mt-5 partner",
-        alt: "EchoAR"
-      },
-      {
-        link: "https://balsamiq.com/",
-        src: "balsamiq.svg",
-        imageHeight: "28px",
-        className: "px-5 mt-4 partner",
-        alt: "Balsamiq"
-      },
-      {
-        link: "https://www.twilio.com/",
-        src: "twilio.png",
-        imageHeight: "24px",
-        className: "px-5 mt-4 partner",
-        alt: "Twilio"
-      },
-      {
-        link: "https://www.axure.com/",
-        src: "axure.svg",
-        imageHeight: "22px",
-        className: "px-5 mt-4 partner",
-        alt: "Axure"
-      },
-      {
-        link: "https://hackp.ac/mlh-stickermule-hackathons/",
-        src: "stickermule.svg",
-        imageHeight: "19px",
-        className: "px-5 mt-4 partner",
-        alt: "Sticker Mule"
-      }
-    ],
+    sponsors: [
+      // L
+      [
+        {
+          link: "https://cloud.google.com/",
+          src: "google-cloud.svg",
+          imageHeight: "55px",
+          className: "mb-5 px-8 mt-8 partner",
+          alt: "Google Cloud"
+        },
+        {
+          link: "https://www.brooksource.com/",
+          src: "brooksource.svg",
+          imageHeight: "100px",
+          className: "px-8 mt-2 partner",
+          alt: "Brooksource"
+        },
+        {
+          link: "https://www.northropgrumman.com/careers/",
+          src: "northrop.svg",
+          imageHeight: "100px",
+          className: "px-8 mt-2 partner",
+          alt: "Northrop Grumman"
+        },
+        {
+          link: "https://www.centauricorp.com/your-career/",
+          src: "centauri.svg",
+          imageHeight: "95px",
+          className: "px-8 mt-4 partner",
+          alt: "Centauri"
+        }
+      ],
+      // M
+      [
+        {
+          link: "https://cech.uc.edu/schools/it.html/",
+          src: "soit.png",
+          imageHeight: "70px",
+          className: "mb-5 px-5 mt-10 partner",
+          alt: "School of IT"
+        },
+        {
+          link: "https://ceas.uc.edu",
+          src: "uc-ceas_logo.png",
+          imageHeight: "90px",
+          className: "px-5 mt-5 partner",
+          alt: "CEAS"
+        }
+      ],
+      // S
+      [
+        {
+          link: "https://www.linode.com/",
+          src: "linode.svg",
+          imageHeight: "42px",
+          className: "px-5 mt-5 partner",
+          alt: "Linode"
+        },
+        {
+          link: "https://www.wolfram.com/hackathons/",
+          src: "wolfram.svg",
+          imageHeight: "44px",
+          className: "px-5 mt-5 partner",
+          alt: "Wolfram"
+        },
+        {
+          link: "https://www.cbts.com/careers/",
+          src: "cbts.png",
+          imageHeight: "44px",
+          className: "px-5 mt-5 partner",
+          alt: "Cincinnati Bell"
+        }
+      ],
+      // XS
+      [
+        {
+          link: "https://www.echoar.xyz/",
+          src: "echoAR.png",
+          imageHeight: "18px",
+          className: "px-5 mt-5 partner",
+          alt: "EchoAR"
+        },
+        {
+          link: "https://balsamiq.com/",
+          src: "balsamiq.svg",
+          imageHeight: "28px",
+          className: "px-5 mt-4 partner",
+          alt: "Balsamiq"
+        },
+        {
+          link: "https://www.twilio.com/",
+          src: "twilio.png",
+          imageHeight: "24px",
+          className: "px-5 mt-4 partner",
+          alt: "Twilio"
+        },
+        {
+          link: "https://www.axure.com/",
+          src: "axure.svg",
+          imageHeight: "22px",
+          className: "px-5 mt-4 partner",
+          alt: "Axure"
+        },
+        {
+          link: "https://hackp.ac/mlh-stickermule-hackathons/",
+          src: "stickermule.svg",
+          imageHeight: "19px",
+          className: "px-5 mt-4 partner",
+          alt: "Sticker Mule"
+        }
+      ]
+    ]
+    
   },
 
   plugins: [
