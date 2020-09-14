@@ -96,9 +96,16 @@ module.exports = {
         {
           link: "https://www.centauricorp.com/your-career/",
           src: "centauri.svg",
-          imageHeight: "95px",
+          imageHeight: "96px",
           className: "px-0 sm:px-20 mt-4 partner",
           alt: "Centauri"
+        },
+        {
+          link: "https://www.fisglobal.com/en/careers/",
+          src: "fis.png",
+          imageHeight: "71px",
+          className: "px-0 sm:px-20 mt-4 partner",
+          alt: "FIS"
         }
       ],
       // M
@@ -140,6 +147,13 @@ module.exports = {
           imageHeight: "44px",
           className: "px-5 mt-5 partner",
           alt: "Cincinnati Bell"
+        },
+        {
+          link: "https://www.digitalocean.com/careers/",
+          src: "do.png",
+          imageHeight: "31px",
+          className: "px-5 mt-5 partner",
+          alt: "Digital Ocean"
         }
       ],
       // XS
