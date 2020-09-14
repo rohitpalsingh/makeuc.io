@@ -8,9 +8,6 @@ import HeaderImage from "../components/HeaderImage";
 import Accordion from "../components/Accordion";
 import SEO from "../components/SEO";
 
-// import Schedule from '../components/Schedule';
-// import scheduleData from '../../content/schedule.yaml';
-
 export const query = graphql`
   query {
     site {
@@ -102,14 +99,6 @@ export default () => {
           </div>
         </div>
       </section>
-      {/* <section id="schedule" className="py-20 lg:pb-24 lg:pt-24">
-      <div className="container mx-auto text-center">
-        <h2 className="text-3xl lg:text-5xl font-semibold">Schedule</h2>
-        <div className="mt-12">
-          <Schedule schedule={scheduleData} height="300px" />
-        </div>
-      </div>
-    </section> */}
       <section id="tracks" className="py-10 lg:pb-24 lg:pt-24">
         <div className="container mx-auto text-center">
           <h2
@@ -162,7 +151,6 @@ export default () => {
           </div>
         </div>
       </section>
-      {/* <section id="prizes"></section> */}
       <section id="sponsors" className="py-10 lg:pb-24 lg:pt-24">
         <div className="container mx-auto text-center">
           <h2
