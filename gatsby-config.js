@@ -111,6 +111,13 @@ module.exports = {
       // M
       [
         {
+          link: "https://www.marathonpetroleum.com/Jobs/University-Recruiting/",
+          src: "marathon.png",
+          imageHeight: "80px",
+          className: "mb-5 px-5 mt-8 partner",
+          alt: "Marathon"
+        },
+        {
           link: "https://cech.uc.edu/schools/it.html/",
           src: "soit.png",
           imageHeight: "70px",
@@ -152,7 +159,7 @@ module.exports = {
           link: "https://www.digitalocean.com/careers/",
           src: "do.png",
           imageHeight: "31px",
-          className: "px-5 mt-5 partner",
+          className: "px-5 mt-6 partner",
           alt: "Digital Ocean"
         }
       ],
