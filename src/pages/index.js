@@ -38,9 +38,18 @@ export default () => {
               <strong>OCTOBER 3-4, 2020</strong>
             </p>
             <p className="mt-8 md:mt-12">
-              <Link to="/register">
+              {/* Comment this out when registration is closed and live site is up */}
+              {/* <Link to="/register">
                 <Button size="lg" className="font-sans text-md font-bold">
                   REGISTER
+                </Button>
+              </Link> */}
+              
+              
+              {/* Comment this out when registration opens up */}
+              <Link to="https://live.makeuc.io">
+                <Button size="lg" className="font-sans text-md font-bold">
+                  LIVE SITE
                 </Button>
               </Link>
             </p>
