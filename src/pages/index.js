@@ -38,18 +38,21 @@ export default () => {
               <strong>OCTOBER 3-4, 2020</strong>
             </p>
             <p className="mt-8 md:mt-12">
-              {/* Comment this out when registration is closed and live site is up */}
               {/* <Link to="/register">
                 <Button size="lg" className="font-sans text-md font-bold">
                   REGISTER
                 </Button>
               </Link> */}
               
-              
-              {/* Comment this out when registration opens up */}
-              <Link to="https://live.makeuc.io">
+              {/* <Link to="https://live.makeuc.io">
                 <Button size="lg" className="font-sans text-md font-bold">
                   LIVE SITE
+                </Button>
+              </Link> */}
+              
+              <Link to="https://makeuc-2020.devpost.com">
+                <Button size="lg" className="font-sans text-md font-bold">
+                  DEVPOST
                 </Button>
               </Link>
             </p>
