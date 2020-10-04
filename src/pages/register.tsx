@@ -65,7 +65,7 @@ export default () => {
             <div className="flex-1 px-3">
               <Card className="mb-0">
                 {/* Comment this out when registration is closed and live site is up */}
-                {(result === SUCCESS) ?
+                {/* {(result === SUCCESS) ?
                   <div className="flex items-center bg-secondary-darker text-black text-sm font-bold px-4 py-3" role="alert">
                     <p>We have sent you a confirmation email. In order to complete the sign-up process, 
                       please click on the confirmation link. It might have landed in your spam folder.</p>
@@ -337,12 +337,12 @@ export default () => {
                       </div>
                     </form>
                   </>
-                }
+                } */}
 
                 {/* Comment this out when registration opens up */}
-                {/* <div className="flex items-center bg-secondary-darker text-black text-xl font-bold px-4 py-3" role="alert">
+                <div className="flex items-center bg-secondary-darker text-black text-xl font-bold px-4 py-3" role="alert">
                   <p>Registration is closed for this year, please check us out next year!</p>
-                </div> */}
+                </div>
               </Card>
             </div>
           </div>
