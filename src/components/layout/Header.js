@@ -77,7 +77,7 @@ const Header = ({ page = `index` } = {}) => {
           )}
         </div>
       </div>
-      <a
+      {/*<a
         id="mlh-trust-badge"
         style={{
           display: `block`,
@@ -96,7 +96,7 @@ const Header = ({ page = `index` } = {}) => {
           src="https://s3.amazonaws.com/logged-assets/trust-badge/2021/mlh-trust-badge-2021-white.svg"
           alt="Major League Hacking 2021 Hackathon Season"
         />
-      </a>
+      </a>*/}
     </header>
   );
 };

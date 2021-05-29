@@ -24,6 +24,14 @@ export default () => {
   const data = useStaticQuery(query);
   const { tracks, faq, sponsors } = data.site.siteMetadata;
 
+  const smallFontStyle = {
+    fontSize: 12 
+  }
+
+  const mediumFontStyle = {
+    fontSize: 20 
+  }
+
   return (
     <Layout>
       <SEO />
@@ -33,7 +41,7 @@ export default () => {
             <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-none">
               MAKEUC 2020
             </h1>
-            <p className="text-xl lg:text-3xl mt-6 font-light">
+            <p className="text-xl lg:text-3xl mt-6 font-light" style={mediumFontStyle}>
               DISCOVERING THE BEYOND <br />
               <strong>OCTOBER 3-4, 2020</strong>
             </p>
@@ -51,7 +59,7 @@ export default () => {
               </Link> */}
               
               <Link to="https://makeuc-2020.devpost.com">
-                <Button size="lg" className="font-sans text-md font-bold">
+                <Button size="lg" className="text-md font-bold nes-btn">
                   DEVPOST
                 </Button>
               </Link>
@@ -68,7 +76,7 @@ export default () => {
             className="text-3xl lg:text-5xl font-semibold text-center"
             style={{
               textDecoration: "underline",
-              textDecorationColor: "#8ae9c1",
+              textDecorationColor: "#fccf00",//"#8ae9c1",
             }}
           >
             ABOUT
@@ -80,7 +88,7 @@ export default () => {
                   BACKGROUND
                 </h1>
                 <br></br>
-                <p>
+                <p style={smallFontStyle}>
                   MakeUC is a 24-hour hackathon hosted by {" "} 
                   <a
                     target="_blank"
@@ -89,11 +97,15 @@ export default () => {
                   >
                     IEEE at University of Cincinnati
                   </a>
-                  ! At MakeUC, we believe that the most critical challenges must
+                  ! 
+                  <br/>
+                  At MakeUC, we believe that the most critical challenges must
                   be solved by interdisciplinary and diverse teams. All you need
                   to participate is a passion for bettering the world. We offer
                   workshops, APIs and resources to help you succeed!
                 </p>
+                {/* The reason I'm getting rid of this is because we don't know if we're virtual or hybrid, and we don't want to commit too hard either way*/}
+                {/*
                 <br></br>
                 <hr></hr>
                 <br></br>
@@ -101,11 +113,12 @@ export default () => {
                   CHANGES TO MAKEUC
                 </h1>
                 <br></br>
-                <p>
+                <p style={smallFontStyle}>
                   Due to the unprecedented COVID-19 pandemic 😷, MakeUC 2020 will
                   take place virtually this year. Check out our FAQ section to
                   learn more!
                 </p>
+                */}
               </Card>
             </div>
           </div>
@@ -117,7 +130,7 @@ export default () => {
             className="text-3xl lg:text-5xl font-semibold"
             style={{
               textDecoration: "underline",
-              textDecorationColor: "#8ae9c1",
+              textDecorationColor: "#fccf00",//"#8ae9c1",
             }}
           >
             TRACKS
@@ -130,7 +143,7 @@ export default () => {
                     {track.title}
                   </h1>
                   <br></br>
-                  <p className="text-black">{track.content}</p>
+                  <p className="text-black" style={smallFontStyle}>{track.content}</p>
                 </Card>
               ))}
             </div>
@@ -143,7 +156,7 @@ export default () => {
             className="text-3xl lg:text-5xl font-semibold text-center"
             style={{
               textDecoration: "underline",
-              textDecorationColor: "#8ae9c1",
+              textDecorationColor: "#fccf00",//"#8ae9c1",
             }}
           >
             FAQ
@@ -169,7 +182,7 @@ export default () => {
             className="text-3xl lg:text-5xl font-semibold"
             style={{
               textDecoration: "underline",
-              textDecorationColor: "#8ae9c1",
+              textDecorationColor: "#fccf00",//"#8ae9c1",
             }}
           >
             SPONSORS
