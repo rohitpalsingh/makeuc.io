@@ -42,8 +42,8 @@ export default () => {
               MAKEUC 2020
             </h1>
             <p className="text-xl lg:text-3xl mt-6 font-light" style={mediumFontStyle}>
-              DISCOVERING THE BEYOND <br />
-              <strong>OCTOBER 3-4, 2020</strong>
+              MAKE IT MODERN <br />
+              <strong>OCTOBER 9-10, 2021</strong>
             </p>
             <p className="mt-8 md:mt-12">
               {/* <Link to="/register">
@@ -178,7 +178,7 @@ export default () => {
           </div>
         </div>
       </section>
-      <section id="sponsors" className="py-10 lg:pb-24 lg:pt-24">
+      {/*<section id="sponsors" className="py-10 lg:pb-24 lg:pt-24">
         <div className="container mx-auto text-center">
           <h2
             className="text-3xl lg:text-5xl font-semibold"
@@ -211,7 +211,7 @@ export default () => {
             </div>
           </div>
         </div>
-      </section>
+                      </section>*/}
       <div id="ghost" className="mb-5 mt-2 mt-4 px-0 px-5 mt-4 sm:px-16 sm:px-8 sm:px-20 mt-2 partner" />
     </Layout>
   );
