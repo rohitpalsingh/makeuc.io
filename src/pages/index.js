@@ -83,7 +83,7 @@ export default () => {
           </h2>
           <div className="grid sm:grid-cols-1">
             <div className="mt-12 text-left text-black">
-              <div className="nes-container is-centered is-transparent-dark">
+              <div className="nes-container is-centered is-rounded bg-white">
                 <h2 className="text-3xl mb-4">BACKGROUND</h2>
                 <p>
                   MakeUC is a 24-hour hackathon hosted by {" "} 
@@ -136,10 +136,11 @@ export default () => {
           >
             TRACKS
           </h2>
+          {/* Not quite sure how to go about adding more space between the track blocks, need to look into this further*/}
           <div className="mt-12">
             <div className="grid lg:grid-cols-2 sm:grid-cols-1">
               {tracks.map((track) => (
-                <Card key={track.title} className="m-4 text-secondary bg-white">
+                <Card key={track.title} className="nes-container is-centered is-rounded m-4 text-secondary bg-white">
                   <h1 className="text-2xl font-semibold text-black">
                     {track.title}
                   </h1>
@@ -164,7 +165,7 @@ export default () => {
           </h2>
           <div className="grid sm:grid-cols-1">
             <div className="mt-12 text-left text-black">
-              <Card className="m-4 bg-white">
+              <Card className="nes-container is-centered is-rounded m-4 bg-white">
                 {faq.map((faq) => (
                   <Accordion
                     key={faq.question}
@@ -190,7 +191,7 @@ export default () => {
           </h2>
           <div className="container mx-auto grid sm:grid-cols-1">
             <div className="mt-12 text-center text-black sm:grid-cols-1">
-              <Card className="m-4 bg-white">
+              <Card className="nes-container is-centered is-rounded m-4 bg-white">
                 {sponsors.map((category, index) =>
                   <>
                     {!!index && <hr className="mt-5"></hr>}

@@ -68,7 +68,7 @@ const Header = ({ page = `index` } = {}) => {
             // </Link>
 
             <Link to="https://makeuc-2020.devpost.com">
-              <Button className="text-sm font-bold">DEVPOST</Button>
+              <Button className="text-sm font-bold nes-btn">DEVPOST</Button>
             </Link>
           ) : (
             <Link to="/">
