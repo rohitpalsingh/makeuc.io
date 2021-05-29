@@ -98,3 +98,16 @@ main {
 #ghost {
   display: none;
 }
+
+.nes-container.is-transparent-dark {
+  position: relative;
+  margin: 4px;
+  color: #fff;
+  background-color: rgba(59,31,134,0.6);
+  border-color: #fff;
+}
+
+.nes-container.is-transparent-dark.with-title>.title {
+  color: #fff;
+  background-color: rgba(59,31,134,0.6);
+}

@@ -83,12 +83,9 @@ export default () => {
           </h2>
           <div className="grid sm:grid-cols-1">
             <div className="mt-12 text-left text-black">
-              <Card className="m-4 bg-white text-center">
-                <h1 className="text-2xl font-semibold text-black">
-                  BACKGROUND
-                </h1>
-                <br></br>
-                <p style={smallFontStyle}>
+              <div className="nes-container is-centered is-transparent-dark">
+                <h2 className="text-3xl mb-4">BACKGROUND</h2>
+                <p>
                   MakeUC is a 24-hour hackathon hosted by {" "} 
                   <a
                     target="_blank"
@@ -104,8 +101,13 @@ export default () => {
                   to participate is a passion for bettering the world. We offer
                   workshops, APIs and resources to help you succeed!
                 </p>
-                {/* The reason I'm getting rid of this is because we don't know if we're virtual or hybrid, and we don't want to commit too hard either way*/}
-                {/*
+              </div>
+              {/* <Card className="m-4 bg-white text-center">
+                <h1 className="text-2xl font-semibold text-black">
+                  BACKGROUND
+                </h1>
+                <br></br>
+                
                 <br></br>
                 <hr></hr>
                 <br></br>
@@ -118,8 +120,7 @@ export default () => {
                   take place virtually this year. Check out our FAQ section to
                   learn more!
                 </p>
-                */}
-              </Card>
+              </Card> */}
             </div>
           </div>
         </div>
