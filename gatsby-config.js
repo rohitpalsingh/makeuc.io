@@ -36,7 +36,7 @@ module.exports = {
       },
       {
         question: `WHEN IS MAKEUC?`,
-        answer: `MakeUC 2020 will start on October 3rd and end on the 4th over the span of 24 hours!`
+        answer: `MakeUC 2021 will start on October 9th and end on the 10th over the span of 24 hours!`
       },
       {
         question: `HOW MUCH DOES IT COST?`,
