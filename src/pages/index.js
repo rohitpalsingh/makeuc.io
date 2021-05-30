@@ -39,7 +39,7 @@ export default () => {
         <div className="container mx-auto px-8 lg:flex">
           <div className="text-center lg:text-left lg:w-1/2">
             <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-none">
-              MAKEUC 2020
+              MAKEUC 2021
             </h1>
             <p className="text-xl lg:text-3xl mt-6 font-light" style={mediumFontStyle}>
               MAKE IT MODERN <br />
@@ -176,6 +176,31 @@ export default () => {
               </Card>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section id="sponsor-interest" className="py-120 lg:pb-24 lg:pt-24">
+        <div className="container mx-auto">
+          <h2
+            className="text-3xl lg:text-4xl font-semibold text-center"
+            style={{
+              textDecoration: "underline",
+              textDecorationColor: "#fccf00",//"#8ae9c1",
+            }}
+          >
+           INTERESTED IN SPONSORING MAKEUC? 
+          </h2>
+
+          {/*</div><Card className="nes-container is-centered is-rounded m-4 bg-white">*/}
+
+            {/*<h2 className="text-3xl mb-4 text-black">INTERESTED IN SPONSORING MAKEUC?</h2>*/}
+            {/*<p className="text-md sm:text-xl"><a href="mailto:contact@makeuc.io"><u>CONTACT@MAKEUC.IO</u></a></p>*/}
+            <a href="mailto:contact@makeuc" style={{position: 'absolute', left:'43%'}}>
+              <Button size="lg" className="mt-12 text-md font-bold nes-btn is-centered">
+                CONTACT US
+              </Button>
+            </a>
+          {/*</Card>*/}
         </div>
       </section>
       {/*<section id="sponsors" className="py-10 lg:pb-24 lg:pt-24">

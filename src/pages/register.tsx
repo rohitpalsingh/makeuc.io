@@ -58,7 +58,7 @@ export default () => {
           <h2 className="text-3xl lg:text-5xl font-semibold"
           style={{  
             textDecoration: 'underline',
-            textDecorationColor: '#8ae9c1'
+            textDecorationColor: '#fccf00'
           }}
           >REGISTRATION FORM</h2>
           <div className="flex flex-col sm:flex-row sm:-mx-3 mt-12">
@@ -341,7 +341,7 @@ export default () => {
 
                 {/* Comment this out when registration opens up */}
                 <div className="flex items-center bg-secondary-darker text-black text-xl font-bold px-4 py-3" role="alert">
-                  <p>Registration is closed for this year, please check us out next year!</p>
+                  <p>Registration is closed for now, please check us out soon!</p>
                 </div>
               </Card>
             </div>
