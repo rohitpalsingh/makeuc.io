@@ -7,6 +7,7 @@ import Layout from "../components/layout/Layout";
 import HeaderImage from "../components/HeaderImage";
 import Accordion from "../components/Accordion";
 import SEO from "../components/SEO";
+import HeaderImg from "../images/better_header_retro.png"
 
 export const query = graphql`
   query {
@@ -66,7 +67,7 @@ export default () => {
             </p>
           </div>
           <div className="lg:w-1/2">
-            <HeaderImage />
+            <img className="m-auto" style={{width: '60%'}} src={HeaderImg}/>
           </div>
         </div>
       </section>
@@ -180,7 +181,7 @@ export default () => {
       </section>
 
       <section id="sponsor-interest" className="py-120 lg:pb-24 lg:pt-24">
-        <div className="container mx-auto">
+        <div className="container mx-auto text-center">
           <h2
             className="text-3xl lg:text-4xl font-semibold text-center"
             style={{
@@ -195,7 +196,7 @@ export default () => {
 
             {/*<h2 className="text-3xl mb-4 text-black">INTERESTED IN SPONSORING MAKEUC?</h2>*/}
             {/*<p className="text-md sm:text-xl"><a href="mailto:contact@makeuc.io"><u>CONTACT@MAKEUC.IO</u></a></p>*/}
-            <a href="mailto:contact@makeuc" style={{position: 'absolute', left:'43%'}}>
+            <a href="mailto:contact@makeuc.io">
               <Button size="lg" className="mt-12 text-md font-bold nes-btn is-centered">
                 CONTACT US
               </Button>

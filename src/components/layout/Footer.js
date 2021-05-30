@@ -4,7 +4,7 @@ import { FaEnvelope, FaLinkedin, FaInstagram, FaTwitter, FaGithub } from 'react-
 
 const Footer = () => (
   <>
-    <footer className="container mx-auto py-6 px-3 mb-0 text-gray-800 flex">
+    <footer className="container mx-auto py-6 px-3 mb-0 mountain-background flex">
       <IconContext.Provider value={{ size: '2em', className: 'mx-auto' }}>
         <a
           target="_blank"
