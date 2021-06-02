@@ -23,13 +23,13 @@
 .active,
 .focus,
 .visited {
-  background-color: #8ae9c1;
+  background-color: #fccf00 /*#8ae9c1;*/
 }
 
 /* Style the accordion content title */
 .accordion__title {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 600;
+  font-family: 'Press Start 2P', sans-serif; /* I'm not going to lie, I have no idea what the san-serif does but I'm terrified to take it out*/
+  font-weight: 400;
   font-size: 14px;
   text-align: left;
 }
@@ -54,8 +54,8 @@
 
 /* Style the accordion content text */
 .accordion__text {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
-  font-size: 14px;
+  font-family: 'Press Start 2P', sans-serif;
+  font-weight: 100;
+  font-size: 12px;
   padding: 18px;
 }

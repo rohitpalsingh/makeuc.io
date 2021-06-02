@@ -4,7 +4,7 @@ import { FaEnvelope, FaLinkedin, FaInstagram, FaTwitter, FaGithub } from 'react-
 
 const Footer = () => (
   <>
-    <footer className="container mx-auto py-6 px-3 mb-0 text-gray-800 flex">
+    <footer className="container mx-auto py-6 px-3 mb-0 mountain-background flex">
       <IconContext.Provider value={{ size: '2em', className: 'mx-auto' }}>
         <a
           target="_blank"
@@ -19,7 +19,7 @@ const Footer = () => (
           target="_blank"
           aria-label = "LinkedIn"
           rel="noopener noreferrer"
-          href="https://www.linkedin.com/company/makeuc"
+          href="https://www.linkedin.com/company/makeuc/"
           className="flex-1 social-icon"
         >
           <FaLinkedin />
@@ -28,7 +28,7 @@ const Footer = () => (
           target="_blank"
           aria-label = "Instagram"
           rel="noopener noreferrer"
-          href="https://www.instagram.com/uc_ieee"
+          href="https://www.instagram.com/makeuc.io/"
           className="flex-1 social-icon"
         >
           <FaInstagram />
@@ -37,7 +37,7 @@ const Footer = () => (
           target="_blank"
           aria-label = "Twitter"
           rel="noopener noreferrer"
-          href="https://twitter.com/uc_ieee"
+          href="https://twitter.com/uc_make"
           className="flex-1 social-icon"
         >
           <FaTwitter />

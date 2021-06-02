@@ -10,6 +10,14 @@ function Accordion(props) {
 
   const content = useRef(null);
 
+  const smallFontStyle = {
+    fontSize: 12 
+  }
+
+  const mediumFontStyle = {
+    fontSize: 20 
+  }
+
   function toggleAccordion() {
     setActiveState(setActive === "" ? "active" : "");
     setHeightState(
@@ -33,6 +41,7 @@ function Accordion(props) {
       >
         <div
           className="accordion__text"
+          /*style={smallFontStyle}*/
           dangerouslySetInnerHTML={{ __html: props.content }}
         />
       </div>
