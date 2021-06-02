@@ -8,12 +8,18 @@
 @import '../../node_modules/@syncfusion/ej2-popups/styles/material.css';
 @import '../../node_modules/@syncfusion/ej2-splitbuttons/styles/material.css';
 @import '../../node_modules/@syncfusion/ej2-react-schedule/styles/material.css';
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
 
 main {
   background-color: black;
-  background-image: url('./background.png');
+  background-image: url('./jank-background.png');
   background-attachment: fixed;
   color: theme('colors.white');
+  font-family: 'Press Start 2P';
+}
+
+body {
+  background-color: #110000;
 }
 
 .navbar {
@@ -95,4 +101,21 @@ main {
 
 #ghost {
   display: none;
+}
+
+footer.mountain-background {
+  background-color: #110000;
+}
+
+.nes-container.is-transparent-dark {
+  position: relative;
+  margin: 4px;
+  color: #fff;
+  background-color: rgba(59,31,134,0.6);
+  border-color: #fff;
+}
+
+.nes-container.is-transparent-dark.with-title>.title {
+  color: #fff;
+  background-color: rgba(59,31,134,0.6);
 }

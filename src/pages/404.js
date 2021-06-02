@@ -4,6 +4,7 @@ import Button from '../components/Button';
 import FooterImage from '../components/FooterImage';
 import SEO from '../components/SEO';
 import moon from '../svg/moon.png';
+import pacman from '../svg/pacman404.png'
 
 export default () => (
   <>
@@ -14,7 +15,7 @@ export default () => (
           <div className="text-center lg:text-left">
             <h1 className="text-404 font-bold leading-none">
               4
-              <img className="moon-404" src={moon} alt="Moon" />
+              <img className="m-auto moon-404" src={pacman} alt="Moon" />
               4!
             </h1>
             <p className="text-xl lg:text-3xl mt-6 font-light">
