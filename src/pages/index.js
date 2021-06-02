@@ -235,30 +235,6 @@ export default () => {
         </div>
                       </section>
       */}
-      <section id="sponsor-interest" className="py-120 lg:pb-24 lg:pt-24">
-        <div className="container mx-auto text-center">
-          <h2
-            className="text-3xl lg:text-4xl font-semibold text-center"
-            style={{
-              textDecoration: "underline",
-              textDecorationColor: "#8ae9c1",
-            }}
-          >
-           INTERESTED IN SPONSORING MAKEUC? 
-          </h2>
-
-          {/*</div><Card className="nes-container is-centered is-rounded m-4 bg-white">*/}
-
-            {/*<h2 className="text-3xl mb-4 text-black">INTERESTED IN SPONSORING MAKEUC?</h2>*/}
-            {/*<p className="text-md sm:text-xl"><a href="mailto:contact@makeuc.io"><u>CONTACT@MAKEUC.IO</u></a></p>*/}
-            <a href="mailto:contact@makeuc.io">
-              <Button size="lg" className="mt-12 text-md font-bold nes-btn is-centered">
-                CONTACT US
-              </Button>
-            </a>
-          {/*</Card>*/}
-        </div>
-      </section>
 
       <div id="ghost" className="mb-5 mt-2 mt-4 px-0 px-5 mt-4 sm:px-16 sm:px-8 sm:px-20 mt-2 partner" />
     </Layout>
