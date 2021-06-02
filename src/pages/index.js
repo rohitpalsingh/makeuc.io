@@ -43,7 +43,7 @@ export default () => {
               MAKEUC 2021
             </h1>
             <p className="text-xl lg:text-3xl mt-6 font-light" style={mediumFontStyle}>
-              MAKE IT MODERN <br />
+              NEXT STOP: RETRO <br />
               <strong>OCTOBER 9-10, 2021</strong>
             </p>
             <p className="mt-8 md:mt-12">
