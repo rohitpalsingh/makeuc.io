@@ -53,7 +53,7 @@ const Header = ({ page = `index` } = {}) => {
               FAQ
             </AnchorLink>
             {/* <AnchorLink href="#prizes"></AnchorLink> */}
-            <AnchorLink className="px-4 xs:px-2 nav-link" href="#sponsors">
+            <AnchorLink className="px-4 xs:px-2 nav-link" href="#sponsor-interest">
               SPONSORS
             </AnchorLink>
           </div>
@@ -68,8 +68,8 @@ const Header = ({ page = `index` } = {}) => {
             //   <Button className="text-sm font-bold">LIVE SITE</Button>
             // </Link>
 
-            <Link to="https://makeuc-2020.devpost.com">
-              <Button className="text-sm font-bold nes-btn">DEVPOST</Button>
+            <Link to="http://stats.makeuc.io">
+              <Button className="text-sm font-bold nes-btn">STATS</Button>
             </Link>
           ) : (
             <Link to="/">

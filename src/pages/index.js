@@ -59,9 +59,9 @@ export default () => {
                 </Button>
               </Link> */}
               
-              <Link to="https://makeuc-2020.devpost.com">
+              <Link to="http://stats.makeuc.io">
                 <Button size="lg" className="text-md font-bold nes-btn">
-                  DEVPOST
+                 STATS 
                 </Button>
               </Link>
             </p>
@@ -137,7 +137,6 @@ export default () => {
           >
             TRACKS
           </h2>
-          {/* Not quite sure how to go about adding more space between the track blocks, need to look into this further*/}
           <div className="mt-12">
             <div className="grid lg:grid-cols-2 sm:grid-cols-1">
               {tracks.map((track) => (
@@ -191,17 +190,14 @@ export default () => {
           >
            INTERESTED IN SPONSORING MAKEUC? 
           </h2>
-
-          {/*</div><Card className="nes-container is-centered is-rounded m-4 bg-white">*/}
-
-            {/*<h2 className="text-3xl mb-4 text-black">INTERESTED IN SPONSORING MAKEUC?</h2>*/}
-            {/*<p className="text-md sm:text-xl"><a href="mailto:contact@makeuc.io"><u>CONTACT@MAKEUC.IO</u></a></p>*/}
+          <Card className="nes-container is-centered is-rounded m-4 bg-white">
             <a href="mailto:contact@makeuc.io">
-              <Button size="lg" className="mt-12 text-md font-bold nes-btn is-centered">
+              <Button size="lg" className="text-md font-bold nes-btn is-centered">
                 CONTACT US
               </Button>
             </a>
-          {/*</Card>*/}
+            <p className="mt-4 text-md sm:text-xl text-black">OR EMAIL US AT <a href="mailto:contact@makeuc.io"><u>CONTACT@MAKEUC.IO</u></a></p>
+          </Card>
         </div>
       </section>
       {/*<section id="sponsors" className="py-10 lg:pb-24 lg:pt-24">

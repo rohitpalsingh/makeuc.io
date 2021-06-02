@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `MakeUC 2020`,
+    title: `MakeUC 2021`,
     siteUrl: `https://makeuc.io`,
-    description: `MakeUC 2020 is a 24-hour hackathon hosted by IEEE at University of Cincinnati!`,
+    description: `MakeUC 2021 is a 24-hour hackathon hosted by IEEE at University of Cincinnati!`,
     tracks: [
       {
         title: `EDUCATION`,
@@ -10,19 +10,16 @@ module.exports = {
         These projects include any sort of technology that enhances the learning experiences of students.`
       },
       {
-        title: `SPACE EXPLORATION`,
-        content: `Space exploration technology aligns with the main theme of MakeUC 2020! This track includes any 
-        technologies aimed to enhance or otherwise improve any aspect of space exploration.`
+        title: `RETRO THROWBACK`,
+        content: `Retro throwback aligns with the main theme of MakeUC 2021! This track includes any technologies aimed towards any genre of retro, including games, movies, music, and more!`
       },
       {
-        title: `HEALTH TECHNOLOGY`,
-        content: `Health technology aims to make improvements to a variety of health technologies including but 
-        not limited to medical imaging, healthcare technology systems, and interpreting health-related data.`
+        title: `SOCIAL ISSUES`,
+        content: `Increase social responsibility by using technology to promote racial justice, recognize famines, and reduce human environmental impact. Use technology to increase awareness and find solutions.`
       },
       {
-        title: `SOCIAL RESPONSIBILITY`,
-        content: `Technologies for social responsibility encompasses technologies concerning social and economic inequality as well 
-        as reducing environmental impact. This aims to increase overall social responsibility.`
+        title: `ADVANCING CONNECTIVITY`,
+        content: `Bridging the gap between humans and technology enhancing connections between one another. Increasing socialization, spreading ideas, and enhancing communities.`
       }
     ],
     faq: [
