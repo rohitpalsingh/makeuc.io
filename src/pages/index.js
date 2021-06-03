@@ -59,7 +59,7 @@ export default () => {
                 </Button>
               </Link> */}
               
-              <Link to="http://stats.makeuc.io">
+              <Link to="https://stats.makeuc.io">
                 <Button size="lg" className="text-md font-bold nes-btn">
                  STATS 
                 </Button>
