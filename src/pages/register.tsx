@@ -63,9 +63,9 @@ export default () => {
           >REGISTRATION FORM</h2>
           <div className="flex flex-col sm:flex-row sm:-mx-3 mt-12">
             <div className="flex-1 px-3">
-              <Card className="mb-0">
+              <Card className="mb-0 nes-container is-dark is-rounded">
                 {/* Comment this out when registration is closed and live site is up */}
-                {/* {(result === SUCCESS) ?
+                 {(result === SUCCESS) ?
                   <div className="flex items-center bg-secondary-darker text-black text-sm font-bold px-4 py-3" role="alert">
                     <p>We have sent you a confirmation email. In order to complete the sign-up process, 
                       please click on the confirmation link. It might have landed in your spam folder.</p>
@@ -193,7 +193,7 @@ export default () => {
                           type="number"
                           min="2000"
                           max="2040"
-                          placeholder="2023"
+                          placeholder="2024"
                           maxLength={4}
                         />
                       </div>
@@ -337,12 +337,14 @@ export default () => {
                       </div>
                     </form>
                   </>
-                } */}
+                }
 
                 {/* Comment this out when registration opens up */}
+                {/*
                 <div className="flex items-center bg-secondary-darker text-black text-xl font-bold px-4 py-3" role="alert">
                   <p>Registration is closed for now, please check us out soon!</p>
                 </div>
+                */}
               </Card>
             </div>
           </div>

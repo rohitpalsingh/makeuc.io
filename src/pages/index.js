@@ -8,6 +8,7 @@ import HeaderImage from "../components/HeaderImage";
 import Accordion from "../components/Accordion";
 import SEO from "../components/SEO";
 import HeaderImg from "../images/better_header_retro.png"
+import { useState, useEffect } from "react";
 
 export const query = graphql`
   query {
@@ -32,9 +33,27 @@ export default () => {
   const mediumFontStyle = {
     fontSize: 20 
   }
+  //Recently edited for making nav-bar contents responsive
+  const [width, setWindowWidth] = useState(0);
+
+  // componentDidMount...runs only once
+  useEffect( () => {
+    updateDimensions();
+    window.addEventListener("resize", updateDimensions);
+    return () => window.removeEventListener("resize", updateDimensions);
+  }, [])
+
+  const updateDimensions = () => {
+    const width = window.innerWidth;
+    setWindowWidth(width);
+  };
+
+  const responsive = {
+    showTopNavMenu: width > 1023
+  }
 
   return (
-    <Layout>
+    <Layout showTopNavMenu={responsive.showTopNavMenu}>
       <SEO />
       <section className="pt-20 md:pt-40">
         <div className="container mx-auto px-8 lg:flex">
@@ -59,9 +78,9 @@ export default () => {
                 </Button>
               </Link> */}
               
-              <Link to="https://stats.makeuc.io">
+              <Link to="/register">
                 <Button size="lg" className="text-md font-bold nes-btn">
-                 STATS 
+                  REGISTER 
                 </Button>
               </Link>
             </p>
