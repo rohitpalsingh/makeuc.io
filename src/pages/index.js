@@ -62,7 +62,7 @@ export default () => {
               MAKEUC 2021
             </h1>
             <p className="text-xl lg:text-3xl mt-6 font-light" style={mediumFontStyle}>
-              MAKE IT MODERN <br />
+              NEXT STOP: RETRO <br />
               <strong>OCTOBER 9-10, 2021</strong>
             </p>
             <p className="mt-8 md:mt-12">
@@ -78,9 +78,9 @@ export default () => {
                 </Button>
               </Link> */}
               
-              <Link to="https://stats.makeuc.io">
+              <Link to="/register">
                 <Button size="lg" className="text-md font-bold nes-btn">
-                 STATS 
+                  REGISTER 
                 </Button>
               </Link>
             </p>

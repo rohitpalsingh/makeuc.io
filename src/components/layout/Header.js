@@ -68,8 +68,8 @@ const Header = ({ page = `index` } = {}) => {
             //   <Button className="text-sm font-bold">LIVE SITE</Button>
             // </Link>
 
-            <Link to="https://stats.makeuc.io">
-              <Button className="text-sm font-bold nes-btn">STATS</Button>
+            <Link to="/register">
+              <Button className="text-sm font-bold nes-btn">REGISTER</Button>
             </Link>
           ) : (
             <Link to="/">
