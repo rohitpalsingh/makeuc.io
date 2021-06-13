@@ -34,13 +34,21 @@ export default () => {
     if(acceptedFiles.length) {
       formData.set(`resume`, acceptedFiles[0], acceptedFiles[0].name);
     }
+
+    /*const validName = formData.get('fullName').toString().indexOf(' ') >= 0;
+    let validityOut = null;
+    if (!validName){
+      validityOut = <span className="text-red-500 text-xs italic">&nbsp;&nbsp; Please Include First and Last Name</span>
+    }*/
     try {
+      //if (validName){
       const res = await fetch(`${apiUrl}/registrant`, {
         method: `POST`,
         body: formData
       });
 
       setResult(res.status);
+      //}
     } catch (err) {
       setResult(SERVER_ERROR);
     } finally {
@@ -92,7 +100,7 @@ export default () => {
                           className="block text-sm font-bold mb-2"
                           htmlFor="fullName"
                         >
-                          Full Name{errors.fullName && <span className="text-red-500 text-xs italic">&nbsp;&nbsp;required field</span>}
+                          Full Name (First Name + Last Name){errors.fullName && <span className="text-red-500 text-xs italic">&nbsp;&nbsp;required field</span>}
                         </label>
                         <input
                           ref={register({ required: true })}
