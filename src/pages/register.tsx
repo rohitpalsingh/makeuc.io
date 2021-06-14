@@ -19,6 +19,7 @@ const apiUrl = process.env.GATSBY_API_URL || `https://makeuc-registration-dev.he
 const SUCCESS = 201;
 const ALREADY_EXISTS = 400;
 const SERVER_ERROR = 500;
+const NAME_ERROR = 900;
 
 export default () => {
   const { register, errors, handleSubmit } = useForm<RegistrantDTO>();
@@ -35,20 +36,26 @@ export default () => {
       formData.set(`resume`, acceptedFiles[0], acceptedFiles[0].name);
     }
 
-    /*const validName = formData.get('fullName').toString().indexOf(' ') >= 0;
+    const validName = formData.get('fullName').toString()
+                        .trim()
+                        .indexOf(' ') >= 0;
+    /*k
     let validityOut = null;
     if (!validName){
       validityOut = <span className="text-red-500 text-xs italic">&nbsp;&nbsp; Please Include First and Last Name</span>
     }*/
     try {
-      //if (validName){
-      const res = await fetch(`${apiUrl}/registrant`, {
-        method: `POST`,
-        body: formData
-      });
+      if (validName){
+        const res = await fetch(`${apiUrl}/registrant`, {
+          method: `POST`,
+          body: formData
+        });
 
-      setResult(res.status);
-      //}
+        setResult(res.status);
+      }
+      else {
+        setResult(NAME_ERROR);
+      }
     } catch (err) {
       setResult(SERVER_ERROR);
     } finally {
@@ -91,7 +98,7 @@ export default () => {
                           <p>
                             There was a problem with the registration, please try again or contact us at <a href="mailto:info@makeuc.io" className="text-secondary">info@makeuc.io</a>
                           </p>
-                        </div> : ``
+                        </div> : ''
                     }
                     <br />
                     <form className="w-full max-w-5xl mx-auto register-form" onSubmit={handleSubmit(onSubmit)}>
@@ -100,7 +107,7 @@ export default () => {
                           className="block text-sm font-bold mb-2"
                           htmlFor="fullName"
                         >
-                          Full Name (First Name + Last Name){errors.fullName && <span className="text-red-500 text-xs italic">&nbsp;&nbsp;required field</span>}
+                          Full Name (First Name + Last Name){errors.fullName && <span className="text-red-500 text-xs italic">&nbsp;&nbsp;required field</span>}{result === NAME_ERROR && <span className="text-red-500 text-xs italic">&nbsp;&nbsp;Please include your first and last name</span>}
                         </label>
                         <input
                           ref={register({ required: true })}
