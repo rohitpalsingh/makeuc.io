@@ -35,7 +35,7 @@ const Header = ({ page = `index` } = {}) => {
         <Link to="/">
           <div className="flex items-center text-2xl">
             {/*<div className="w-12 md:ml-24 lg:ml-32">*/}
-            <div className="w-12">
+            <div className="w-12" id="logo">
               <LogoIcon />
             </div>
           </div>

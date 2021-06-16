@@ -119,3 +119,8 @@ footer.mountain-background {
   color: #fff;
   background-color: rgba(59,31,134,0.6);
 }
+
+#logo {
+  max-width: auto;
+  height: auto;
+}
