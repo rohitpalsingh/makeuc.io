@@ -26,7 +26,7 @@ export default () => (
             </p>
             <p className="mt-8 md:mt-12">
               <Link to="/">
-                <Button size="lg">Home</Button>
+                <Button size="lg" className="text-md font-bold nes-btn">Home</Button>
               </Link>
             </p>
           </div>

@@ -31,17 +31,14 @@ const Header = ({ page = `index` } = {}) => {
         zIndex: 10,
       }}
     >
-      <div className="container flex flex-col sm:flex-row items-center justify-between max-w-full px-8 py-2">
+      <div className="container flex flex-col sm:flex-row items-center max-w-full px-8 py-2">
         <Link to="/">
-          <div className="flex items-center text-2xl">
-            {/*<div className="w-12 md:ml-24 lg:ml-32">*/}
-            <div className="w-12">
-              <LogoIcon />
-            </div>
+          <div className="flex items-center">
+            <LogoIcon />
           </div>
         </Link>
         {page === `index` && (
-          <div className="flex mt-3 sm:mt-0">
+          <div className="flex justify-evenly md:justify-center flex-grow mt-3 sm:mt-0 text-xs sm:text-sm md:text-base">
             <AnchorLink className="px-4 xs:px-2 nav-link" href="#about">
               ABOUT
             </AnchorLink>
@@ -68,8 +65,8 @@ const Header = ({ page = `index` } = {}) => {
             //   <Button className="text-sm font-bold">LIVE SITE</Button>
             // </Link>
 
-            <Link to="http://stats.makeuc.io">
-              <Button className="text-sm font-bold nes-btn">STATS</Button>
+            <Link to="/register">
+              <Button className="text-sm font-bold nes-btn">REGISTER</Button>
             </Link>
           ) : (
             <Link to="/">

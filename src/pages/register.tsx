@@ -19,6 +19,7 @@ const apiUrl = process.env.GATSBY_API_URL || `https://makeuc-registration-dev.he
 const SUCCESS = 201;
 const ALREADY_EXISTS = 400;
 const SERVER_ERROR = 500;
+const NAME_ERROR = 900;
 
 export default () => {
   const { register, errors, handleSubmit } = useForm<RegistrantDTO>();
@@ -34,13 +35,27 @@ export default () => {
     if(acceptedFiles.length) {
       formData.set(`resume`, acceptedFiles[0], acceptedFiles[0].name);
     }
-    try {
-      const res = await fetch(`${apiUrl}/registrant`, {
-        method: `POST`,
-        body: formData
-      });
 
-      setResult(res.status);
+    const validName = formData.get('fullName').toString()
+                        .trim()
+                        .indexOf(' ') >= 0;
+    /*k
+    let validityOut = null;
+    if (!validName){
+      validityOut = <span className="text-red-500 text-xs italic">&nbsp;&nbsp; Please Include First and Last Name</span>
+    }*/
+    try {
+      if (validName){
+        const res = await fetch(`${apiUrl}/registrant`, {
+          method: `POST`,
+          body: formData
+        });
+
+        setResult(res.status);
+      }
+      else {
+        setResult(NAME_ERROR);
+      }
     } catch (err) {
       setResult(SERVER_ERROR);
     } finally {
@@ -63,9 +78,9 @@ export default () => {
           >REGISTRATION FORM</h2>
           <div className="flex flex-col sm:flex-row sm:-mx-3 mt-12">
             <div className="flex-1 px-3">
-              <Card className="mb-0">
+              <Card className="mb-0 nes-container is-dark is-rounded">
                 {/* Comment this out when registration is closed and live site is up */}
-                {/* {(result === SUCCESS) ?
+                 {(result === SUCCESS) ?
                   <div className="flex items-center bg-secondary-darker text-black text-sm font-bold px-4 py-3" role="alert">
                     <p>We have sent you a confirmation email. In order to complete the sign-up process, 
                       please click on the confirmation link. It might have landed in your spam folder.</p>
@@ -83,7 +98,7 @@ export default () => {
                           <p>
                             There was a problem with the registration, please try again or contact us at <a href="mailto:info@makeuc.io" className="text-secondary">info@makeuc.io</a>
                           </p>
-                        </div> : ``
+                        </div> : ''
                     }
                     <br />
                     <form className="w-full max-w-5xl mx-auto register-form" onSubmit={handleSubmit(onSubmit)}>
@@ -92,7 +107,7 @@ export default () => {
                           className="block text-sm font-bold mb-2"
                           htmlFor="fullName"
                         >
-                          Full Name{errors.fullName && <span className="text-red-500 text-xs italic">&nbsp;&nbsp;required field</span>}
+                          Full Name (First Name + Last Name){errors.fullName && <span className="text-red-500 text-xs italic">&nbsp;&nbsp;required field</span>}{result === NAME_ERROR && <span className="text-red-500 text-xs italic">&nbsp;&nbsp;Please include your first and last name</span>}
                         </label>
                         <input
                           ref={register({ required: true })}
@@ -193,7 +208,7 @@ export default () => {
                           type="number"
                           min="2000"
                           max="2040"
-                          placeholder="2023"
+                          placeholder="2024"
                           maxLength={4}
                         />
                       </div>
@@ -337,12 +352,14 @@ export default () => {
                       </div>
                     </form>
                   </>
-                } */}
+                }
 
                 {/* Comment this out when registration opens up */}
+                {/*
                 <div className="flex items-center bg-secondary-darker text-black text-xl font-bold px-4 py-3" role="alert">
                   <p>Registration is closed for now, please check us out soon!</p>
                 </div>
+                */}
               </Card>
             </div>
           </div>
