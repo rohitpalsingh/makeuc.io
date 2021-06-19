@@ -219,7 +219,7 @@ export default () => {
           </Card>
         </div>
       </section>
-      {/*<section id="sponsors" className="py-10 lg:pb-24 lg:pt-24">
+      <section id="sponsors" className="py-10 lg:pb-24 lg:pt-24">
         <div className="container mx-auto text-center">
           <h2
             className="text-3xl lg:text-5xl font-semibold"
@@ -252,9 +252,7 @@ export default () => {
             </div>
           </div>
         </div>
-                      </section>
-      */}
-
+      </section>
       <div id="ghost" className="mb-5 mt-2 mt-4 px-0 px-5 mt-4 sm:px-16 sm:px-8 sm:px-20 mt-2 partner" />
     </Layout>
   );

@@ -70,40 +70,47 @@ module.exports = {
       // L
       [
         {
+          link: "https://www.guerbet.com/",
+          src: "guerbet.svg",
+          imageHeight: "55px",
+          className: "px-0 sm:px-8 partner",
+          alt: "Guerbet"
+        }
+        /*{
           link: "https://cloud.google.com/",
           src: "google-cloud.svg",
           imageHeight: "55px",
           className: "px-0 sm:px-8 mt-8 partner",
           alt: "Google Cloud"
-        },
-        {
+        },*/
+        /*{
           link: "https://www.brooksource.com/",
           src: "brooksource.svg",
           imageHeight: "100px",
           className: "px-0 sm:px-8 mt-2 partner",
           alt: "Brooksource"
-        },
-        {
+        },*/
+        /*{
           link: "https://www.northropgrumman.com/careers/",
           src: "northrop.svg",
           imageHeight: "100px",
           className: "px-0 sm:px-16 mt-2 partner",
           alt: "Northrop Grumman"
-        },
-        {
+        },*/
+        /*{
           link: "https://www.centauricorp.com/your-career/",
           src: "centauri.svg",
           imageHeight: "96px",
           className: "px-0 sm:px-20 mt-4 partner",
           alt: "Centauri"
-        },
-        {
+        },*/
+        /*{
           link: "https://www.fisglobal.com/en/careers/",
           src: "fis.png",
           imageHeight: "71px",
           className: "px-0 sm:px-20 mt-4 partner",
           alt: "FIS"
-        }
+        }*/
       ],
       // M
       [
@@ -111,64 +118,64 @@ module.exports = {
           link: "https://www.marathonpetroleum.com/Jobs/University-Recruiting/",
           src: "marathon.png",
           imageHeight: "80px",
-          className: "mb-5 px-5 mt-8 partner",
+          className: "px-5 mt-4 partner",
           alt: "Marathon"
         },
-        {
+        /*{
           link: "https://cech.uc.edu/schools/it.html/",
           src: "soit.png",
           imageHeight: "70px",
           className: "mb-5 px-5 mt-10 partner",
           alt: "School of IT"
-        },
-        {
+        },*/
+        /*{
           link: "https://ceas.uc.edu",
           src: "uc-ceas_logo.png",
           imageHeight: "90px",
           className: "px-5 mt-5 partner",
           alt: "CEAS"
-        }
+        }*/
       ],
       // S
       [
-        {
+        /*{
           link: "https://www.linode.com/",
           src: "linode.svg",
           imageHeight: "42px",
           className: "px-5 mt-5 partner",
           alt: "Linode"
-        },
-        {
+        },*/
+        /*{
           link: "https://www.wolfram.com/hackathons/",
           src: "wolfram.svg",
           imageHeight: "44px",
           className: "px-5 mt-5 partner",
           alt: "Wolfram"
-        },
-        {
+        },*/
+        /*{
           link: "https://www.cbts.com/careers/",
           src: "cbts.png",
           imageHeight: "44px",
           className: "px-5 mt-5 partner",
           alt: "Cincinnati Bell"
-        },
-        {
+        },*/
+        /*{
           link: "https://www.digitalocean.com/careers/",
           src: "do.png",
           imageHeight: "31px",
           className: "px-5 mt-6 partner",
           alt: "Digital Ocean"
+        },*/
+        {
+          link: "https://www.overleaf.com/",
+          src: "overleaf.png",
+          imageHeight: "40px",
+          className: "px-5 mt-6 partner",
+          alt: "Overleaf"
         }
       ],
       // XS
       [
-        {
-          link: "https://www.echoar.xyz/",
-          src: "echoAR.png",
-          imageHeight: "18px",
-          className: "px-5 mt-5 partner",
-          alt: "EchoAR"
-        },
         {
           link: "https://balsamiq.com/",
           src: "balsamiq.svg",
@@ -176,13 +183,13 @@ module.exports = {
           className: "px-5 mt-4 partner",
           alt: "Balsamiq"
         },
-        {
+        /*{
           link: "https://www.twilio.com/",
           src: "twilio.png",
           imageHeight: "24px",
           className: "px-5 mt-4 partner",
           alt: "Twilio"
-        },
+        },*/
         {
           link: "https://www.axure.com/",
           src: "axure.svg",
@@ -190,13 +197,21 @@ module.exports = {
           className: "px-5 mt-4 partner",
           alt: "Axure"
         },
+
         {
+          link: "https://www.stickergiant.com/",
+          src: "stickergiant.png",
+          imageHeight: "40px",
+          className: "px-5 mt-2 sm:px-6 partner",
+          alt: "Sticker Giant"
+        }
+        /*{
           link: "https://hackp.ac/mlh-stickermule-hackathons/",
           src: "stickermule.svg",
           imageHeight: "19px",
           className: "px-5 mt-4 partner",
           alt: "Sticker Mule"
-        }
+        }*/
       ]
     ]
     
