@@ -198,27 +198,6 @@ export default () => {
         </div>
       </section>
 
-      <section id="sponsor-interest" className="py-120 lg:pb-24 lg:pt-24">
-        <div className="container mx-auto text-center">
-          <h2
-            className="text-3xl lg:text-4xl font-semibold text-center"
-            style={{
-              textDecoration: "underline",
-              textDecorationColor: "#fccf00",//"#8ae9c1",
-            }}
-          >
-           INTERESTED IN SPONSORING MAKEUC? 
-          </h2>
-          <Card className="nes-container is-centered is-rounded m-4 bg-white">
-            <a href="mailto:contact@makeuc.io">
-              <Button size="lg" className="text-md font-bold nes-btn is-centered">
-                CONTACT US
-              </Button>
-            </a>
-            <p className="mt-4 text-md sm:text-xl text-black">OR EMAIL US AT <a href="mailto:contact@makeuc.io"><u>CONTACT@MAKEUC.IO</u></a></p>
-          </Card>
-        </div>
-      </section>
       <section id="sponsors" className="py-10 lg:pb-24 lg:pt-24">
         <div className="container mx-auto text-center">
           <h2
@@ -251,6 +230,28 @@ export default () => {
               </Card>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section id="sponsor-interest" className="py-120 lg:pb-24 lg:pt-24">
+        <div className="container mx-auto text-center">
+          <h2
+            className="text-3xl lg:text-4xl font-semibold text-center"
+            style={{
+              textDecoration: "underline",
+              textDecorationColor: "#fccf00",//"#8ae9c1",
+            }}
+          >
+           INTERESTED IN SPONSORING MAKEUC? 
+          </h2>
+          <Card className="nes-container is-centered is-rounded m-4 bg-white">
+            <a href="mailto:contact@makeuc.io">
+              <Button size="lg" className="text-md font-bold nes-btn is-centered">
+                CONTACT US
+              </Button>
+            </a>
+            <p className="mt-4 text-md sm:text-xl text-black">OR EMAIL US AT <a href="mailto:contact@makeuc.io"><u>CONTACT@MAKEUC.IO</u></a></p>
+          </Card>
         </div>
       </section>
       <div id="ghost" className="mb-5 mt-2 mt-4 px-0 px-5 mt-4 sm:px-16 sm:px-8 sm:px-20 mt-2 partner" />
