@@ -75,6 +75,13 @@ module.exports = {
           imageHeight: "55px",
           className: "px-0 sm:px-8 partner",
           alt: "Guerbet"
+        },
+        {
+          link: "https://www.siemens.com/global/en.html",
+          src: "siemens.svg",
+          imageHeight: "55px",
+          className: "px-0 sm:px-8 partner",
+          alt: "Siemens"
         }
         /*{
           link: "https://cloud.google.com/",
@@ -145,13 +152,7 @@ module.exports = {
           className: "px-5 mt-5 partner",
           alt: "Linode"
         },*/
-        /*{
-          link: "https://www.wolfram.com/hackathons/",
-          src: "wolfram.svg",
-          imageHeight: "44px",
-          className: "px-5 mt-5 partner",
-          alt: "Wolfram"
-        },*/
+        /*,*/
         /*{
           link: "https://www.cbts.com/careers/",
           src: "cbts.png",
@@ -183,17 +184,24 @@ module.exports = {
           className: "px-5 mt-4 partner",
           alt: "Balsamiq"
         },
-        /*{
+        {
+          link: "https://www.wolfram.com/hackathons/",
+          src: "wolfram.svg",
+          imageHeight: "28px",
+          className: "px-5 mt-5 partner",
+          alt: "Wolfram"
+        },
+        {
           link: "https://www.twilio.com/",
           src: "twilio.png",
-          imageHeight: "24px",
+          imageHeight: "28px",
           className: "px-5 mt-4 partner",
           alt: "Twilio"
-        },*/
+        },
         {
           link: "https://www.axure.com/",
           src: "axure.svg",
-          imageHeight: "22px",
+          imageHeight: "28px",
           className: "px-5 mt-4 partner",
           alt: "Axure"
         },
