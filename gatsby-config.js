@@ -178,6 +178,13 @@ module.exports = {
       // XS
       [
         {
+          link: "https://www.axure.com/",
+          src: "axure.svg",
+          imageHeight: "28px",
+          className: "px-5 mt-4 partner",
+          alt: "Axure"
+        },
+        {
           link: "https://balsamiq.com/",
           src: "balsamiq.svg",
           imageHeight: "28px",
@@ -185,11 +192,18 @@ module.exports = {
           alt: "Balsamiq"
         },
         {
-          link: "https://www.wolfram.com/hackathons/",
-          src: "wolfram.svg",
+          link: "https://www.qoom.io/",
+          src: "qoom.svg",
           imageHeight: "28px",
-          className: "px-5 mt-5 partner",
-          alt: "Wolfram"
+          className: "px-5 mt-4 partner",
+          alt: "Qoom"
+        },
+        {
+          link: "https://www.stickergiant.com/",
+          src: "stickergiant.png",
+          imageHeight: "40px",
+          className: "px-5 mt-2 sm:px-6 partner",
+          alt: "Sticker Giant"
         },
         {
           link: "https://www.twilio.com/",
@@ -199,19 +213,11 @@ module.exports = {
           alt: "Twilio"
         },
         {
-          link: "https://www.axure.com/",
-          src: "axure.svg",
+          link: "https://www.wolfram.com/hackathons/",
+          src: "wolfram.svg",
           imageHeight: "28px",
-          className: "px-5 mt-4 partner",
-          alt: "Axure"
-        },
-
-        {
-          link: "https://www.stickergiant.com/",
-          src: "stickergiant.png",
-          imageHeight: "40px",
-          className: "px-5 mt-2 sm:px-6 partner",
-          alt: "Sticker Giant"
+          className: "px-5 mt-5 partner",
+          alt: "Wolfram"
         }
         /*{
           link: "https://hackp.ac/mlh-stickermule-hackathons/",
