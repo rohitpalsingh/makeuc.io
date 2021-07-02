@@ -170,7 +170,7 @@ module.exports = {
         {
           link: "https://www.overleaf.com/",
           src: "overleaf.png",
-          imageHeight: "40px",
+          imageHeight: "52px",
           className: "px-5 mt-6 partner",
           alt: "Overleaf"
         }
@@ -180,43 +180,43 @@ module.exports = {
         {
           link: "https://www.axure.com/",
           src: "axure.svg",
-          imageHeight: "28px",
+          imageHeight: "18px",
           className: "px-5 mt-4 partner",
           alt: "Axure"
         },
         {
           link: "https://balsamiq.com/",
           src: "balsamiq.svg",
-          imageHeight: "28px",
+          imageHeight: "18px",
           className: "px-5 mt-4 partner",
           alt: "Balsamiq"
         },
         {
           link: "https://www.qoom.io/",
           src: "qoom.svg",
-          imageHeight: "28px",
+          imageHeight: "15px",
           className: "px-5 mt-4 partner",
           alt: "Qoom"
         },
         {
           link: "https://www.stickergiant.com/",
           src: "stickergiant.png",
-          imageHeight: "40px",
+          imageHeight: "28px",
           className: "px-5 mt-2 sm:px-6 partner",
           alt: "Sticker Giant"
         },
         {
           link: "https://www.twilio.com/",
           src: "twilio.png",
-          imageHeight: "28px",
+          imageHeight: "18px",
           className: "px-5 mt-4 partner",
           alt: "Twilio"
         },
         {
           link: "https://www.wolfram.com/hackathons/",
           src: "wolfram.svg",
-          imageHeight: "28px",
-          className: "px-5 mt-5 partner",
+          imageHeight: "24px",
+          className: "px-5 mt-4 partner",
           alt: "Wolfram"
         }
         /*{
