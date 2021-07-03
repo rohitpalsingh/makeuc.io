@@ -50,7 +50,7 @@ const Header = ({ page = `index` } = {}) => {
               FAQ
             </AnchorLink>
             {/* <AnchorLink href="#prizes"></AnchorLink> */}
-            <AnchorLink className="px-4 xs:px-2 nav-link" href="#sponsor-interest">
+            <AnchorLink className="px-4 xs:px-2 nav-link" href="#sponsors">
               SPONSORS
             </AnchorLink>
           </div>

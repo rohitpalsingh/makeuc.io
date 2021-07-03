@@ -39,11 +39,7 @@ export default () => {
     const validName = formData.get('fullName').toString()
                         .trim()
                         .indexOf(' ') >= 0;
-    /*k
-    let validityOut = null;
-    if (!validName){
-      validityOut = <span className="text-red-500 text-xs italic">&nbsp;&nbsp; Please Include First and Last Name</span>
-    }*/
+    
     try {
       if (validName){
         const res = await fetch(`${apiUrl}/registrant`, {
@@ -287,7 +283,7 @@ export default () => {
                           placeholder="Notes"
                         />
                       </div>
-                      <div className="text-left text-sm">
+                      <div className="text-left text-sm" style={{fontSize: "11px"}}>
                         <label>
                           <input
                             name="agreed"
@@ -306,7 +302,7 @@ export default () => {
                         </label>
                         {errors.agreed && <span className="text-red-500 font-bold text-xs italic">&nbsp;&nbsp;Please check this box</span>}
                       </div>
-                      <div className="text-left text-sm">
+                      <div className="text-left text-sm" style={{fontSize: "11px"}}>
                         <label>
                           <input
                             name="authorized"
@@ -315,7 +311,7 @@ export default () => {
                             className="mr-2 leading-tight"
                           />
                           I authorize you to share my application/registration information for event administration, ranking, MLH administration, 
-                          pre- and post-event informational e-mails, and occasional messages about hackathons in-line with the <a 
+                          pre and post-event informational e-mails, and occasional messages about hackathons in-line with the <a 
                             target="_blank"
                             aria-label = "MLH Privacy Policy"
                             rel="noopener noreferrer"

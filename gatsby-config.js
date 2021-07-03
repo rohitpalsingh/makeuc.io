@@ -75,6 +75,13 @@ module.exports = {
           imageHeight: "55px",
           className: "px-0 sm:px-8 partner",
           alt: "Guerbet"
+        },
+        {
+          link: "https://www.siemens.com/global/en.html",
+          src: "siemens.svg",
+          imageHeight: "55px",
+          className: "px-0 sm:px-8 partner",
+          alt: "Siemens"
         }
         /*{
           link: "https://cloud.google.com/",
@@ -145,13 +152,7 @@ module.exports = {
           className: "px-5 mt-5 partner",
           alt: "Linode"
         },*/
-        /*{
-          link: "https://www.wolfram.com/hackathons/",
-          src: "wolfram.svg",
-          imageHeight: "44px",
-          className: "px-5 mt-5 partner",
-          alt: "Wolfram"
-        },*/
+        /*,*/
         /*{
           link: "https://www.cbts.com/careers/",
           src: "cbts.png",
@@ -169,7 +170,7 @@ module.exports = {
         {
           link: "https://www.overleaf.com/",
           src: "overleaf.png",
-          imageHeight: "40px",
+          imageHeight: "52px",
           className: "px-5 mt-6 partner",
           alt: "Overleaf"
         }
@@ -177,33 +178,46 @@ module.exports = {
       // XS
       [
         {
-          link: "https://balsamiq.com/",
-          src: "balsamiq.svg",
-          imageHeight: "28px",
-          className: "px-5 mt-4 partner",
-          alt: "Balsamiq"
-        },
-        /*{
-          link: "https://www.twilio.com/",
-          src: "twilio.png",
-          imageHeight: "24px",
-          className: "px-5 mt-4 partner",
-          alt: "Twilio"
-        },*/
-        {
           link: "https://www.axure.com/",
           src: "axure.svg",
-          imageHeight: "22px",
+          imageHeight: "18px",
           className: "px-5 mt-4 partner",
           alt: "Axure"
         },
-
+        {
+          link: "https://balsamiq.com/",
+          src: "balsamiq.svg",
+          imageHeight: "18px",
+          className: "px-5 mt-4 partner",
+          alt: "Balsamiq"
+        },
+        {
+          link: "https://www.qoom.io/",
+          src: "qoom.svg",
+          imageHeight: "15px",
+          className: "px-5 mt-4 partner",
+          alt: "Qoom"
+        },
         {
           link: "https://www.stickergiant.com/",
           src: "stickergiant.png",
-          imageHeight: "40px",
+          imageHeight: "28px",
           className: "px-5 mt-2 sm:px-6 partner",
           alt: "Sticker Giant"
+        },
+        {
+          link: "https://www.twilio.com/",
+          src: "twilio.png",
+          imageHeight: "18px",
+          className: "px-5 mt-4 partner",
+          alt: "Twilio"
+        },
+        {
+          link: "https://www.wolfram.com/hackathons/",
+          src: "wolfram.svg",
+          imageHeight: "24px",
+          className: "px-5 mt-4 partner",
+          alt: "Wolfram"
         }
         /*{
           link: "https://hackp.ac/mlh-stickermule-hackathons/",
