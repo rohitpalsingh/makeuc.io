@@ -199,6 +199,13 @@ module.exports = {
           alt: "Qoom"
         },
         {
+          link: "https://www.sketch.com/",
+          src: "sketch.png",
+          imageHeight: "28px",
+          className: "px-5 mt-3 sm:px-6 partner",
+          alt: "Sketch"
+        },
+        {
           link: "https://www.stickergiant.com/",
           src: "stickergiant.png",
           imageHeight: "28px",
