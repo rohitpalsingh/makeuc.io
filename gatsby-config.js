@@ -139,7 +139,7 @@ module.exports = {
         {
           link: "https://www.marathonpetroleum.com/Jobs/University-Recruiting/",
           src: "marathon.png",
-          imageHeight: "80px",
+          imageHeight: "92px",
           className: "px-5 mt-4 partner",
           alt: "Marathon"
         },
