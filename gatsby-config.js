@@ -85,18 +85,18 @@ module.exports = {
           alt: "Givaudan"
         },
         {
-          link: "https://www.guerbet.com/",
-          src: "guerbet.svg",
-          imageHeight: "55px",
-          className: "px-0 sm:px-8 partner",
-          alt: "Guerbet"
-        },
-        {
           link: "https://www.siemens.com/global/en.html",
           src: "siemens.svg",
           imageHeight: "55px",
           className: "px-0 sm:px-8 partner",
           alt: "Siemens"
+        },
+        {
+          link: "https://www.guerbet.com/",
+          src: "guerbet.svg",
+          imageHeight: "55px",
+          className: "px-0 sm:px-8 partner",
+          alt: "Guerbet"
         }
         /*{
           link: "https://cloud.google.com/",
@@ -188,6 +188,13 @@ module.exports = {
           imageHeight: "52px",
           className: "px-5 mt-4 partner",
           alt: "Overleaf"
+        },
+        {
+          link: "https://www.wolfram.com/hackathons/",
+          src: "wolfram.svg",
+          imageHeight: "52px",
+          className: "px-5 mt-4 partner",
+          alt: "Wolfram"
         }
       ],
       // XS
@@ -241,13 +248,7 @@ module.exports = {
           className: "px-5 mt-3 partner",
           alt: "Twilio"
         },
-        {
-          link: "https://www.wolfram.com/hackathons/",
-          src: "wolfram.svg",
-          imageHeight: "24px",
-          className: "px-5 mt-3 partner",
-          alt: "Wolfram"
-        }
+        
         /*{
           link: "https://hackp.ac/mlh-stickermule-hackathons/",
           src: "stickermule.svg",
