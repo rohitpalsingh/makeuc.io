@@ -78,7 +78,7 @@ module.exports = {
       // L
       [
         {
-          link: "https://www.google.com",
+          link: "https://www.givaudan.com/",
           src: "givaudan.png",
           imageHeight: "67px",
           className: "px-0 sm:px-8 partner",
@@ -88,14 +88,14 @@ module.exports = {
           link: "https://www.siemens.com/global/en.html",
           src: "siemens.svg",
           imageHeight: "55px",
-          className: "px-0 sm:px-8 partner",
+          className: "px-0 mt-2 sm:px-8 partner",
           alt: "Siemens"
         },
         {
           link: "https://www.guerbet.com/",
           src: "guerbet.svg",
           imageHeight: "55px",
-          className: "px-0 sm:px-8 partner",
+          className: "px-0 mt-2 sm:px-8 partner",
           alt: "Guerbet"
         }
         /*{
