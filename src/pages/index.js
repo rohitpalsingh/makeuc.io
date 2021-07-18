@@ -141,6 +141,17 @@ export default () => {
                   learn more!
                 </p>
               </Card> */}
+              <Card className="m-4 bg-white text-center nes-container is-centered is-rounded">
+                <h1 className="text-2xl font-semibold text-black">
+                  CHANGES TO MAKEUC
+                </h1>
+                <br></br>
+                <p style={{fontSize: '16px'}}>
+                  As we begin to move forward into 2021, MakeUC is proud to 
+                  announce that we will be open to partial in-person attendance!
+                  Information on in-person attendance will be released in the near future.
+                </p>
+              </Card>
             </div>
           </div>
         </div>

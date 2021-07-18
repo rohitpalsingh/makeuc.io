@@ -36,6 +36,14 @@ module.exports = {
         answer: `MakeUC 2021 will start on October 9th and end on the 10th over the span of 24 hours!`
       },
       {
+        question: 'WILL MAKEUC BE IN PERSON?',
+        answer: 'MakeUC 2021 will be partially held in person with the option for hackers to join online!'
+      },
+      {
+        question: 'WHO CAN ATTEND IN PERSON?',
+        answer: 'The MakeUC Team will be releasing information shortly on in-person attendance eligibility!'
+      },
+      {
         question: `HOW MUCH DOES IT COST?`,
         answer: `Nothing! The entire event is free for any student, with development tools and prizes all included. 
         We will be sharing free resources from our sponsors (i.e. APIs) post-registration!`
@@ -70,18 +78,25 @@ module.exports = {
       // L
       [
         {
-          link: "https://www.guerbet.com/",
-          src: "guerbet.svg",
-          imageHeight: "55px",
+          link: "https://www.givaudan.com/",
+          src: "givaudan.png",
+          imageHeight: "67px",
           className: "px-0 sm:px-8 partner",
-          alt: "Guerbet"
+          alt: "Givaudan"
         },
         {
           link: "https://www.siemens.com/global/en.html",
           src: "siemens.svg",
           imageHeight: "55px",
-          className: "px-0 sm:px-8 partner",
+          className: "px-0 mt-2 sm:px-8 partner",
           alt: "Siemens"
+        },
+        {
+          link: "https://www.guerbet.com/",
+          src: "guerbet.svg",
+          imageHeight: "55px",
+          className: "px-0 mt-2 sm:px-8 partner",
+          alt: "Guerbet"
         }
         /*{
           link: "https://cloud.google.com/",
@@ -124,7 +139,7 @@ module.exports = {
         {
           link: "https://www.marathonpetroleum.com/Jobs/University-Recruiting/",
           src: "marathon.png",
-          imageHeight: "80px",
+          imageHeight: "92px",
           className: "px-5 mt-4 partner",
           alt: "Marathon"
         },
@@ -171,8 +186,15 @@ module.exports = {
           link: "https://www.overleaf.com/",
           src: "overleaf.png",
           imageHeight: "52px",
-          className: "px-5 mt-6 partner",
+          className: "px-5 mt-4 partner",
           alt: "Overleaf"
+        },
+        {
+          link: "https://www.wolfram.com/hackathons/",
+          src: "wolfram.svg",
+          imageHeight: "52px",
+          className: "px-5 mt-4 partner",
+          alt: "Wolfram"
         }
       ],
       // XS
@@ -192,11 +214,25 @@ module.exports = {
           alt: "Balsamiq"
         },
         {
+          link: "https://www.chipotle.com/",
+          src: "chipotle.svg",
+          imageHeight: "28px",
+          className: "px-5 mt-2 partner",
+          alt: "Chipotle"
+        },
+        {
           link: "https://www.qoom.io/",
           src: "qoom.svg",
           imageHeight: "15px",
           className: "px-5 mt-4 partner",
           alt: "Qoom"
+        },
+        {
+          link: "https://www.sketch.com/",
+          src: "sketch.png",
+          imageHeight: "28px",
+          className: "px-5 mt-2 sm:px-6 partner",
+          alt: "Sketch"
         },
         {
           link: "https://www.stickergiant.com/",
@@ -209,16 +245,10 @@ module.exports = {
           link: "https://www.twilio.com/",
           src: "twilio.png",
           imageHeight: "18px",
-          className: "px-5 mt-4 partner",
+          className: "px-5 mt-3 partner",
           alt: "Twilio"
         },
-        {
-          link: "https://www.wolfram.com/hackathons/",
-          src: "wolfram.svg",
-          imageHeight: "24px",
-          className: "px-5 mt-4 partner",
-          alt: "Wolfram"
-        }
+        
         /*{
           link: "https://hackp.ac/mlh-stickermule-hackathons/",
           src: "stickermule.svg",

@@ -11,6 +11,7 @@
 @import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
 
 main {
+  background-size: cover;
   background-color: black;
   background-image: url('./jank-background.png');
   background-attachment: fixed;
