@@ -85,24 +85,25 @@ module.exports = {
           alt: "Givaudan"
         },
         {
+          link: "https://aws.amazon.com/",
+          src: "aws.png",
+          imageHeight: "92px",
+          className: "px-0 mt-2 sm:px-20 partner",
+          alt: "AWS"
+        },
+        {
           link: "https://www.siemens.com/global/en.html",
           src: "siemens.svg",
-          imageHeight: "55px",
+          imageHeight: "52px",
           className: "px-0 mt-6 sm:px-8 partner",
           alt: "Siemens"
         },
-        {
-          link: "https://aws.amazon.com/",
-          src: "aws.png",
-          imageHeight: "80px",
-          className: "px-0 mt-1 sm:px-20 partner",
-          alt: "AWS"
-        },
+        
         {
           link: "https://www.northropgrumman.com/careers/",
           src: "northrop.svg",
           imageHeight: "100px",
-          className: "px-0 mt-1 sm:px-24 partner",
+          className: "px-0 mt-1 sm:px-16 partner",
           alt: "Northrop Grumman"
         },
         {
