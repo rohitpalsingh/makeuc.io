@@ -81,21 +81,36 @@ module.exports = {
           link: "https://www.givaudan.com/",
           src: "givaudan.png",
           imageHeight: "67px",
-          className: "px-0 sm:px-8 partner",
+          className: "px-0 mt-4 sm:px-8 partner",
           alt: "Givaudan"
+        },
+        {
+          link: "https://aws.amazon.com/",
+          src: "aws.png",
+          imageHeight: "92px",
+          className: "px-0 mt-2 sm:px-20 partner",
+          alt: "AWS"
         },
         {
           link: "https://www.siemens.com/global/en.html",
           src: "siemens.svg",
-          imageHeight: "55px",
-          className: "px-0 mt-2 sm:px-8 partner",
+          imageHeight: "52px",
+          className: "px-0 mt-6 sm:px-8 partner",
           alt: "Siemens"
+        },
+        
+        {
+          link: "https://www.northropgrumman.com/careers/",
+          src: "northrop.svg",
+          imageHeight: "100px",
+          className: "px-0 mt-1 sm:px-16 partner",
+          alt: "Northrop Grumman"
         },
         {
           link: "https://www.guerbet.com/",
           src: "guerbet.svg",
           imageHeight: "55px",
-          className: "px-0 mt-2 sm:px-8 partner",
+          className: "px-0 mt-6 sm:px-16 partner",
           alt: "Guerbet"
         }
         /*{
@@ -112,13 +127,7 @@ module.exports = {
           className: "px-0 sm:px-8 mt-2 partner",
           alt: "Brooksource"
         },*/
-        /*{
-          link: "https://www.northropgrumman.com/careers/",
-          src: "northrop.svg",
-          imageHeight: "100px",
-          className: "px-0 sm:px-16 mt-2 partner",
-          alt: "Northrop Grumman"
-        },*/
+       
         /*{
           link: "https://www.centauricorp.com/your-career/",
           src: "centauri.svg",
@@ -228,10 +237,17 @@ module.exports = {
           alt: "Qoom"
         },
         {
+          link: "https://www.sashido.io/en/",
+          src: "sashido.webp",
+          imageHeight: "25px",
+          className: "px-5 mt-3 partner",
+          alt: "Sashido"
+        },
+        {
           link: "https://www.sketch.com/",
           src: "sketch.png",
           imageHeight: "28px",
-          className: "px-5 mt-2 sm:px-6 partner",
+          className: "px-5 mt-3 sm:px-6 partner",
           alt: "Sketch"
         },
         {
