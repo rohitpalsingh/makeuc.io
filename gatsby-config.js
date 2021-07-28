@@ -114,13 +114,6 @@ module.exports = {
           alt: "Guerbet"
         }
         /*{
-          link: "https://cloud.google.com/",
-          src: "google-cloud.svg",
-          imageHeight: "55px",
-          className: "px-0 sm:px-8 mt-8 partner",
-          alt: "Google Cloud"
-        },*/
-        /*{
           link: "https://www.brooksource.com/",
           src: "brooksource.svg",
           imageHeight: "100px",
@@ -151,6 +144,13 @@ module.exports = {
           imageHeight: "92px",
           className: "px-5 mt-4 partner",
           alt: "Marathon"
+        },
+        {
+          link: "https://cloud.google.com/",
+          src: "google-cloud.svg",
+          imageHeight: "65px",
+          className: "px-0 sm:px-8 mt-8 partner",
+          alt: "Google Cloud"
         },
         /*{
           link: "https://cech.uc.edu/schools/it.html/",
