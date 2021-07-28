@@ -87,7 +87,7 @@ module.exports = {
         {
           link: "https://aws.amazon.com/",
           src: "aws.png",
-          imageHeight: "92px",
+          imageHeight: "85px",
           className: "px-0 mt-2 sm:px-20 partner",
           alt: "AWS"
         },
@@ -140,15 +140,15 @@ module.exports = {
       [
         {
           link: "https://www.marathonpetroleum.com/Jobs/University-Recruiting/",
-          src: "marathon.png",
-          imageHeight: "92px",
-          className: "px-5 mt-4 partner",
+          src: "https://cdn.winsightmedia.com/platform/files/public/cspdn/main/articles/Marathon_Petroleum_Corporation_Logo.jpg",
+          imageHeight: "112px",
+          className: "px-5 mt-1 partner",
           alt: "Marathon"
         },
         {
           link: "https://cloud.google.com/",
           src: "google-cloud.svg",
-          imageHeight: "65px",
+          imageHeight: "53px",
           className: "px-0 sm:px-8 mt-8 partner",
           alt: "Google Cloud"
         },
