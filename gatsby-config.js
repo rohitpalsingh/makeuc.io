@@ -244,10 +244,17 @@ module.exports = {
           alt: "Sashido"
         },
         {
+          link: "https://scrimba.com/",
+          src: "scrimba.jpg",
+          imageHeight: "25px",
+          className: "px-5 mt-2 partner",
+          alt: "Scrimba"
+        },
+        {
           link: "https://www.sketch.com/",
           src: "sketch.png",
           imageHeight: "28px",
-          className: "px-5 mt-3 sm:px-6 partner",
+          className: "px-5 mt-2 sm:px-6 partner",
           alt: "Sketch"
         },
         {
