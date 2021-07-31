@@ -184,19 +184,19 @@ module.exports = {
           className: "px-5 mt-5 partner",
           alt: "Cincinnati Bell"
         },*/
-        /*{
-          link: "https://www.digitalocean.com/careers/",
-          src: "do.png",
-          imageHeight: "31px",
-          className: "px-5 mt-6 partner",
-          alt: "Digital Ocean"
-        },*/
         {
           link: "https://www.overleaf.com/",
           src: "overleaf.png",
           imageHeight: "52px",
           className: "px-5 mt-4 partner",
           alt: "Overleaf"
+        },
+        {
+          link: "https://www.digitalocean.com/careers/",
+          src: "do.png",
+          imageHeight: "52px",
+          className: "px-5 mt-3 partner",
+          alt: "Digital Ocean"
         },
         {
           link: "https://www.wolfram.com/hackathons/",

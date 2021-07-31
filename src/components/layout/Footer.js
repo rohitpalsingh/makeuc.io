@@ -69,7 +69,18 @@ const Footer = () => (
         CODE OF CONDUCT
         </b>
       </a>
+      <br/>
+      <br/>
+      <a
+        target="_blank"
+        aria-label="Organizers"
+        rel="noopener noreferrer"
+        href="https://ieee.uc.edu/"
+      >
+        ORGANIZED BY <img src="ieee.png" style={{height:"50px", whitespace:"nowrap", display:"inline"}}></img>
+      </a>
     </div>
+    
   </>
 );
 
