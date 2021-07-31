@@ -194,8 +194,8 @@ module.exports = {
         {
           link: "https://www.digitalocean.com/careers/",
           src: "do.png",
-          imageHeight: "52px",
-          className: "px-5 mt-3 partner",
+          imageHeight: "45px",
+          className: "px-5 mt-4 partner",
           alt: "Digital Ocean"
         },
         {
@@ -246,14 +246,14 @@ module.exports = {
         {
           link: "https://scrimba.com/",
           src: "scrimba.jpg",
-          imageHeight: "25px",
-          className: "px-5 mt-2 partner",
+          imageHeight: "22px",
+          className: "px-5 mt-3 partner",
           alt: "Scrimba"
         },
         {
           link: "https://www.sketch.com/",
           src: "sketch.png",
-          imageHeight: "28px",
+          imageHeight: "29px",
           className: "px-5 mt-2 sm:px-6 partner",
           alt: "Sketch"
         },
