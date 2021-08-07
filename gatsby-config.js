@@ -149,13 +149,13 @@ module.exports = {
           link: "https://cloud.google.com/",
           src: "google-cloud.svg",
           imageHeight: "53px",
-          className: "px-0 sm:px-8 mt-8 partner",
+          className: "px-0 sm:px-8 mt-10 partner",
           alt: "Google Cloud"
         },
         {
           link: "https://www.mongodb.com/",
           src: "mongodb.svg",
-          imageHeight: "53px",
+          imageHeight: "63px",
           className: "px-0 sm:px-8 mt-8 partner",
           alt: "MongoDB"
         }
