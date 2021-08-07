@@ -142,16 +142,23 @@ module.exports = {
           link: "https://www.marathonpetroleum.com/Jobs/University-Recruiting/",
           src: "https://cdn.winsightmedia.com/platform/files/public/cspdn/main/articles/Marathon_Petroleum_Corporation_Logo.jpg",
           imageHeight: "112px",
-          className: "px-5 mt-1 partner",
+          className: "px-5 mt-2 partner",
           alt: "Marathon"
         },
         {
           link: "https://cloud.google.com/",
           src: "google-cloud.svg",
           imageHeight: "53px",
-          className: "px-0 sm:px-8 mt-8 partner",
+          className: "px-0 sm:px-8 mt-10 partner",
           alt: "Google Cloud"
         },
+        {
+          link: "https://www.mongodb.com/",
+          src: "mongodb.svg",
+          imageHeight: "63px",
+          className: "px-0 sm:px-8 mt-8 partner",
+          alt: "MongoDB"
+        }
         /*{
           link: "https://cech.uc.edu/schools/it.html/",
           src: "soit.png",
