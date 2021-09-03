@@ -34,7 +34,7 @@ const Header = ({ page = `index` } = {}) => {
       <div className="container flex flex-col sm:flex-row items-center max-w-full px-8 py-2">
         <Link to="/">
           <div className="flex items-center">
-            <div className="w-12 md:ml-24 lg:ml-32">
+            <div className="w-14 md:ml-24 lg:ml-30">
               <LogoIcon />
             </div>
           </div>
@@ -80,10 +80,11 @@ const Header = ({ page = `index` } = {}) => {
 
       <a 
         id="mlh-trust-badge" 
+        className="flex"
         style={{
           display: "block",
           maxWidth: "100px",
-          minWidth: "60px", 
+          minWidth: "40px", 
           position: "fixed",
           left: "15px",
           top: 0,
