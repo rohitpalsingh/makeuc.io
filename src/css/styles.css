@@ -127,6 +127,11 @@ footer.mountain-background {
   padding-right: 0rem;
 }
 
+.gather {
+  padding-left: 3rem;
+  padding-right: 10rem;
+}
+
 #logo {
   max-width: auto;
   height: auto;

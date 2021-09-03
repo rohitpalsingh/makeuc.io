@@ -164,7 +164,7 @@ module.exports = {
           link: "https://www.gather.town/",
           src: "gather.png",
           imageHeight: "70px",
-          className: "pl-12 pr-40 partner",
+          className: "gather partner",
           alt: "Gather Town"
         },
         
