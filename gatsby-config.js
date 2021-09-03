@@ -145,6 +145,14 @@ module.exports = {
           className: "px-5 mt-2 partner",
           alt: "Marathon"
         },
+        {/* Best. Sponsor. Ever. */}
+        {
+          link: "https://www.gather.town/",
+          src: "gather.png",
+          imageHeight: "80px",
+          className: "px-5 mt-6 partner",
+          alt: "Gather Town"
+        },
         {
           link: "https://cloud.google.com/",
           src: "google-cloud.svg",
@@ -156,7 +164,7 @@ module.exports = {
           link: "https://www.mongodb.com/",
           src: "mongodb.svg",
           imageHeight: "63px",
-          className: "px-0 sm:px-8 mt-8 partner",
+          className: "px-0 sm:px-8 partner",
           alt: "MongoDB"
         }
         /*{
@@ -249,6 +257,13 @@ module.exports = {
           imageHeight: "25px",
           className: "px-5 mt-3 partner",
           alt: "Sashido"
+        },
+        {
+          link: "https://tezos.com/",
+          src: "tezos.png",
+          imageHeight: "25px",
+          className: "px-5 mt-3 partner",
+          alt: "Tezos"
         },
         {
           link: "https://scrimba.com/",
