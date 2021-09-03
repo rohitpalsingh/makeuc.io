@@ -107,6 +107,13 @@ module.exports = {
           alt: "Northrop Grumman"
         },
         {
+          link: "https://tezos.com/",
+          src: "tezos.png",
+          imageHeight: "80px",
+          className: "px-4 mt-4 partner",
+          alt: "Tezos"
+        },
+        {
           link: "https://www.guerbet.com/",
           src: "guerbet.svg",
           imageHeight: "55px",
@@ -259,13 +266,7 @@ module.exports = {
           className: "px-4 mt-3 partner",
           alt: "Sashido"
         },
-        {
-          link: "https://tezos.com/",
-          src: "tezos.png",
-          imageHeight: "25px",
-          className: "px-4 mt-3 partner",
-          alt: "Tezos"
-        },
+        
         {
           link: "https://scrimba.com/",
           src: "scrimba.jpg",
