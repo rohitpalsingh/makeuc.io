@@ -77,7 +77,7 @@ const Footer = () => (
         rel="noopener noreferrer"
         href="https://ieee.uc.edu/"
       >
-        ORGANIZED BY <img src="ieee.png" style={{height:"50px", whitespace:"nowrap", display:"inline"}}></img>
+        ORGANIZED BY IEEE@UC {/*<img src="ieee.png" style={{height:"50px", whitespace:"nowrap", display:"inline"}}></img>*/}
       </a>
     </div>
     
