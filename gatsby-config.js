@@ -145,7 +145,7 @@ module.exports = {
           className: "px-5 mt-2 partner",
           alt: "Marathon"
         },
-        {/* Best. Sponsor. Ever. */}
+        /* Best. Sponsor. Ever. */
         {
           link: "https://www.gather.town/",
           src: "gather.png",
