@@ -152,14 +152,6 @@ module.exports = {
           className: "px-5 sm:px-8 mt-10 partner",
           alt: "Google Cloud"
         },
-        /* Best. Sponsor. Ever. */
-        {
-          link: "https://www.gather.town/",
-          src: "gather.png",
-          imageHeight: "70px",
-          className: "px-20 partner",
-          alt: "Gather Town"
-        },
         {
           link: "https://www.mongodb.com/",
           src: "mongodb.svg",
