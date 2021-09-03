@@ -157,16 +157,25 @@ module.exports = {
           link: "https://cloud.google.com/",
           src: "google-cloud.svg",
           imageHeight: "53px",
-          className: "px-0 sm:px-8 mt-10 partner",
+          className: "px-5 sm:px-8 mt-10 partner",
           alt: "Google Cloud"
         },
         {
           link: "https://www.mongodb.com/",
           src: "mongodb.svg",
           imageHeight: "63px",
-          className: "px-0 sm:px-8 partner",
+          className: "newline px-0 sm:px-8 partner",
           alt: "MongoDB"
-        }
+        },
+        /* Best. Sponsor. Ever. */
+        {
+          link: "https://www.gather.town/",
+          src: "gather.png",
+          imageHeight: "70px",
+          className: "pl-12 pr-40 partner",
+          alt: "Gather Town"
+        },
+        
         /*{
           link: "https://cech.uc.edu/schools/it.html/",
           src: "soit.png",
