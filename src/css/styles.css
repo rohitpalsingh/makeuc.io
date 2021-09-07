@@ -121,6 +121,17 @@ footer.mountain-background {
   background-color: rgba(59,31,134,0.6);
 }
 
+ /* this is a terrible hack */
+.newline {
+  padding-left: 13.75rem;
+  padding-right: 0rem;
+}
+
+.gather {
+  padding-left: 3rem;
+  padding-right: 10rem;
+}
+
 #logo {
   max-width: auto;
   height: auto;

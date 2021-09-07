@@ -107,6 +107,13 @@ module.exports = {
           alt: "Northrop Grumman"
         },
         {
+          link: "https://tezos.com/",
+          src: "tezos.png",
+          imageHeight: "80px",
+          className: "px-4 mt-4 partner",
+          alt: "Tezos"
+        },
+        {
           link: "https://www.guerbet.com/",
           src: "guerbet.svg",
           imageHeight: "55px",
@@ -149,16 +156,25 @@ module.exports = {
           link: "https://cloud.google.com/",
           src: "google-cloud.svg",
           imageHeight: "53px",
-          className: "px-0 sm:px-8 mt-10 partner",
+          className: "px-5 sm:px-8 mt-10 partner",
           alt: "Google Cloud"
         },
         {
           link: "https://www.mongodb.com/",
           src: "mongodb.svg",
           imageHeight: "63px",
-          className: "px-0 sm:px-8 mt-8 partner",
+          className: "newline px-0 sm:px-8 partner",
           alt: "MongoDB"
-        }
+        },
+        /* Best. Sponsor. Ever. */
+        {
+          link: "https://www.gather.town/",
+          src: "gather.png",
+          imageHeight: "70px",
+          className: "gather partner",
+          alt: "Gather Town"
+        },
+        
         /*{
           link: "https://cech.uc.edu/schools/it.html/",
           src: "soit.png",
@@ -219,63 +235,64 @@ module.exports = {
           link: "https://www.axure.com/",
           src: "axure.svg",
           imageHeight: "18px",
-          className: "px-5 mt-4 partner",
+          className: "px-4 mt-4 partner",
           alt: "Axure"
         },
         {
           link: "https://balsamiq.com/",
           src: "balsamiq.svg",
           imageHeight: "18px",
-          className: "px-5 mt-4 partner",
+          className: "px-4 mt-4 partner",
           alt: "Balsamiq"
         },
         {
           link: "https://www.chipotle.com/",
           src: "chipotle.svg",
           imageHeight: "28px",
-          className: "px-5 mt-2 partner",
+          className: "px-4 mt-2 partner",
           alt: "Chipotle"
         },
         {
           link: "https://www.qoom.io/",
           src: "qoom.svg",
           imageHeight: "15px",
-          className: "px-5 mt-4 partner",
+          className: "px-4 mt-4 partner",
           alt: "Qoom"
         },
         {
           link: "https://www.sashido.io/en/",
           src: "sashido.webp",
           imageHeight: "25px",
-          className: "px-5 mt-3 partner",
+          className: "px-4 mt-3 partner",
           alt: "Sashido"
         },
+        
         {
           link: "https://scrimba.com/",
           src: "scrimba.jpg",
           imageHeight: "22px",
-          className: "px-5 mt-3 partner",
+          className: "px-4 mt-3 partner",
           alt: "Scrimba"
         },
         {
           link: "https://www.sketch.com/",
           src: "sketch.png",
           imageHeight: "29px",
-          className: "px-5 mt-2 sm:px-6 partner",
+          className: "px-4 mt-2 sm:px-6 partner",
           alt: "Sketch"
         },
         {
           link: "https://www.stickergiant.com/",
           src: "stickergiant.png",
           imageHeight: "28px",
-          className: "px-5 mt-2 sm:px-6 partner",
+          className: "px-4 mt-2 sm:px-6 partner",
           alt: "Sticker Giant"
         },
         {
           link: "https://www.twilio.com/",
           src: "twilio.png",
           imageHeight: "18px",
-          className: "px-5 mt-3 partner",
+          className: "px-4 mt-3 partner",
           alt: "Twilio"
         },
         

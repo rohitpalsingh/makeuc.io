@@ -227,11 +227,11 @@ export default () => {
                   <>
                     {!!index && <hr className="mt-5"></hr>}
 
-                    <div className="sm:mx-auto px-auto flex justify-center content-around flex-wrap">
+                    <div className="sm:mx-auto px-auto flex justify-center items-center content-around flex-wrap">
                       {category.map((sponsor) => (
-                        <div key={sponsor.link} className="mt-1 text-secondary bg-white">
+                        <div key={sponsor.link} className="mt-1 text-secondary bg-white m-2 md:m-4">
                           <a href={sponsor.link} target={"_blank"} rel={"noopener noreferrer"}>
-                          <img src={sponsor.src} style={{ height: sponsor.imageHeight }} className={sponsor.className} alt={sponsor.alt} />
+                          <img src={sponsor.src} style={{ height: sponsor.imageHeight }} alt={sponsor.alt} />
                           </a>
                         </div>
                       ))}
