@@ -248,7 +248,7 @@ module.exports = {
         {
           link: "https://www.chipotle.com/",
           src: "chipotle.svg",
-          imageHeight: "28px",
+          imageHeight: "29px",
           className: "px-4 mt-2 partner",
           alt: "Chipotle"
         },
@@ -289,20 +289,19 @@ module.exports = {
           alt: "Sticker Giant"
         },
         {
+          link: "https://hackp.ac/mlh-stickermule-hackathons/",
+          src: "stickermule.svg",
+          imageHeight: "18px",
+          className: "px-4 mt-4 partner",
+          alt: "Sticker Mule"
+        },
+        {
           link: "https://www.twilio.com/",
           src: "twilio.png",
           imageHeight: "18px",
           className: "px-4 mt-3 partner",
           alt: "Twilio"
-        },
-        
-        /*{
-          link: "https://hackp.ac/mlh-stickermule-hackathons/",
-          src: "stickermule.svg",
-          imageHeight: "19px",
-          className: "px-5 mt-4 partner",
-          alt: "Sticker Mule"
-        }*/
+        }
       ]
     ]
     
