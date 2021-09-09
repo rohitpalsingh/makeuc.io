@@ -177,7 +177,7 @@ module.exports = {
         {
           link: "https://www.jpmorgan.com/global",
           src: "jpmorgan.svg",
-          imageHeight: "70px",
+          imageHeight: "60px",
           className: "px-0 sm:px-8 partner",
           alt: "J.P. Morgan"
         }
