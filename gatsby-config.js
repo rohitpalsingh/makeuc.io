@@ -174,6 +174,13 @@ module.exports = {
           className: "gather partner",
           alt: "Gather Town"
         },
+        {
+          link: "https://www.jpmorgan.com/global",
+          src: "jpmorgan.svg",
+          imageHeight: "60px",
+          className: "px-0 sm:px-8 partner",
+          alt: "J.P. Morgan"
+        }
         
         /*{
           link: "https://cech.uc.edu/schools/it.html/",
@@ -234,35 +241,35 @@ module.exports = {
         {
           link: "https://www.axure.com/",
           src: "axure.svg",
-          imageHeight: "18px",
+          imageHeight: "21px",
           className: "px-4 mt-4 partner",
           alt: "Axure"
         },
         {
           link: "https://balsamiq.com/",
           src: "balsamiq.svg",
-          imageHeight: "18px",
+          imageHeight: "21px",
           className: "px-4 mt-4 partner",
           alt: "Balsamiq"
         },
         {
           link: "https://www.chipotle.com/",
           src: "chipotle.svg",
-          imageHeight: "28px",
+          imageHeight: "32px",
           className: "px-4 mt-2 partner",
           alt: "Chipotle"
         },
         {
           link: "https://www.qoom.io/",
           src: "qoom.svg",
-          imageHeight: "15px",
+          imageHeight: "18px",
           className: "px-4 mt-4 partner",
           alt: "Qoom"
         },
         {
           link: "https://www.sashido.io/en/",
           src: "sashido.webp",
-          imageHeight: "25px",
+          imageHeight: "28px",
           className: "px-4 mt-3 partner",
           alt: "Sashido"
         },
@@ -270,39 +277,38 @@ module.exports = {
         {
           link: "https://scrimba.com/",
           src: "scrimba.jpg",
-          imageHeight: "22px",
+          imageHeight: "25px",
           className: "px-4 mt-3 partner",
           alt: "Scrimba"
         },
         {
           link: "https://www.sketch.com/",
           src: "sketch.png",
-          imageHeight: "29px",
+          imageHeight: "32px",
           className: "px-4 mt-2 sm:px-6 partner",
           alt: "Sketch"
         },
         {
           link: "https://www.stickergiant.com/",
           src: "stickergiant.png",
-          imageHeight: "28px",
+          imageHeight: "31px",
           className: "px-4 mt-2 sm:px-6 partner",
           alt: "Sticker Giant"
         },
         {
-          link: "https://www.twilio.com/",
-          src: "twilio.png",
-          imageHeight: "18px",
-          className: "px-4 mt-3 partner",
-          alt: "Twilio"
-        },
-        
-        /*{
           link: "https://hackp.ac/mlh-stickermule-hackathons/",
           src: "stickermule.svg",
-          imageHeight: "19px",
-          className: "px-5 mt-4 partner",
+          imageHeight: "21px",
+          className: "px-4 mt-4 partner",
           alt: "Sticker Mule"
-        }*/
+        },
+        {
+          link: "https://www.twilio.com/",
+          src: "twilio.png",
+          imageHeight: "21px",
+          className: "px-4 mt-3 partner",
+          alt: "Twilio"
+        }
       ]
     ]
     
