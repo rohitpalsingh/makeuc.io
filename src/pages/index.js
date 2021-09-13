@@ -225,7 +225,7 @@ export default () => {
               <Card className="nes-container is-centered is-rounded m-4 bg-white">
                 {sponsors.map((category, index) =>
                   <>
-                    {!!index && index != 4 && <hr className="mt-5"></hr>} {/* this is absolutely disgusting */}
+                    {!!index && index != 5 && index != 1 && <hr className="mt-5"></hr>} {/* this is absolutely disgusting */}
 
                     <div className="sm:mx-auto px-auto flex justify-center items-center content-around flex-wrap">
                       {category.map((sponsor) => (
