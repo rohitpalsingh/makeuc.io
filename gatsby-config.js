@@ -253,6 +253,13 @@ module.exports = {
           alt: "Balsamiq"
         },
         {
+          link: "https://beeceptor.com/",
+          src: "beeceptor.png",
+          imageHeight: "21px",
+          className: "px-4 mt-4 partner",
+          alt: "Beeceptor"
+        },
+        {
           link: "https://www.chipotle.com/",
           src: "chipotle.svg",
           imageHeight: "32px",
@@ -281,6 +288,9 @@ module.exports = {
           className: "px-4 mt-3 partner",
           alt: "Scrimba"
         },
+        
+      ],
+      [
         {
           link: "https://www.sketch.com/",
           src: "sketch.png",
