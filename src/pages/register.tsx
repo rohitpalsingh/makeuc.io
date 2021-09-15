@@ -126,6 +126,18 @@ export default () => {
                         />
                       </div>
                       <div className="mb-4 text-left">
+                        <label className="block text-sm font-bold mb-2" htmlFor="phone">
+                          Phone Number{errors.phone && <span className="text-red-500 text-xs italic">&nbsp;&nbsp;required field</span>}
+                        </label>
+                        <input
+                          ref={register({ required: true })}
+                          className="shadow appearance-none border rounded w-full py-2 px-3  leading-tight focus:outline-none focus:shadow-outline"
+                          name="phone"
+                          type="tel"
+                          placeholder="+1 (123) 456-7890"
+                        />
+                      </div>
+                      <div className="mb-4 text-left">
                         <label className="block text-sm font-bold mb-2" htmlFor="school">
                           School{errors.school && <span className="text-red-500 text-xs italic">&nbsp;&nbsp;required field</span>}
                         </label>

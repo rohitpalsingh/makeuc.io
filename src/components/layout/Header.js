@@ -58,7 +58,7 @@ const Header = ({ page = `index` } = {}) => {
           </div>
         )}
         <div className="hidden md:block">
-          {page === `index` ? (
+          {page === `index` && (
             // <Link to="/register">
             //   <Button className="text-sm font-bold">REGISTER NOW!</Button>
             // </Link>
@@ -70,11 +70,11 @@ const Header = ({ page = `index` } = {}) => {
             <Link to="/register">
               <Button className="text-sm font-bold nes-btn">REGISTER</Button>
             </Link>
-          ) : (
+          )} {/*: (
             <Link to="/">
               <Button className="text-sm font-bold">HOME</Button>
-            </Link>
-          )}
+          </Link>
+          )}*/}
         </div>
       </div>
 
