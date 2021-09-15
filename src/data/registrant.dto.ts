@@ -1,6 +1,7 @@
 export class RegistrantDTO {
   readonly fullName: string
   readonly email: string
+  readonly phone: string
   readonly school: string
   readonly country: string
   readonly degree: string
@@ -13,4 +14,5 @@ export class RegistrantDTO {
   readonly questions?: string
   readonly agreed: boolean
   readonly authorized: boolean
+  readonly communication: boolean
 }

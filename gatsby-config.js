@@ -85,13 +85,6 @@ module.exports = {
           alt: "Givaudan"
         },
         {
-          link: "https://aws.amazon.com/",
-          src: "aws.png",
-          imageHeight: "85px",
-          className: "px-0 mt-2 sm:px-20 partner",
-          alt: "AWS"
-        },
-        {
           link: "https://www.siemens.com/global/en.html",
           src: "siemens.svg",
           imageHeight: "52px",
@@ -106,20 +99,7 @@ module.exports = {
           className: "px-0 mt-1 sm:px-16 partner",
           alt: "Northrop Grumman"
         },
-        {
-          link: "https://tezos.com/",
-          src: "tezos.png",
-          imageHeight: "80px",
-          className: "px-4 mt-4 partner",
-          alt: "Tezos"
-        },
-        {
-          link: "https://www.guerbet.com/",
-          src: "guerbet.svg",
-          imageHeight: "55px",
-          className: "px-0 mt-6 sm:px-16 partner",
-          alt: "Guerbet"
-        }
+        
         /*{
           link: "https://www.brooksource.com/",
           src: "brooksource.svg",
@@ -142,6 +122,30 @@ module.exports = {
           className: "px-0 sm:px-20 mt-4 partner",
           alt: "FIS"
         }*/
+      ],
+
+      [
+        {
+          link: "https://aws.amazon.com/",
+          src: "aws.png",
+          imageHeight: "85px",
+          className: "px-0 mt-2 sm:px-20 partner",
+          alt: "AWS"
+        },
+        {
+          link: "https://tezos.com/",
+          src: "tezos.png",
+          imageHeight: "80px",
+          className: "px-4 mt-4 partner",
+          alt: "Tezos"
+        },
+        {
+          link: "https://www.guerbet.com/",
+          src: "guerbet.svg",
+          imageHeight: "55px",
+          className: "px-0 mt-6 sm:px-16 partner",
+          alt: "Guerbet"
+        }
       ],
       // M
       [
@@ -253,6 +257,13 @@ module.exports = {
           alt: "Balsamiq"
         },
         {
+          link: "https://beeceptor.com/",
+          src: "beeceptor.png",
+          imageHeight: "21px",
+          className: "px-4 mt-4 partner",
+          alt: "Beeceptor"
+        },
+        {
           link: "https://www.chipotle.com/",
           src: "chipotle.svg",
           imageHeight: "32px",
@@ -281,6 +292,9 @@ module.exports = {
           className: "px-4 mt-3 partner",
           alt: "Scrimba"
         },
+        
+      ],
+      [
         {
           link: "https://www.sketch.com/",
           src: "sketch.png",

@@ -126,6 +126,18 @@ export default () => {
                         />
                       </div>
                       <div className="mb-4 text-left">
+                        <label className="block text-sm font-bold mb-2" htmlFor="phone">
+                          Phone Number{errors.phone && <span className="text-red-500 text-xs italic">&nbsp;&nbsp;required field</span>}
+                        </label>
+                        <input
+                          ref={register({ required: true })}
+                          className="shadow appearance-none border rounded w-full py-2 px-3  leading-tight focus:outline-none focus:shadow-outline"
+                          name="phone"
+                          type="tel"
+                          placeholder="+1 (123) 456-7890"
+                        />
+                      </div>
+                      <div className="mb-4 text-left">
                         <label className="block text-sm font-bold mb-2" htmlFor="school">
                           School{errors.school && <span className="text-red-500 text-xs italic">&nbsp;&nbsp;required field</span>}
                         </label>
@@ -335,6 +347,18 @@ export default () => {
                             MLH Privacy Policy</a>.
                         </label>
                         {errors.authorized && <span className="text-red-500 font-bold text-xs italic">&nbsp;&nbsp;Please check this box</span>}
+                      </div>
+                      <div className="text-left text-sm" style={{fontSize: "11px"}}>
+                        <label>
+                          <input
+                            name="communication"
+                            ref={register({ validate: v => v })}
+                            type="checkbox"
+                            className="mr-2 leading-tight"
+                          />
+                          I authorize MLH to send me pre- and post-event informational e-mails, which contain free credit and opportunities from their partners. 
+                        </label>
+                        {errors.communication && <span className="text-red-500 font-bold text-xs italic">&nbsp;&nbsp;Please check this box</span>}
                       </div>
                       <div className="md:items-center py-20 lg:pb-20 lg:pt-10">
                         <Button
