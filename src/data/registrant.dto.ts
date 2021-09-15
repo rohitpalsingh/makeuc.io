@@ -14,4 +14,5 @@ export class RegistrantDTO {
   readonly questions?: string
   readonly agreed: boolean
   readonly authorized: boolean
+  readonly communication: boolean
 }

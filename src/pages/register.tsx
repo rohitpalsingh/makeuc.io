@@ -348,6 +348,18 @@ export default () => {
                         </label>
                         {errors.authorized && <span className="text-red-500 font-bold text-xs italic">&nbsp;&nbsp;Please check this box</span>}
                       </div>
+                      <div className="text-left text-sm" style={{fontSize: "11px"}}>
+                        <label>
+                          <input
+                            name="communication"
+                            ref={register({ validate: v => v })}
+                            type="checkbox"
+                            className="mr-2 leading-tight"
+                          />
+                          I authorize MLH to send me pre- and post-event informational e-mails, which contain free credit and opportunities from their partners. 
+                        </label>
+                        {errors.communication && <span className="text-red-500 font-bold text-xs italic">&nbsp;&nbsp;Please check this box</span>}
+                      </div>
                       <div className="md:items-center py-20 lg:pb-20 lg:pt-10">
                         <Button
                           size="default"
