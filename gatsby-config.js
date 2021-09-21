@@ -75,20 +75,29 @@ module.exports = {
       }
     ],
     sponsors: [
+      [
+        {
+          link: "https://aws.amazon.com/",
+          src: "aws.png",
+          imageHeight: "125px",
+          className: "partner",
+          alt: "AWS"
+        }
+      ],
       // L
       [
         {
           link: "https://www.givaudan.com/",
           src: "givaudan.png",
           imageHeight: "67px",
-          className: "px-0 mt-4 sm:px-8 partner",
+          className: "partner",
           alt: "Givaudan"
         },
         {
           link: "https://www.siemens.com/global/en.html",
           src: "siemens.svg",
           imageHeight: "52px",
-          className: "px-0 mt-6 sm:px-8 partner",
+          className: "partner",
           alt: "Siemens"
         },
         
@@ -96,7 +105,7 @@ module.exports = {
           link: "https://www.northropgrumman.com/careers/",
           src: "northrop.svg",
           imageHeight: "100px",
-          className: "px-0 mt-1 sm:px-16 partner",
+          className: "partner",
           alt: "Northrop Grumman"
         },
         
@@ -126,24 +135,17 @@ module.exports = {
 
       [
         {
-          link: "https://aws.amazon.com/",
-          src: "aws.png",
-          imageHeight: "85px",
-          className: "px-0 mt-2 sm:px-20 partner",
-          alt: "AWS"
-        },
-        {
           link: "https://tezos.com/",
           src: "tezos.png",
           imageHeight: "80px",
-          className: "px-4 mt-4 partner",
+          className: "partner",
           alt: "Tezos"
         },
         {
           link: "https://www.guerbet.com/",
           src: "guerbet.svg",
           imageHeight: "55px",
-          className: "px-0 mt-6 sm:px-16 partner",
+          className: "partner",
           alt: "Guerbet"
         }
       ],
@@ -153,38 +155,46 @@ module.exports = {
           link: "https://www.marathonpetroleum.com/Jobs/University-Recruiting/",
           src: "https://cdn.winsightmedia.com/platform/files/public/cspdn/main/articles/Marathon_Petroleum_Corporation_Logo.jpg",
           imageHeight: "112px",
-          className: "px-5 mt-2 partner",
+          className: "mt-2 partner",
           alt: "Marathon"
         },
         {
           link: "https://cloud.google.com/",
           src: "google-cloud.svg",
           imageHeight: "53px",
-          className: "px-5 sm:px-8 mt-10 partner",
+          className: "mt-2 partner",
           alt: "Google Cloud"
         },
         {
           link: "https://www.mongodb.com/",
           src: "mongodb.svg",
           imageHeight: "63px",
-          className: "newline px-0 sm:px-8 partner",
+          className: "px-2 partner",
           alt: "MongoDB"
+        },
+        {
+          link: "https://www.registry.google/",
+          src: "googleregistry.png",
+          imageHeight: "50px",
+          className: "px-4 partner",
+          alt: "Google Registry"
+        },
+        {
+          link: "https://www.jpmorgan.com/global",
+          src: "jpmorgan.svg",
+          imageHeight: "60px",
+          className: "px-4 partner",
+          alt: "J.P. Morgan"
         },
         /* Best. Sponsor. Ever. */
         {
           link: "https://www.gather.town/",
           src: "gather.png",
           imageHeight: "70px",
-          className: "gather partner",
+          className: "px-4 partner",
           alt: "Gather Town"
-        },
-        {
-          link: "https://www.jpmorgan.com/global",
-          src: "jpmorgan.svg",
-          imageHeight: "60px",
-          className: "px-0 sm:px-8 partner",
-          alt: "J.P. Morgan"
         }
+        
         
         /*{
           link: "https://cech.uc.edu/schools/it.html/",
@@ -222,21 +232,21 @@ module.exports = {
           link: "https://www.overleaf.com/",
           src: "overleaf.png",
           imageHeight: "52px",
-          className: "px-5 mt-4 partner",
+          className: "mt-2 partner",
           alt: "Overleaf"
         },
         {
           link: "https://www.digitalocean.com/careers/",
           src: "do.png",
           imageHeight: "45px",
-          className: "px-5 mt-4 partner",
+          className: "mt-2 partner",
           alt: "Digital Ocean"
         },
         {
           link: "https://www.wolfram.com/hackathons/",
           src: "wolfram.svg",
           imageHeight: "52px",
-          className: "px-5 mt-4 partner",
+          className: "mt-2 partner",
           alt: "Wolfram"
         }
       ],
@@ -246,42 +256,42 @@ module.exports = {
           link: "https://www.axure.com/",
           src: "axure.svg",
           imageHeight: "21px",
-          className: "px-4 mt-4 partner",
+          className: "partner",
           alt: "Axure"
         },
         {
           link: "https://balsamiq.com/",
           src: "balsamiq.svg",
           imageHeight: "21px",
-          className: "px-4 mt-4 partner",
+          className: "partner",
           alt: "Balsamiq"
         },
         {
           link: "https://beeceptor.com/",
           src: "beeceptor.png",
           imageHeight: "21px",
-          className: "px-4 mt-4 partner",
+          className: "partner",
           alt: "Beeceptor"
         },
         {
           link: "https://www.chipotle.com/",
           src: "chipotle.svg",
           imageHeight: "32px",
-          className: "px-4 mt-2 partner",
+          className: "partner",
           alt: "Chipotle"
         },
         {
           link: "https://www.qoom.io/",
           src: "qoom.svg",
           imageHeight: "18px",
-          className: "px-4 mt-4 partner",
+          className: "partner",
           alt: "Qoom"
         },
         {
           link: "https://www.sashido.io/en/",
           src: "sashido.webp",
           imageHeight: "28px",
-          className: "px-4 mt-3 partner",
+          className: "partner",
           alt: "Sashido"
         },
         
@@ -289,7 +299,7 @@ module.exports = {
           link: "https://scrimba.com/",
           src: "scrimba.jpg",
           imageHeight: "25px",
-          className: "px-4 mt-3 partner",
+          className: "partner",
           alt: "Scrimba"
         },
         
@@ -299,33 +309,32 @@ module.exports = {
           link: "https://www.sketch.com/",
           src: "sketch.png",
           imageHeight: "32px",
-          className: "px-4 mt-2 sm:px-6 partner",
+          className: "partner",
           alt: "Sketch"
         },
         {
           link: "https://www.stickergiant.com/",
           src: "stickergiant.png",
           imageHeight: "31px",
-          className: "px-4 mt-2 sm:px-6 partner",
+          className: "partner",
           alt: "Sticker Giant"
         },
         {
           link: "https://hackp.ac/mlh-stickermule-hackathons/",
           src: "stickermule.svg",
           imageHeight: "21px",
-          className: "px-4 mt-4 partner",
+          className: "partner",
           alt: "Sticker Mule"
         },
         {
           link: "https://www.twilio.com/",
           src: "twilio.png",
           imageHeight: "21px",
-          className: "px-4 mt-3 partner",
+          className: "partner",
           alt: "Twilio"
         }
       ]
     ]
-    
   },
 
   plugins: [

@@ -225,13 +225,13 @@ export default () => {
               <Card className="nes-container is-centered is-rounded m-4 bg-white">
                 {sponsors.map((category, index) =>
                   <>
-                    {!!index && index != 5 && index != 1 && <hr className="mt-5"></hr>} {/* this is absolutely disgusting */}
+                    {!!index && index != 6 && index != 2 && <hr className="mt-5"></hr>} {/* this is absolutely disgusting */}
 
                     <div className="sm:mx-auto px-auto flex justify-center items-center content-around flex-wrap">
                       {category.map((sponsor) => (
                         <div key={sponsor.link} className="mt-1 text-secondary bg-white m-2 md:m-4">
                           <a href={sponsor.link} target={"_blank"} rel={"noopener noreferrer"}>
-                          <img src={sponsor.src} style={{ height: sponsor.imageHeight }} alt={sponsor.alt} />
+                          <img src={sponsor.src} style={{ height: sponsor.imageHeight }} className={sponsor.className} alt={sponsor.alt} />
                           </a>
                         </div>
                       ))}
