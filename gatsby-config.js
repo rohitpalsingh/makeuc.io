@@ -175,7 +175,7 @@ module.exports = {
         {
           link: "https://www.registry.google/",
           src: "googleregistry.png",
-          imageHeight: "50px",
+          imageHeight: "57px",
           className: "px-4 partner",
           alt: "Google Registry"
         },
