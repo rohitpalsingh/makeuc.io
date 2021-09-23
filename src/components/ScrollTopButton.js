@@ -15,7 +15,7 @@ const ScrollTopButton = ({ distance = 700 } = {}) => {
       bottomOffset={200}
       litSrc={PacmanGIF}
       hoveringSrc={PacmanWait}
-      style={{ border: `none`, padding: 0, backgroundColor: 'transparent' }}
+      style={{ border: `none`, padding: 0, backgroundColor: 'transparent', position: 'fixed', bottom: '20px', right: '20px', zIndex: '9999' }}
     />
   );
 };
