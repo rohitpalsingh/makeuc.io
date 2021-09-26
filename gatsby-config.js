@@ -193,7 +193,15 @@ module.exports = {
           imageHeight: "70px",
           className: "px-4 partner",
           alt: "Gather Town"
+        },
+        {
+          link: "https://business.uc.edu/centers-partnerships/entrepreneurship.html",
+          src: "uc_entrepreneur.png",
+          imageHeight: "90px",
+          className: "px-4 partner",
+          alt: "UC Center For Entrepreneurship"
         }
+
         
         
         /*{
