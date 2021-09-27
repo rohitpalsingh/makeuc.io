@@ -186,7 +186,6 @@ module.exports = {
           className: "px-4 partner",
           alt: "J.P. Morgan"
         },
-        /* Best. Sponsor. Ever. */
         {
           link: "https://www.gather.town/",
           src: "gather.png",
@@ -195,10 +194,17 @@ module.exports = {
           alt: "Gather Town"
         },
         {
+          link: "https://www.ey.com/en_us",
+          src: "ey.png",
+          imageHeight: "80px",
+          className: "px-8 partner",
+          alt: "EY"
+        },
+        {
           link: "https://business.uc.edu/centers-partnerships/entrepreneurship.html",
           src: "uc_entrepreneur.png",
           imageHeight: "90px",
-          className: "px-4 partner",
+          className: "px-4 mt-2 partner",
           alt: "UC Center For Entrepreneurship"
         }
 
