@@ -136,7 +136,7 @@ module.exports = {
       [
         {
           link: "https://tezos.com/",
-          src: "tezos.png",
+          src: "tezos80.png",
           imageHeight: "80px",
           className: "partner",
           alt: "Tezos"
@@ -153,7 +153,7 @@ module.exports = {
       [
         {
           link: "https://www.marathonpetroleum.com/Jobs/University-Recruiting/",
-          src: "https://cdn.winsightmedia.com/platform/files/public/cspdn/main/articles/Marathon_Petroleum_Corporation_Logo.jpg",
+          src: "marathon112.jpg",
           imageHeight: "112px",
           className: "mt-2 partner",
           alt: "Marathon"
@@ -174,7 +174,7 @@ module.exports = {
         },
         {
           link: "https://www.registry.google/",
-          src: "googleregistry.png",
+          src: "googleregistry57.png",
           imageHeight: "57px",
           className: "px-4 partner",
           alt: "Google Registry"
@@ -188,21 +188,21 @@ module.exports = {
         },
         {
           link: "https://www.gather.town/",
-          src: "gather.png",
+          src: "gather70.png",
           imageHeight: "70px",
           className: "px-4 partner",
           alt: "Gather Town"
         },
         {
           link: "https://www.ey.com/en_us",
-          src: "ey.png",
+          src: "ey80.png",
           imageHeight: "80px",
           className: "px-8 partner",
           alt: "EY"
         },
         {
           link: "https://business.uc.edu/centers-partnerships/entrepreneurship.html",
-          src: "uc_entrepreneur.png",
+          src: "uc_entrepreneur90.png",
           imageHeight: "90px",
           className: "px-4 mt-2 partner",
           alt: "UC Center For Entrepreneurship"
@@ -244,14 +244,14 @@ module.exports = {
         },*/
         {
           link: "https://www.overleaf.com/",
-          src: "overleaf.png",
+          src: "overleaf52.png",
           imageHeight: "52px",
           className: "mt-2 partner",
           alt: "Overleaf"
         },
         {
           link: "https://www.digitalocean.com/careers/",
-          src: "do.png",
+          src: "do45.png",
           imageHeight: "45px",
           className: "mt-2 partner",
           alt: "Digital Ocean"
@@ -282,7 +282,7 @@ module.exports = {
         },
         {
           link: "https://beeceptor.com/",
-          src: "beeceptor.png",
+          src: "beeceptor21.png",
           imageHeight: "21px",
           className: "partner",
           alt: "Beeceptor"
@@ -311,7 +311,7 @@ module.exports = {
         
         {
           link: "https://scrimba.com/",
-          src: "scrimba.jpg",
+          src: "scrimba25.jpg",
           imageHeight: "25px",
           className: "partner",
           alt: "Scrimba"
@@ -321,14 +321,14 @@ module.exports = {
       [
         {
           link: "https://www.sketch.com/",
-          src: "sketch.png",
+          src: "sketch32.png",
           imageHeight: "32px",
           className: "partner",
           alt: "Sketch"
         },
         {
           link: "https://www.stickergiant.com/",
-          src: "stickergiant.png",
+          src: "stickergiant31.png",
           imageHeight: "31px",
           className: "partner",
           alt: "Sticker Giant"
@@ -342,7 +342,7 @@ module.exports = {
         },
         {
           link: "https://www.twilio.com/",
-          src: "twilio.png",
+          src: "twilio21.png",
           imageHeight: "21px",
           className: "partner",
           alt: "Twilio"

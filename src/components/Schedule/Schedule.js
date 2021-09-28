@@ -49,8 +49,8 @@ export default function BasicTable() {
                   <span className="b">{row.name}</span>
                 </TableCell>
                 {/* at this point, I'm pretty sure you know I'm not a web person, but who cares, I'm doing this anyways */}
-                <TableCell align="center" className="schedule-date-time" style={{fontWeight: "500"}}>{row.start}</TableCell>
-                <TableCell align="center" className="schedule-date-time" style={{fontWeight: "500"}}>{row.end}</TableCell>
+                <TableCell align="center" className="schedule-date-time" style={{fontWeight: "500", color: "#ff8304"}}>{row.start}</TableCell>
+                <TableCell align="center" className="schedule-date-time" style={{fontWeight: "500", color: "#ff8304"}}>{row.end}</TableCell>
               </TableRow>
             ))}
           </TableBody>

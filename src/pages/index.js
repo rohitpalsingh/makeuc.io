@@ -201,10 +201,9 @@ export default () => {
                 </h1>
                 <br></br>
                 <p className="text-black" style={{fontSize: '16px'}}>
-                  Hype Week is a week of events and workshops that will help you prepare for MakeUC,
-                  get to know your fellow hackers, and get to know the MakeUC community. We'll be giving
-                  workshops on a number of different topics, as well as some fun events to network with 
-                  hackers and mentors.
+                  Hype Week is a week of events and workshops that will help you get to know your fellow hackers, 
+                  sponsors, mentors, and the MakeUC community. We'll be hosting workshops on a number of different topics 
+                  as well as some fun events to network with hackers and mentors.
                 </p>
             </Card>
             <Card className="nes-container is-centered is-rounded m-4 text-secondary bg-white">
