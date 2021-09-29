@@ -5,6 +5,7 @@ import Button from "../components/Button";
 import Card from "../components/Card";
 import Layout from "../components/layout/Layout";
 import HeaderImage from "../components/HeaderImage";
+import Schedule from "../components/Schedule/Schedule"
 import Accordion from "../components/Accordion";
 import SEO from "../components/SEO";
 import HeaderImg from "../images/better_header_retro.png"
@@ -179,6 +180,39 @@ export default () => {
                 </Card>
               ))}
             </div>
+          </div>
+        </div>
+      </section>
+      <section id="hypeweek" className="py-10 lg:pb-24 lg:pt-24">
+        <div className="container mx-auto text-center">
+          <h2
+            className="text-3xl lg:text-5xl font-semibold"
+            style={{
+              textDecoration: "underline",
+              textDecorationColor: "#fccf00",//"#8ae9c1",
+            }}
+          >
+           HYPE WEEK
+          </h2>
+          <div className="mt-12">
+            <Card className="nes-container is-centered is-rounded m-4 text-secondary bg-white">
+                <h1 className="text-2xl font-semibold text-black">
+                  WHAT IS HYPE WEEK? 
+                </h1>
+                <br></br>
+                <p className="text-black" style={{fontSize: '16px'}}>
+                  Hype Week is a week of events and workshops that will help you get to know your fellow hackers, 
+                  sponsors, mentors, and the MakeUC community. We'll be hosting workshops on a number of different topics 
+                  as well as some fun events to network with hackers and mentors.
+                </p>
+            </Card>
+            <Card className="nes-container is-centered is-rounded m-4 text-secondary bg-white">
+              <h1 className="text-2xl font-semibold text-black">
+                SCHEDULE
+              </h1>
+              <br></br>
+              <Schedule></Schedule>
+            </Card>
           </div>
         </div>
       </section>

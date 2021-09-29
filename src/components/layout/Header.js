@@ -48,6 +48,9 @@ const Header = ({ page = `index` } = {}) => {
             <AnchorLink className="px-4 xs:px-2 nav-link" href="#tracks">
               TRACKS
             </AnchorLink>
+            <AnchorLink className="px-4 xs:px-2 nav-link" href="#hypeweek">
+              HYPEWEEK 
+            </AnchorLink>
             <AnchorLink className="px-4 xs:px-2 nav-link" href="#faq">
               FAQ
             </AnchorLink>

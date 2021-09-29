@@ -125,3 +125,27 @@ footer.mountain-background {
   max-width: auto;
   height: auto;
 }
+
+.schedule-bg {
+  background-color: $purple-white !important;
+}
+
+table tr:nth-child(2n + 2) {
+  background-color: #ecebf5;
+}
+
+.schedule-gray-row tr:nth-child(1) {
+  background-color: #ecebf5;
+}
+
+.schedule-date-time {
+  width: 1.5rem !important;
+}
+
+.schedule-name {
+  width: 1.5rem !important;
+}
+
+.schedule-table {
+  table-layout: fixed !important;
+}
