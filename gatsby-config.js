@@ -41,7 +41,7 @@ module.exports = {
       },
       {
         question: 'WHO CAN ATTEND IN PERSON?',
-        answer: 'The MakeUC Team will be releasing information shortly on in-person attendance eligibility!'
+        answer: 'The MakeUC Team has sent out initial in-person invitations, and will be following up soon!'
       },
       {
         question: `HOW MUCH DOES IT COST?`,
