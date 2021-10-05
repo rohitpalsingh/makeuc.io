@@ -213,7 +213,7 @@ module.exports = {
           imageHeight: "90px",
           className: "px-4 mt-2 partner",
           alt: "UC Center For Entrepreneurship"
-        }
+        },
         /*{
           link: "https://cech.uc.edu/schools/it.html/",
           src: "soit.png",
@@ -221,13 +221,13 @@ module.exports = {
           className: "mb-5 px-5 mt-10 partner",
           alt: "School of IT"
         },*/
-        /*{
-          link: "https://ceas.uc.edu",
-          src: "uc-ceas_logo.png",
-          imageHeight: "90px",
-          className: "px-5 mt-5 partner",
-          alt: "CEAS"
-        }*/
+        // {
+        //   link: "https://ceas.uc.edu",
+        //   src: "uc-ceas_logo.png",
+        //   imageHeight: "90px",
+        //   className: "px-5 partner",
+        //   alt: "CEAS"
+        // }
       ],
       // S
       [
@@ -266,6 +266,13 @@ module.exports = {
           imageHeight: "52px",
           className: "mt-2 partner",
           alt: "Wolfram"
+        },
+        {
+          link: "https://tribunal.uc.edu/",
+          src: "tribunal50.png",
+          imageHeight: "50px",
+          className: "mt-2 partner",
+          alt: "Tribunal"
         }
       ],
       // XS
