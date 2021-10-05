@@ -266,13 +266,6 @@ module.exports = {
           imageHeight: "52px",
           className: "mt-2 partner",
           alt: "Wolfram"
-        },
-        {
-          link: "https://tribunal.uc.edu/",
-          src: "tribunal50.png",
-          imageHeight: "50px",
-          className: "mt-2 partner",
-          alt: "Tribunal"
         }
       ],
       // XS
