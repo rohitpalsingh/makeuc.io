@@ -159,11 +159,11 @@ module.exports = {
           alt: "Marathon"
         },
         {
-          link: "https://cloud.google.com/",
-          src: "google-cloud.svg",
-          imageHeight: "53px",
-          className: "mt-2 partner",
-          alt: "Google Cloud"
+          link: "https://www.assemblyai.com/",
+          src: "https://www.assemblyai.com/_next/static/image/src/modules/layout/branding/logo/assets/default.a451cfb665ce63899754f3d832630ece.svg",
+          imageHeight: "60px",
+          className: "px-8 mt-2 partner",
+          alt: "Assembly AI"
         },
         {
           link: "https://www.mongodb.com/",
@@ -201,15 +201,19 @@ module.exports = {
           alt: "EY"
         },
         {
+          link: "https://cloud.google.com/",
+          src: "google-cloud.svg",
+          imageHeight: "53px",
+          className: "mt-8 partner",
+          alt: "Google Cloud"
+        },
+        {
           link: "https://business.uc.edu/centers-partnerships/entrepreneurship.html",
           src: "uc_entrepreneur90.png",
           imageHeight: "90px",
           className: "px-4 mt-2 partner",
           alt: "UC Center For Entrepreneurship"
-        }
-
-        
-        
+        },
         /*{
           link: "https://cech.uc.edu/schools/it.html/",
           src: "soit.png",
@@ -217,13 +221,13 @@ module.exports = {
           className: "mb-5 px-5 mt-10 partner",
           alt: "School of IT"
         },*/
-        /*{
-          link: "https://ceas.uc.edu",
-          src: "uc-ceas_logo.png",
-          imageHeight: "90px",
-          className: "px-5 mt-5 partner",
-          alt: "CEAS"
-        }*/
+        // {
+        //   link: "https://ceas.uc.edu",
+        //   src: "uc-ceas_logo.png",
+        //   imageHeight: "90px",
+        //   className: "px-5 partner",
+        //   alt: "CEAS"
+        // }
       ],
       // S
       [
