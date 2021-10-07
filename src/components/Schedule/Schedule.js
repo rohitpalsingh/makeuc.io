@@ -23,7 +23,7 @@ const generalRows = [
   createData("Student Networking Icebreaker", "Oct 5 - 7:00PM", "Oct 5 - 7:45 PM"),
   createData("Intro to Website Design with Command Tech", "Oct 6 - 7:00PM", "Oct 6 - 7:45PM"),
   createData("IEEE MakeUC General Preparation", "Oct 7 - 5:00PM", "Oct 7 - 6:00PM"),
-  createData("Intro to Program Management with Microsoft", "Oct 7 - 7:00PM", "Oct 7 - 8:00PM"),
+  createData("Intro to Program Management with Microsoft", "Oct 7 - 8:00PM", "Oct 7 - 9:00PM"),
   createData("Fun With scribbl.io", "Oct 8 - 6:00PM", "Oct 8 - 7:00PM")
 ];
 
