@@ -66,13 +66,13 @@ const Header = ({ page = `index` } = {}) => {
             //   <Button className="text-sm font-bold">REGISTER NOW!</Button>
             // </Link>
 
-            // <Link to="https://live.makeuc.io">
-            //   <Button className="text-sm font-bold">LIVE SITE</Button>
-            // </Link>
-
-            <Link to="/register">
-              <Button className="text-sm font-bold nes-btn">REGISTER</Button>
+            <Link to="https://makeuc-2021.devpost.com/">
+              <Button className="text-sm font-bold nes-btn">DEVPOST</Button>
             </Link>
+
+            // <Link to="/register">
+            //   <Button className="text-sm font-bold nes-btn">REGISTER</Button>
+            // </Link>
           )} {/*: (
             <Link to="/">
               <Button className="text-sm font-bold">HOME</Button>

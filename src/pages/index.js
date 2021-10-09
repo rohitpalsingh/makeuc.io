@@ -73,17 +73,17 @@ export default () => {
                 </Button>
               </Link> */}
               
-              {/* <Link to="https://live.makeuc.io">
-                <Button size="lg" className="font-sans text-md font-bold">
-                  LIVE SITE
+              <Link to="https://makeuc-2021.devpost.com/">
+                <Button size="lg" className="text-md font-bold nes-btn">
+                  DEVPOST
                 </Button>
-              </Link> */}
+              </Link>
               
-              <Link to="/register">
+              {/* <Link to="/register">
                 <Button size="lg" className="text-md font-bold nes-btn">
                   REGISTER 
                 </Button>
-              </Link>
+              </Link> */}
             </p>
           </div>
           <div className="lg:w-1/2">
