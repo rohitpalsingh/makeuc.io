@@ -6,6 +6,13 @@ node_js:
 script:
   - npm run build
 
+before_install:
+  - sudo apt-get -y install nasm
+
+addons:
+  apt:
+    update: true
+
 deploy:
   - provider: s3
     access_key_id: $AWS_KEY
