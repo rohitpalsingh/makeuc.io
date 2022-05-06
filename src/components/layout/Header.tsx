@@ -1,27 +1,30 @@
-import React, { useEffect, useState } from "react";
-import AnchorLink from "react-anchor-link-smooth-scroll";
-import { Link } from "gatsby";
-import LogoIcon from "../../svg/LogoIcon";
-import Button from "../Button";
+import { Link } from 'gatsby';
+import React, { FC, useEffect, useState } from 'react';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
+import LogoIcon from '../../svg/LogoIcon';
+import Button from '../Button';
 
-const Header = ({ page = `index` } = {}) => {
-  const [state, setState] = useState(`top`);
+export type HeaderProps = {
+  page?: string;
+};
+
+const Header: FC<HeaderProps> = ({ page = 'index' }) => {
+  const [state, setState] = useState('top');
 
   useEffect(() => {
-    const listener = document.addEventListener(`scroll`, (e) => {
-      var scrolled = document.scrollingElement.scrollTop;
+    const scrollListener = () => {
+      const scrolled = document.scrollingElement.scrollTop;
       if (scrolled >= 100) {
-        if (state !== `scrolling`) {
-          setState(`scrolling`);
+        if (state !== 'scrolling') {
+          setState('scrolling');
         }
-      } else {
-        if (state !== `top`) {
-          setState(`top`);
-        }
+      } else if (state !== 'top') {
+        setState('top');
       }
-    });
+    };
 
-    return () => document.removeEventListener(`scroll`, listener);
+    document.addEventListener('scroll', scrollListener);
+    return () => document.removeEventListener('scroll', scrollListener);
   });
 
   return (
@@ -39,7 +42,7 @@ const Header = ({ page = `index` } = {}) => {
             </div>
           </div>
         </Link>
-        {page === `index` && (
+        {page === 'index' && (
           <div className="flex justify-evenly md:justify-center flex-grow mt-3 sm:mt-0 text-xs sm:text-sm md:text-base">
             <AnchorLink className="px-4 xs:px-2 nav-link" href="#about">
               ABOUT
@@ -49,7 +52,7 @@ const Header = ({ page = `index` } = {}) => {
               TRACKS
             </AnchorLink>
             <AnchorLink className="px-4 xs:px-2 nav-link" href="#hypeweek">
-              HYPEWEEK 
+              HYPEWEEK
             </AnchorLink>
             <AnchorLink className="px-4 xs:px-2 nav-link" href="#faq">
               FAQ
@@ -61,7 +64,7 @@ const Header = ({ page = `index` } = {}) => {
           </div>
         )}
         <div className="hidden md:block">
-          {page === `index` && (
+          {page === 'index' && (
             // <Link to="/register">
             //   <Button className="text-sm font-bold">REGISTER NOW!</Button>
             // </Link>
@@ -73,34 +76,36 @@ const Header = ({ page = `index` } = {}) => {
             // <Link to="/register">
             //   <Button className="text-sm font-bold nes-btn">REGISTER</Button>
             // </Link>
-          )} {/*: (
+          )}{' '}
+          {/*: (
             <Link to="/">
               <Button className="text-sm font-bold">HOME</Button>
           </Link>
-          )}*/}
+          )} */}
         </div>
       </div>
 
-      <a 
-        id="mlh-trust-badge" 
+      <a
+        id="mlh-trust-badge"
         className="flex"
         style={{
-          display: "block",
-          maxWidth: "100px",
-          minWidth: "40px", 
-          position: "fixed",
-          left: "15px",
+          display: 'block',
+          maxWidth: '100px',
+          minWidth: '40px',
+          position: 'fixed',
+          left: '15px',
           top: 0,
-          width: "10%",
-          zIndex: "10000"
+          width: '10%',
+          zIndex: '10000',
         }}
-        href="https://mlh.io/seasons/2022/events?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2022-season&utm_content=white" 
+        href="https://mlh.io/seasons/2022/events?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2022-season&utm_content=white"
         target="_blank"
+        rel="noreferrer"
       >
-        <img 
-          src="https://s3.amazonaws.com/logged-assets/trust-badge/2022/mlh-trust-badge-2022-white.svg" 
-          alt="Major League Hacking 2022 Hackathon Season" 
-          style={{width: "100%"}}
+        <img
+          src="https://s3.amazonaws.com/logged-assets/trust-badge/2022/mlh-trust-badge-2022-white.svg"
+          alt="Major League Hacking 2022 Hackathon Season"
+          style={{ width: '100%' }}
         />
       </a>
     </header>
