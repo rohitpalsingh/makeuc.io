@@ -1,12 +1,11 @@
-import React from 'react';
 import { Link } from 'gatsby';
+import React, { FC } from 'react';
 import Button from '../components/Button';
 import FooterImage from '../components/FooterImage';
 import SEO from '../components/SEO';
-import moon from '../svg/moon.png';
-import pacman from '../svg/pacman404.png'
+import pacman from '../svg/pacman404.png';
 
-export default () => (
+const Error404Page: FC = () => (
   <>
     <SEO />
     <main>
@@ -19,14 +18,16 @@ export default () => (
               4!
             </h1>
             <p className="text-xl lg:text-3xl mt-6 font-light">
-              It looks like the page you're searching for does not exist.
+              It looks like the page you&amp;re searching for does not exist.
             </p>
             <p className="text-sm mt-6 font-light">
               Impossible. Perhaps the website is incomplete?
             </p>
             <p className="mt-8 md:mt-12">
               <Link to="/">
-                <Button size="lg" className="text-md font-bold nes-btn">Home</Button>
+                <Button size="lg" className="text-md font-bold nes-btn">
+                  Home
+                </Button>
               </Link>
             </p>
           </div>
@@ -36,3 +37,4 @@ export default () => (
     </main>
   </>
 );
+export default Error404Page;

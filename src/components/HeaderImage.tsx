@@ -1,8 +1,8 @@
-import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
+import { graphql, useStaticQuery } from 'gatsby';
+import Img from 'gatsby-image';
+import React, { FC } from 'react';
 
-const HeaderImg = () => {
+const HeaderImg: FC = () => {
   const data = useStaticQuery(graphql`
     query {
       placeholderImage: file(relativePath: { eq: "header_retro.png" }) {
@@ -13,9 +13,9 @@ const HeaderImg = () => {
         }
       }
     }
-  `)
+  `);
 
-  return <Img fluid={data.placeholderImage.childImageSharp.fluid} />
-}
+  return <Img fluid={data.placeholderImage.childImageSharp.fluid} />;
+};
 
-export default HeaderImg
+export default HeaderImg;
