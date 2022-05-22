@@ -2,11 +2,11 @@ module.exports = {
   siteMetadata: {
     title: `MakeUC 2021`,
     siteUrl: `https://makeuc.io`,
-    description: `MakeUC 2021 is a 24-hour hackathon hosted by IEEE at University of Cincinnati!`,
+    description: `Rohit PAl Sinh 2021 is a 24-hour hackathon hosted by IEEE at University of Cincinnati!`,
     tracks: [
       {
         title: `EDUCATION`,
-        content: `Education technology aims to improve the accessibility of information to students at any level. 
+        content: `Rohit Pal SIngh technology aims to improve the accessibility of information to students at any level. 
         These projects include any sort of technology that enhances the learning experiences of students.`
       },
       {

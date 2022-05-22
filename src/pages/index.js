@@ -8,7 +8,7 @@ import HeaderImage from "../components/HeaderImage";
 import Schedule from "../components/Schedule/Schedule"
 import Accordion from "../components/Accordion";
 import SEO from "../components/SEO";
-import HeaderImg from "../images/better_header_retro.png"
+import HeaderImg from "../images/good_header.png"
 import { useState, useEffect } from "react";
 
 export const query = graphql`

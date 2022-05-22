@@ -8,15 +8,15 @@
 @import '../../node_modules/@syncfusion/ej2-popups/styles/material.css';
 @import '../../node_modules/@syncfusion/ej2-splitbuttons/styles/material.css';
 @import '../../node_modules/@syncfusion/ej2-react-schedule/styles/material.css';
-@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Flex');
 
 main {
   background-size: cover;
-  background-color: black;
-  background-image: url('./jank-background.png');
+  background-color: white;
+  background-image: url('./goodbackground.png');
   background-attachment: fixed;
-  color: theme('colors.white');
-  font-family: 'Press Start 2P';
+  color: theme('colors.black');
+  font-family: 'Roboto Flex';
 }
 
 body {
